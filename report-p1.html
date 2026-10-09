@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>PackageGraph Outlier Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+       margin: 2em; color: #1f2328; background: #fafbfc; }
+header h1 { margin-bottom: 0.2em; color: #0969da; }
+.meta { color: #6e7781; font-size: 0.9em; margin: 0.2em 0; }
+section { margin: 2em 0; padding: 1em; background: #fff;
+          border: 1px solid #d0d7de; border-radius: 6px; }
+h2 { margin-top: 0; padding-bottom: 0.3em; border-bottom: 1px solid #d0d7de; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 0.4em 0.7em; border: 1px solid #d0d7de; text-align: left; }
+th { background: #f6f8fa; }
+td.name { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+td.dev { text-align: right; font-variant-numeric: tabular-nums; }
+td.side { text-align: center; font-weight: bold; }
+tr.high { background: #fff8c5; }
+tr.high td.side { color: #9a6700; }
+tr.low  { background: #ddf4ff; }
+tr.low  td.side { color: #0969da; }
+table.stats td { font-variant-numeric: tabular-nums; }
+.empty { color: #6e7781; font-style: italic; }
+footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #d0d7de; }
+</style>
+</head>
+<body>
+<header><h1>PackageGraph Outlier Report</h1>
+<p class="meta">Datei: packageGraph.gml &middot; erstellt: 2026-10-09 14:28:09</p>
+<p class="meta">Knoten: 14972 &middot; Kanten: 20454 &middot; Bundles: 178 &middot; Top-1-Auswertung</p>
+</header>
+<section id="summary">
+<h2>Zusammenfassung</h2>
+<table class="stats"><tbody>
+<tr><th>Outlier gesamt</th><td>508</td></tr>
+<tr><th>davon HIGH</th><td>254</td></tr>
+<tr><th>davon LOW</th><td>254</td></tr>
+<tr><th>Bundles mit Outlier</th><td>178</td></tr>
+</tbody></table>
+</section>
+<section class="bundle">
+<h2>pflegeversicherung.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.pflegeversicherung.zusatzzahlung</td><td>14</td><td>13.000</td><td>1.295</td><td class="dev">11.705</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitsunfaehigkeit.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.arbeitsunfaehigkeit.damdk.anlagen.bizservices</td><td>16</td><td>15.000</td><td>3.998</td><td class="dev">11.002</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kur.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kur.daar.nachrichtenempfang.pruefdatensatz</td><td>14</td><td>13.000</td><td>2.359</td><td class="dev">10.641</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeversicherung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeleistungen.zuschlagpflegehilfskraefte.application.service</td><td>16</td><td>15.000</td><td>4.857</td><td class="dev">10.143</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeleistungen.verguetungszuschlag.application.service</td><td>16</td><td>15.000</td><td>4.857</td><td class="dev">10.143</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kur.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kur.datenaustausch.rechnung.pruefung</td><td>13</td><td>12.000</td><td>2.359</td><td class="dev">9.641</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kur.joblib.jobs.dsgvo.pdfErzeuger.fehlernachricht</td><td>13</td><td>12.000</td><td>2.359</td><td class="dev">9.641</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kur.datenaustausch.fehler.intern</td><td>13</td><td>12.000</td><td>2.359</td><td class="dev">9.641</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kur.datenaustausch.reha.validierung.schemata.feh</td><td>13</td><td>12.000</td><td>2.359</td><td class="dev">9.641</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbeitrag.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.arbeitgeberbeitrag.erstattungsmeldung</td><td>13</td><td>12.000</td><td>2.703</td><td class="dev">9.297</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.arbeitgeberbeitrag.betriebspruefung.adhoc.parametercontainer</td><td>13</td><td>12.000</td><td>2.703</td><td class="dev">9.297</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>eel.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.eel.regelwerk.regeln.beispiel</td><td>15</td><td>14.000</td><td>4.793</td><td class="dev">9.207</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeversicherung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.batch.dunkelverarbeitung.kzpvhp.verhinderungspflege.versicherter</td><td>16</td><td>14.000</td><td>4.857</td><td class="dev">9.143</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeleistungen.verguetungszuschlag.application.port.in</td><td>15</td><td>14.000</td><td>4.857</td><td class="dev">9.143</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeleistungen.hospiz.domain.model.leistung.hinweispruefer</td><td>15</td><td>14.000</td><td>4.857</td><td class="dev">9.143</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.batch.dunkelverarbeitung.kzpvhp.verhinderungspflege.leistungserbringer</td><td>16</td><td>14.000</td><td>4.857</td><td class="dev">9.143</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitsunfaehigkeit.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.arbeitsunfaehigkeit.damdk.nachricht.ausgehend.stornierung</td><td>14</td><td>13.000</td><td>3.998</td><td class="dev">9.002</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenz.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.briefanforderer.intern.status.uebergaenge</td><td>12</td><td>11.000</td><td>2.044</td><td class="dev">8.956</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausaufenthalt.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.entity.krankenhaus.kain.beanstandung</td><td>14</td><td>13.000</td><td>4.063</td><td class="dev">8.937</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-hzv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.hzv.abrechnung.pruefung.ab2020.leistungsziffer.pseudoziffern</td><td>12</td><td>11.000</td><td>2.507</td><td class="dev">8.493</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.einstufungsverlauf.adapter.vorgangssystem</td><td>12</td><td>11.000</td><td>2.789</td><td class="dev">8.211</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>konfigurierbare-leistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.konfigurierbareleistung.korrespondenz.util</td><td>11</td><td>10.000</td><td>1.840</td><td class="dev">8.160</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausaufenthalt.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.entity.krankenhaus.kain.pvttextbausteine</td><td>12</td><td>12.000</td><td>4.063</td><td class="dev">7.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.entity.krankenhaus.kain.eroerterung</td><td>13</td><td>12.000</td><td>4.063</td><td class="dev">7.937</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versichertenbestandsfuehrung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.versicherter.oks.sepamandat</td><td>11</td><td>10.000</td><td>2.115</td><td class="dev">7.885</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.versicherter.control.dunkelverarbeitung.impl</td><td>11</td><td>10.000</td><td>2.115</td><td class="dev">7.885</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sonstige-leistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.sonstigeleistung.korrespondenz.util</td><td>11</td><td>10.000</td><td>2.214</td><td class="dev">7.786</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vertriebspartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vertriebspartner.abrechnung</td><td>11</td><td>11.000</td><td>3.233</td><td class="dev">7.767</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-kollektiv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.arzt.batch.neu.fehlerkvrueckmeldungen.verarbeiten.writer.update.statement</td><td>11</td><td>10.000</td><td>2.266</td><td class="dev">7.734</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.arzt.batch.neu.loeschen.ausblenden.einblenden</td><td>11</td><td>10.000</td><td>2.266</td><td class="dev">7.734</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.einstufungsverlauf.eai.ablaufkap.freiwillige</td><td>12</td><td>10.500</td><td>2.789</td><td class="dev">7.711</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gesundheitskarte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.gesundheitskarte.lichtbildmanagement.lichtbildantrag</td><td>11</td><td>10.000</td><td>2.553</td><td class="dev">7.447</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>diseasemanagement.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.dmp.dunkelverarbeitung.adapter.in</td><td>10</td><td>9.000</td><td>1.558</td><td class="dev">7.442</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>crm.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kampagnenmanagement.schriftgutpotenzial.erzeugen.cj014</td><td>12</td><td>11.000</td><td>3.558</td><td class="dev">7.442</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.kampagnenmanagement.schriftgutpotenzial.erzeugen.prozahn</td><td>12</td><td>11.000</td><td>3.558</td><td class="dev">7.442</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsmanagement.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistungsmanagement.control.nachrichtenannahme</td><td>11</td><td>9.500</td><td>2.113</td><td class="dev">7.387</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eel.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eel.eaub.basis.eai</td><td>10</td><td>9.000</td><td>1.642</td><td class="dev">7.358</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eel.eaua.versicherungpruefen</td><td>10</td><td>9.000</td><td>1.642</td><td class="dev">7.358</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenaufnahme.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.dokumentenaufnahme.control.archivierteeingangspost.dokumentenklassenaustausch</td><td>10</td><td>9.000</td><td>1.891</td><td class="dev">7.109</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.krankenhausverzeichnis.eai.tkipost.intern</td><td>10</td><td>9.000</td><td>1.928</td><td class="dev">7.072</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haertefall.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.haertefall.prozessdaten</td><td>10</td><td>8.500</td><td>1.518</td><td class="dev">6.982</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vertrieb.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vertrieb.bericht.neuaufnahmezuordnung</td><td>10</td><td>9.000</td><td>2.018</td><td class="dev">6.982</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-zahnaerzte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.datenaustausch.zahnarzt.pkm</td><td>11</td><td>10.000</td><td>3.030</td><td class="dev">6.970</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>apothekenabrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.apotheke.schriftgut.differenzmeldung</td><td>10</td><td>9.000</td><td>2.059</td><td class="dev">6.941</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.apotheke.verordnung.image.archiv</td><td>10</td><td>9.000</td><td>2.059</td><td class="dev">6.941</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausaufenthalt.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.batch.loeschen.mdk</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v600.stellungnahme.pruefung</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v200.stellungnahme.pruefung.entlassung</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v100.stellungnahme.pruefung.entlassung</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v200.mdk</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v300.stellungnahme</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v100.stellungnahme.pruefung</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.krankenhaus.schnittstellen.anliegen.mdk</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mdkgutachten.vps.einspielung.elemente.beauftragung.v300.stellungnahme.pruefung.falldaten</td><td>12</td><td>11.000</td><td>4.063</td><td class="dev">6.937</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zahnersatz.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.zahnersatz.control.dunkelverarbeitung</td><td>10</td><td>9.000</td><td>2.116</td><td class="dev">6.884</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-asv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.asv.abrechnung.pruefung</td><td>9</td><td>9.000</td><td>2.121</td><td class="dev">6.879</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.verzugszinsen.deutsch</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.forderung.ausland.pauschal</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.ueberzahlung</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenmeldung</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.verzugszins.ausland.s032naf.nachricht</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.forderung.deutsch.aufwand</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.verzugszinsen.ausland</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.verzugszins.deutsch.s028ndf.nachricht</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.forderung.ausland.aufwand</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.postkorbmeldung.kostenabrechnung.benachrichtigung</td><td>10</td><td>9.000</td><td>2.217</td><td class="dev">6.783</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zusatzvertrag-batch.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.zusatzvertrag.batch.praemienauszahlung.abrechnungunerledigt</td><td>9</td><td>8.000</td><td>1.218</td><td class="dev">6.782</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>unfall.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.regresse.annahme</td><td>10</td><td>9.000</td><td>2.459</td><td class="dev">6.541</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hilfsmittelversorgung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.hilfsmittelversorgung.damd.testnachrichten</td><td>10</td><td>9.000</td><td>2.505</td><td class="dev">6.495</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>bonusprogramm.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.bonusprogramm.teilnahme.tkipost</td><td>11</td><td>9.500</td><td>3.066</td><td class="dev">6.434</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pzr.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.pzr.dokumentenfolgeverarbeitung</td><td>10</td><td>9.000</td><td>2.583</td><td class="dev">6.417</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>selvteilnahme.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.selvteilnahme.dunkelverarbeitung</td><td>10</td><td>9.000</td><td>2.610</td><td class="dev">6.390</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbestandsfuehrung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.arbeitgeber.beitrag.abrechnungssatz.abrechnungssatzpflege.intern</td><td>9</td><td>8.000</td><td>1.660</td><td class="dev">6.340</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fv-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.fvmeldeverfahren.meldung.bausteine</td><td>9</td><td>9.000</td><td>2.669</td><td class="dev">6.331</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungen-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.korrespondenz.util</td><td>9</td><td>8.000</td><td>1.699</td><td class="dev">6.301</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hzv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.hzv.dsgvo.sql</td><td>10</td><td>9.000</td><td>2.748</td><td class="dev">6.252</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>widerspruch.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.widerspruch.ausschuss.query</td><td>13</td><td>11.000</td><td>4.754</td><td class="dev">6.246</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haertefall.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.haertefall.brieffolgeverarbeitung.algii</td><td>10</td><td>9.000</td><td>2.829</td><td class="dev">6.171</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zusatzvertrag.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.zusatzvertrag.praemienauszahlung.entity.parelevanterversicherter.impl</td><td>9</td><td>8.000</td><td>1.838</td><td class="dev">6.162</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.zusatzvertrag.praemienauszahlung.control.pavertrag.pavertragbeendigung.rueckforderung.pruefungen</td><td>9</td><td>8.000</td><td>1.838</td><td class="dev">6.162</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-finanzverwaltung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.finanzverwaltung.dunkelverarbeitung</td><td>10</td><td>9.000</td><td>2.933</td><td class="dev">6.067</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kur.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.kur.av</td><td>11</td><td>7.500</td><td>1.524</td><td class="dev">5.976</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haeusliche-krankenpflege.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.haeuslichekrankenpflege.dokumentenaufnahme</td><td>11</td><td>10.000</td><td>4.048</td><td class="dev">5.952</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.haeuslichekrankenpflege.leistungsmanagement.gutachtenauftrag.specifications</td><td>11</td><td>10.000</td><td>4.048</td><td class="dev">5.952</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>mitgliederbeitrag.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.mitgliederbeitrag.beitragsbescheid.pflichtig</td><td>11</td><td>10.000</td><td>4.073</td><td class="dev">5.927</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>meinetk.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.meinetk.epa.sperre</td><td>9</td><td>8.000</td><td>2.137</td><td class="dev">5.863</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>abr-sonst-leistungserbringer.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.armsle.rechnungsbezahlung.vll</td><td>10</td><td>8.000</td><td>2.138</td><td class="dev">5.862</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.armsle.rechnungsbezahlung</td><td>9</td><td>8.000</td><td>2.138</td><td class="dev">5.862</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.postkorb.dokumentfassade</td><td>9</td><td>8.000</td><td>2.187</td><td class="dev">5.813</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.buchung.zahlungseingang.zuordnung.specification</td><td>9</td><td>8.000</td><td>2.217</td><td class="dev">5.783</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rechnungswesen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.nebenbuch.vorbeleg.entity.vorbeleg.intern</td><td>8</td><td>7.000</td><td>1.255</td><td class="dev">5.745</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.nebenbuch.prozessdaten</td><td>8</td><td>7.000</td><td>1.255</td><td class="dev">5.745</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>tk-vorsorge-planer.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.tkvorsorgeplaner.hzv</td><td>10</td><td>9.000</td><td>3.269</td><td class="dev">5.731</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>mutterschaftsgeld.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.mutterschaftsgeld.metpruefung</td><td>9</td><td>9.000</td><td>3.311</td><td class="dev">5.689</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>studienverlauf.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.studium.control.schriftgut</td><td>8</td><td>7.000</td><td>1.382</td><td class="dev">5.618</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kinderkrankengeld.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kinderkrankengeld.tracking</td><td>9</td><td>8.000</td><td>2.396</td><td class="dev">5.604</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>tkkonto.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.tkkonto.forderungsrealisierung.intern</td><td>10</td><td>9.000</td><td>3.407</td><td class="dev">5.593</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>psychotherapie.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.psychotherapie.dunkelverarbeitung</td><td>10</td><td>9.000</td><td>3.442</td><td class="dev">5.558</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haushaltshilfe.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.haushaltshilfe.belege</td><td>9</td><td>8.000</td><td>2.477</td><td class="dev">5.523</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hilfsmittelversorgung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.hilfsmittelversorgung.damd.nachricht.erzeuger.ausgehend</td><td>9</td><td>8.000</td><td>2.505</td><td class="dev">5.495</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>diga.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.diga.korrespondenz.control</td><td>8</td><td>7.000</td><td>1.510</td><td class="dev">5.490</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.diga.fall.pruefung</td><td>8</td><td>7.000</td><td>1.510</td><td class="dev">5.490</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeunterstuetzungsgeld.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.pflegeunterstuetzungsgeld.datenaustausch.mva.model.entity</td><td>8</td><td>7.000</td><td>1.510</td><td class="dev">5.490</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.forderung.pauschale.ausland.s116naf</td><td>9</td><td>7.667</td><td>2.217</td><td class="dev">5.450</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.verzugszins.ausland.s032naf.loeschung</td><td>9</td><td>7.667</td><td>2.217</td><td class="dev">5.450</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>duebak-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.duebakmeldungen.batch.verarbeitung.verarbeiter</td><td>8</td><td>7.000</td><td>1.652</td><td class="dev">5.348</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsrueckforderung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistungsrueckforderung.vorgang.suche</td><td>10</td><td>9.000</td><td>3.671</td><td class="dev">5.329</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vorgangssystem.vorgangsakte.intern</td><td>9</td><td>7.500</td><td>2.187</td><td class="dev">5.313</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>crmbasis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kundenkontakt.control.anliegen.tracking</td><td>8</td><td>7.000</td><td>1.689</td><td class="dev">5.311</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kostenerstattung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kostenerstattung.entity.kostenerstattung.kostenerstattungsfall.generated.builder</td><td>8</td><td>7.000</td><td>1.716</td><td class="dev">5.284</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.verzugszins.ausland.s032naf</td><td>9</td><td>7.500</td><td>2.217</td><td class="dev">5.283</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>entsendung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.entsendung.xml.jaxb.jahreswechsel2022zu2023</td><td>11</td><td>9.667</td><td>4.383</td><td class="dev">5.283</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kassenwechselmeldungen.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kassenwechsel.meldung.intern.versionsmanager</td><td>8</td><td>7.000</td><td>1.742</td><td class="dev">5.258</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eel.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eel.basis.kompatibilitaet</td><td>8</td><td>7.000</td><td>1.848</td><td class="dev">5.152</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gesundheitsprojekte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.gesundheitsmassnahmen.entity.massnahmen</td><td>8</td><td>7.000</td><td>1.851</td><td class="dev">5.149</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.forderung.aufwand.deutsch.s091ndfrueck.other.loeschung</td><td>9</td><td>7.333</td><td>2.217</td><td class="dev">5.117</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.forderung.aufwand.deutsch.gutschrift.s088ndf.loeschung</td><td>9</td><td>7.333</td><td>2.217</td><td class="dev">5.117</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.forderung.aufwand.deutsch.gutschrift.s085ndf.loeschen</td><td>9</td><td>7.333</td><td>2.217</td><td class="dev">5.117</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>entsendung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.entsendung.sva.antrag.nordmazedonien.intern</td><td>11</td><td>9.500</td><td>4.383</td><td class="dev">5.117</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.entsendung.sva.antrag.albanien.intern</td><td>11</td><td>9.500</td><td>4.383</td><td class="dev">5.117</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kieferorthopaedie.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kieferorthopaedie.datenaustauschelag.antwort</td><td>10</td><td>9.000</td><td>4.046</td><td class="dev">4.954</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gesundheitskarte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.gesundheitskarte.lichtbildmanagement.lichtbildregistrierung.eai</td><td>10</td><td>7.500</td><td>2.553</td><td class="dev">4.947</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fahrkosten.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.fahrkosten.zzb</td><td>8</td><td>7.000</td><td>2.096</td><td class="dev">4.904</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rente.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.rente.postkorbmeldungen</td><td>9</td><td>8.000</td><td>3.345</td><td class="dev">4.655</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kinderkrankengeld.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.kinderkrankengeld.prozessimpl</td><td>7</td><td>6.000</td><td>1.394</td><td class="dev">4.606</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kostenerstattungswahl.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.kostenerstattungswahl.korrespondenz.anschreiben.type</td><td>9</td><td>8.000</td><td>3.478</td><td class="dev">4.522</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialhilfetraeger-abrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.sozialhilfetraeger.laden.leistungsfall.vorsorge.specification</td><td>8</td><td>7.000</td><td>2.506</td><td class="dev">4.494</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>chroniker.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.chroniker.folgeverarbeitung.muster55</td><td>10</td><td>6.500</td><td>2.007</td><td class="dev">4.493</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zusatzvertrag-extern.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.zusatzvertrag.risikovertrag.control.impl</td><td>7</td><td>6.000</td><td>1.556</td><td class="dev">4.444</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeversicherung.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.pflegeversicherung.zusatzzahlung.prozessdaten.intern</td><td>14</td><td>5.667</td><td>1.295</td><td class="dev">4.372</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbestandsfuehrung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.arbeitgeber.batch.ubb.verarbeiter.mapper</td><td>7</td><td>6.000</td><td>1.660</td><td class="dev">4.340</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kvnr-meldungen.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kvnrmeldungen.postkorbmeldungen</td><td>7</td><td>6.000</td><td>1.756</td><td class="dev">4.244</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versorgungsabrechnung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.versorgungsabrechnung.vorgang</td><td>10</td><td>6.000</td><td>1.904</td><td class="dev">4.096</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberleistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.arbeitgeberleistung.aufwendungsausgleich.control.schriftgut</td><td>7</td><td>6.000</td><td>2.056</td><td class="dev">3.944</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zuzahlung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.zuzahlung.buchung.jahresabgrenzung</td><td>9</td><td>8.000</td><td>4.132</td><td class="dev">3.868</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rsa-clearing.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.rsaclearing.ansprechpartner</td><td>7</td><td>6.000</td><td>2.139</td><td class="dev">3.861</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeversicherung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeeinstufung.domain.model.antrag.leistungsumstellung</td><td>1</td><td>1.000</td><td>4.857</td><td class="dev">3.857</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.vorkasse.application.service</td><td>2</td><td>1.000</td><td>4.857</td><td class="dev">3.857</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeeinstufung.adapter.in.antrag.wiederholungsgutachtenauftrag.es</td><td>1</td><td>1.000</td><td>4.857</td><td class="dev">3.857</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeleistungen.pflegegeld.adapter.in.pvkontrollen.saldopflegegeld.tkjob</td><td>1</td><td>1.000</td><td>4.857</td><td class="dev">3.857</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.pflegeleistungen.hilfsmittel.application.port.in.antrag</td><td>1</td><td>1.000</td><td>4.857</td><td class="dev">3.857</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.batch.leodatenabweichungprueferparagraf84</td><td>1</td><td>1.000</td><td>4.857</td><td class="dev">3.857</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>eel.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.eel.konto.pruefregel</td><td>2</td><td>1.000</td><td>4.793</td><td class="dev">3.793</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>widerspruch.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.widerspruch.bdparser.token</td><td>1</td><td>1.000</td><td>4.754</td><td class="dev">3.754</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozv-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.meldeverlauf.svmeldungen.intern.folgeverarbeitung.einstufungsverlaufupdate.strategiepruefung</td><td>1</td><td>1.000</td><td>4.633</td><td class="dev">3.633</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.meldeverlauf.svmeldungen.intern.eai.weiterleitung.folgeverarbeitung</td><td>1</td><td>1.000</td><td>4.633</td><td class="dev">3.633</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vollmacht.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vollmacht.domain.entity.verbund.historisierung</td><td>6</td><td>5.000</td><td>1.408</td><td class="dev">3.592</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versorgungsangebot.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.versorgungsangebot.entity.versorgungspartnerschaft.impl</td><td>5</td><td>5.000</td><td>1.473</td><td class="dev">3.527</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.basis.identifikation.konsistenzpruefungen.lae</td><td>6</td><td>5.000</td><td>1.517</td><td class="dev">3.483</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.einstufungsverlauf.proko.versicherungsrechtlichebeurteilung.basis</td><td>11</td><td>5.000</td><td>1.525</td><td class="dev">3.475</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>everordnungmanager.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.everordnungmanager.folgeverarbeitung</td><td>10</td><td>5.000</td><td>1.545</td><td class="dev">3.455</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-mitteilungsverfahren-rv.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.da.mitteilungsverfahren.rv.jobs.mrvimport</td><td>6</td><td>5.000</td><td>1.594</td><td class="dev">3.406</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>entsendung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.entsendung.xml.jaxb.extraV1.types.components</td><td>2</td><td>1.000</td><td>4.383</td><td class="dev">3.383</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.entsendung.sva.antrag.kosovo</td><td>1</td><td>1.000</td><td>4.383</td><td class="dev">3.383</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.entsendung.sva.antrag.tunesien</td><td>1</td><td>1.000</td><td>4.383</td><td class="dev">3.383</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozv-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.meldeverlauf.svmeldungen.vzk.intern.kinderkrankengeld</td><td>9</td><td>8.000</td><td>4.633</td><td class="dev">3.367</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.meldeverlauf.svmeldungen.vzk.intern.mutterschaftsgeld</td><td>9</td><td>8.000</td><td>4.633</td><td class="dev">3.367</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krebsregister-abrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.krebsregister.abrechnung.fehlernachricht</td><td>5</td><td>5.000</td><td>1.665</td><td class="dev">3.335</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>akquise.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.akquise.identifizierung</td><td>6</td><td>5.000</td><td>1.718</td><td class="dev">3.282</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vollmacht.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vollmacht.mapper.partnerdaten</td><td>7</td><td>4.667</td><td>1.408</td><td class="dev">3.259</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-za-leistungsantraege.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.elag.pmb</td><td>8</td><td>5.500</td><td>2.291</td><td class="dev">3.209</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-hybrid-drg.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.aerzte.hybriddrg.abrechnung.job.pruefen.abrechnungspruefung.writer.eai.report</td><td>6</td><td>5.000</td><td>1.795</td><td class="dev">3.205</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.aerzte.hybriddrg.abrechnung.job.pruefen.abrechnungspruefung.writer.eai.factory</td><td>6</td><td>5.000</td><td>1.795</td><td class="dev">3.205</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vollmacht.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vollmacht.mapper.verbund</td><td>6</td><td>4.600</td><td>1.408</td><td class="dev">3.192</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zuzahlung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.zuzahlung.services.elektronischerrechtsverkehr</td><td>2</td><td>1.000</td><td>4.132</td><td class="dev">3.132</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>mitgliederbeitrag.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.mitgliederbeitrag.kinderpvberechnung</td><td>2</td><td>1.000</td><td>4.073</td><td class="dev">3.073</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versorgungsbezug-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.zahlstelle.tools</td><td>6</td><td>5.000</td><td>1.936</td><td class="dev">3.064</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausaufenthalt.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.entity.krankenhaus.inka.pkm</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.control.datenaustausch.krankenhaus.nachrichten.format.arten</td><td>2</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.krankenhaus.zuzahlung.zzb</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.batch.mdkkh.score.ml.schnittstelle.daten.mdfall</td><td>2</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.krankenhaus.type.pruefbedingungen</td><td>2</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.batch.offenefaelle</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.batch.mdkkh.db.batch.vps.senden.scoring</td><td>2</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.krankenhaus.fehlerpruefungen.pruefbedingungen.diagnosen</td><td>2</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.krankenhaus.versicherter</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.entity.datenaustausch.krankenhaus.pruefungregress</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.krankenhaus.anforderungmedizinischebegruendung</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.krankenhaus.pkms.pkmzumfall</td><td>1</td><td>1.000</td><td>4.063</td><td class="dev">3.063</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haeusliche-krankenpflege.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.haeuslichekrankenpflege.dvtest.erfassung.massnahmen</td><td>1</td><td>1.000</td><td>4.048</td><td class="dev">3.048</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.haeuslichekrankenpflege.dvtest.erfassung.metadaten</td><td>2</td><td>1.000</td><td>4.048</td><td class="dev">3.048</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kieferorthopaedie.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.kieferorthopaedie.gutachten</td><td>1</td><td>1.000</td><td>4.046</td><td class="dev">3.046</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>selvabrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.selvabrechnung.abrechnung.verbuche</td><td>6</td><td>5.000</td><td>1.968</td><td class="dev">3.032</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitsunfaehigkeit.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.arbeitsunfaehigkeit.inputstream</td><td>1</td><td>1.000</td><td>3.998</td><td class="dev">2.998</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.arbeitsunfaehigkeit.kassenwechsel.abschlussmeldung.krankengeld.type</td><td>1</td><td>1.000</td><td>3.998</td><td class="dev">2.998</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenklasse.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.dokumentenklasse.base.callback.impl</td><td>6</td><td>5.000</td><td>2.039</td><td class="dev">2.961</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>geschaeftspartner.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.tkpartner.schnittstelle.api.mapper.partner.erweitert</td><td>7</td><td>4.333</td><td>1.392</td><td class="dev">2.942</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeperson.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeperson.beitragsrelevanteunterbrechnung</td><td>6</td><td>5.000</td><td>2.077</td><td class="dev">2.923</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>praevention.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.leistung.praevention.kostenerstatten.pem</td><td>9</td><td>4.333</td><td>1.545</td><td class="dev">2.788</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsrueckforderung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistungsrueckforderung.batch.ladelauf.versichertenvergleich</td><td>1</td><td>1.000</td><td>3.671</td><td class="dev">2.671</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rente.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.rente.meldungen.intern.pruefung.rvkvanmeldung</td><td>7</td><td>6.000</td><td>3.345</td><td class="dev">2.655</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>geschaeftspartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.tkpartner.vertreter.control.vollmacht.pflege.status.automat.zustand</td><td>5</td><td>4.000</td><td>1.380</td><td class="dev">2.620</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.tkpartner.vertreter.control.vollmacht.pflege.status.automat.uebergang</td><td>5</td><td>4.000</td><td>1.380</td><td class="dev">2.620</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.leistung.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.leistung.api.pv.service</td><td>8</td><td>3.667</td><td>1.099</td><td class="dev">2.568</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>crm.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kampagnenmanagement.ems.sieis.util</td><td>1</td><td>1.000</td><td>3.558</td><td class="dev">2.558</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.kampagnenmanagement.ems.sieis</td><td>2</td><td>1.000</td><td>3.558</td><td class="dev">2.558</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenarchiv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.dokumentenarchiv.archiv.intern</td><td>4</td><td>4.000</td><td>1.474</td><td class="dev">2.526</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>insolvenzmanagement.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.insolvenzmanagement.schriftgut</td><td>5</td><td>4.000</td><td>1.486</td><td class="dev">2.514</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kostenerstattungswahl.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.kostenerstattungswahl.oks.type</td><td>1</td><td>1.000</td><td>3.478</td><td class="dev">2.478</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>psychotherapie.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.psychotherapie.batch</td><td>1</td><td>1.000</td><td>3.442</td><td class="dev">2.442</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozessereignismanager.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.prozessereignismanager.mapping.entity</td><td>6</td><td>5.000</td><td>2.565</td><td class="dev">2.435</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>tkkonto.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.tkkonto.mahnmassnahme</td><td>1</td><td>1.000</td><td>3.407</td><td class="dev">2.407</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>tk-patientenquittung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.tkvalue.tkvia</td><td>5</td><td>4.000</td><td>1.614</td><td class="dev">2.386</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenkassenverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.krankenkasse.control.krankenkassepflege.impl</td><td>5</td><td>4.000</td><td>1.620</td><td class="dev">2.380</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rente.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.rente.meldungen.intern.verarbeitung.rentendatenaktualisierung</td><td>2</td><td>1.000</td><td>3.345</td><td class="dev">2.345</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.rente.batch.rentenbewilligungensonstigemeldungen</td><td>2</td><td>1.000</td><td>3.345</td><td class="dev">2.345</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rehasport.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.rehasport.control</td><td>5</td><td>4.000</td><td>1.682</td><td class="dev">2.318</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>mutterschaftsgeld.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.mutterschaftsgeld.berechnung.leistungssatz</td><td>1</td><td>1.000</td><td>3.311</td><td class="dev">2.311</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zahnersatz.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.zahnersatz.bonusanspruch</td><td>7</td><td>3.500</td><td>1.191</td><td class="dev">2.309</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arzneimittelverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.apotheke.arzneimittelabrechner.intern</td><td>5</td><td>3.500</td><td>1.230</td><td class="dev">2.270</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>tk-vorsorge-planer.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.tkvorsorgeplaner.stornieren.eai</td><td>1</td><td>1.000</td><td>3.269</td><td class="dev">2.269</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>behandlerverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.behandler.praxis.selektoren</td><td>5</td><td>4.000</td><td>1.734</td><td class="dev">2.266</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsuebersicht.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.query.leistung</td><td>8</td><td>5.000</td><td>2.758</td><td class="dev">2.242</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vertriebspartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.vertriebspartner.internet.batch.passworterstellung</td><td>2</td><td>1.000</td><td>3.233</td><td class="dev">2.233</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kurverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kurdisposition.control.impl</td><td>5</td><td>4.000</td><td>1.815</td><td class="dev">2.185</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>akquise.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.akquise.potenzialkunde.neuaufnahmeinit.prozessimpl.servicetask</td><td>6</td><td>3.333</td><td>1.199</td><td class="dev">2.134</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fusionsarchiv-stammdaten.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.fusionsarchiv.stammdaten.mitgliederbestand.dokumente</td><td>10</td><td>4.333</td><td>2.236</td><td class="dev">2.097</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeperson.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.pflegeperson.anspruchfeststellen.prozessimpl.pem</td><td>5</td><td>3.500</td><td>1.426</td><td class="dev">2.074</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>bonusprogramm.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.bonusprogramm.bonusimport.bonusheft</td><td>2</td><td>1.000</td><td>3.066</td><td class="dev">2.066</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>abr-sonst-leistungserbringer.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.armsle.hk.abrechnungspruefung.korrespondenz</td><td>5</td><td>3.500</td><td>1.453</td><td class="dev">2.047</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-zahnaerzte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.datenaustausch.zahnarzt.gesamtrechnung.suche</td><td>1</td><td>1.000</td><td>3.030</td><td class="dev">2.030</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rechnungswesen.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.rechnungswesen.betragauszahlen.prozessimpl</td><td>5</td><td>3.500</td><td>1.500</td><td class="dev">2.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>eessi-institution.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.institution.repository.v02m00</td><td>5</td><td>4.000</td><td>2.000</td><td class="dev">2.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-insolvenzgeld.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.da.insolvenzgeld.entities.nachrichten.ausgehend</td><td>5</td><td>4.000</td><td>2.023</td><td class="dev">1.977</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-finanzverwaltung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.finanzverwaltung.loeschung</td><td>1</td><td>1.000</td><td>2.933</td><td class="dev">1.933</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zahlstellenkonto.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.zahlstellenkonto.schnittstelle.controller.in.dateneingabe.fields.kennung</td><td>4</td><td>3.000</td><td>1.093</td><td class="dev">1.907</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zentralregistratur.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.zentralregistratur.akte</td><td>4</td><td>4.000</td><td>2.097</td><td class="dev">1.903</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>generische-kostenerstattung.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.kostenerstattung.generisch.kanaldatenverarbeiter.praevention</td><td>5</td><td>3.500</td><td>1.636</td><td class="dev">1.864</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pzr.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.pzr.prozessdaten.intern</td><td>7</td><td>3.500</td><td>1.640</td><td class="dev">1.860</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialausgleich-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.sozialausgleich.einstufung</td><td>6</td><td>4.000</td><td>2.151</td><td class="dev">1.849</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbestandsfuehrung.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.arbeitgeber.rollen.abrechnendestelle</td><td>4</td><td>3.000</td><td>1.156</td><td class="dev">1.844</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haertefall.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.haertefall.schnittstellen.rechnungswesen</td><td>1</td><td>1.000</td><td>2.829</td><td class="dev">1.829</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-sonstigeleistungserbringer.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.sle.dateneingang.leistungsueberschneidung.pkm</td><td>4</td><td>3.000</td><td>1.199</td><td class="dev">1.801</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.einstufungsverlauf.einkommensanfrage.nachweis.dto</td><td>2</td><td>1.000</td><td>2.789</td><td class="dev">1.789</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.einstufungsverlauf.eai.umstellung.rechtskreis</td><td>1</td><td>1.000</td><td>2.789</td><td class="dev">1.789</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsuebersicht.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.leistungsuebersicht.filter</td><td>1</td><td>1.000</td><td>2.758</td><td class="dev">1.758</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>organisationsverwaltung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.organisation.type</td><td>3</td><td>3.000</td><td>1.248</td><td class="dev">1.752</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hzv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.hzv.behandler</td><td>1</td><td>1.000</td><td>2.748</td><td class="dev">1.748</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-uv-traeger.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.regresse.datenaustausch.uv</td><td>5</td><td>3.000</td><td>1.269</td><td class="dev">1.731</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialversicherungsabkommen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.control.grenzgang</td><td>6</td><td>3.400</td><td>1.670</td><td class="dev">1.730</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gebuehrenordnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.gebuehrenordnung.entity.zahnarzt.goposition.zuordnung</td><td>3</td><td>3.000</td><td>1.285</td><td class="dev">1.715</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbeitrag.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.arbeitgeberbeitrag.beitragsnachweis.bearbeitung.verarbeiter.schaetzung</td><td>2</td><td>1.000</td><td>2.703</td><td class="dev">1.703</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.arbeitgeberbeitrag.beitragsnachweis.batch.einmalaktion</td><td>2</td><td>1.000</td><td>2.703</td><td class="dev">1.703</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-beitragsdifferenzierung-pv.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.da.beitragsdifferenzierung.pv.xml.version100.erzeugung</td><td>4</td><td>3.000</td><td>1.313</td><td class="dev">1.688</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>praevention.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.entity.praevention</td><td>7</td><td>3.000</td><td>1.321</td><td class="dev">1.679</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gebietsabgrenzung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.gebietsabgrenzung.entity.zustaendigkeit.intern</td><td>4</td><td>3.000</td><td>1.322</td><td class="dev">1.678</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fv-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.fvmeldeverfahren.bereinigungslauf</td><td>1</td><td>1.000</td><td>2.669</td><td class="dev">1.669</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>erv.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.erv.process</td><td>4</td><td>3.000</td><td>1.350</td><td class="dev">1.650</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>selvteilnahme.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.selvteilnahme.einschreibung.tkjob.abrein</td><td>2</td><td>1.000</td><td>2.610</td><td class="dev">1.610</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>interessent-pflege.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.interessent.control.pflege</td><td>5</td><td>3.000</td><td>1.392</td><td class="dev">1.608</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>interessent.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.interessent.entity.interessent.impl</td><td>5</td><td>3.167</td><td>1.569</td><td class="dev">1.598</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pzr.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.pzr.webservice</td><td>1</td><td>1.000</td><td>2.583</td><td class="dev">1.583</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozessereignismanager.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.prozessereignismanager.querschnitt</td><td>2</td><td>1.000</td><td>2.565</td><td class="dev">1.565</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gesundheitskarte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.gesundheitskarte.webservice.camsconnector</td><td>2</td><td>1.000</td><td>2.553</td><td class="dev">1.553</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.gesundheitskarte.type</td><td>1</td><td>1.000</td><td>2.553</td><td class="dev">1.553</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kim-log.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kimlog.type.config</td><td>4</td><td>3.000</td><td>1.460</td><td class="dev">1.540</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozess.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.prozess.engineref</td><td>4</td><td>3.000</td><td>1.470</td><td class="dev">1.530</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-hzv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.hzv.abrechnung.dsgvo.es</td><td>1</td><td>1.000</td><td>2.507</td><td class="dev">1.507</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialhilfetraeger-abrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.sozialhilfetraeger.batch.sachkontenumbuchung</td><td>1</td><td>1.000</td><td>2.506</td><td class="dev">1.506</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hilfsmittelversorgung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.hilfsmittelversorgung.damd.jobs.himimddaimport.batch</td><td>2</td><td>1.000</td><td>2.505</td><td class="dev">1.505</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.hilfsmittelversorgung</td><td>2</td><td>1.000</td><td>2.505</td><td class="dev">1.505</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenzpartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenzpartner.control.security</td><td>4</td><td>3.000</td><td>1.500</td><td class="dev">1.500</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haftpflichtversicherer.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.regresse.hpv.entity.teilungsabkommen</td><td>3</td><td>3.000</td><td>1.500</td><td class="dev">1.500</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>ik-inhaber-verzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.ik.batch.uebernahme.datensatz.ik.nachsatz</td><td>4</td><td>3.000</td><td>1.516</td><td class="dev">1.484</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haushaltshilfe.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.haushaltshilfe.batch.leistungserbringer.korrektur.ik.eai</td><td>1</td><td>1.000</td><td>2.477</td><td class="dev">1.477</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>unfall.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.regresse.medizinprodukt</td><td>2</td><td>1.000</td><td>2.459</td><td class="dev">1.459</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kinderkrankengeld.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.control.kinderkrankengeld.batch.jahresloeschung</td><td>2</td><td>1.000</td><td>2.396</td><td class="dev">1.396</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>must.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.must.pem</td><td>4</td><td>2.500</td><td>1.131</td><td class="dev">1.369</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kur.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.entity.kur.verordnung</td><td>1</td><td>1.000</td><td>2.359</td><td class="dev">1.359</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.kur.datenaustausch.xsd.version1000.generiert.feh</td><td>2</td><td>1.000</td><td>2.359</td><td class="dev">1.359</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.kur.joblib.jobs.nachrichtenkurfallzuordnung</td><td>2</td><td>1.000</td><td>2.359</td><td class="dev">1.359</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.kur.davr.application.port.in.bewilligung</td><td>1</td><td>1.000</td><td>2.359</td><td class="dev">1.359</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.kur.daar.entity</td><td>1</td><td>1.000</td><td>2.359</td><td class="dev">1.359</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsaushilfe-ausland.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.auslandsaushilfe.bestand.specification</td><td>5</td><td>2.667</td><td>1.325</td><td class="dev">1.342</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>generische-kostenerstattung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kostenerstattung.generisch.domain.service.impl</td><td>4</td><td>3.000</td><td>1.667</td><td class="dev">1.333</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>mutterschaftsgeld.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.mutterschaftsgeld.prozess</td><td>9</td><td>2.400</td><td>1.078</td><td class="dev">1.322</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fahrkosten.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.fahrkosten.prozessdaten.intern</td><td>8</td><td>2.750</td><td>1.455</td><td class="dev">1.295</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-za-leistungsantraege.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.elag.xsd.version170.generiert</td><td>2</td><td>1.000</td><td>2.291</td><td class="dev">1.291</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-kollektiv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.arzt.einzelfallnachweis.neu.unfall.ermittlung.intern</td><td>1</td><td>1.000</td><td>2.266</td><td class="dev">1.266</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.arzt.kvrueckmeldung.eai</td><td>2</td><td>1.000</td><td>2.266</td><td class="dev">1.266</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-za-leistungsantraege.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.elag.api.par</td><td>4</td><td>3.000</td><td>1.750</td><td class="dev">1.250</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hochschul-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.hochschulmeldungen.entity.intern</td><td>5</td><td>2.333</td><td>1.089</td><td class="dev">1.244</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fusionsarchiv-stammdaten.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.fusionsarchiv.stammdaten.mitgliederbestand.kvk</td><td>1</td><td>1.000</td><td>2.236</td><td class="dev">1.236</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnungnoneessi.eingang.batch.forderung</td><td>2</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.kostenmeldung.leistung.hzv</td><td>2</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.bereinigung.abrechnung.prozessid</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.process.automat.impl</td><td>2</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnungnoneessi.abrechnung.gutschrift</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.ueberzahlung.common.s054nafrueck</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.document.common.v04m05.v07m00</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.process.tmpdata.s031ndf.userinput</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.suche.standardbusinessdocumentdata</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.batch.eingang.strategy</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.common.attachment</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnung.eessi.buchung.zahlungseingang.zuordnung.migration</td><td>2</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.document.s034na</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.document.a012</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.document.s032nbaf</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnungnoneessi.abrechnung.beanstandung</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.abrechnungnoneessi.common.anliegen</td><td>1</td><td>1.000</td><td>2.217</td><td class="dev">1.217</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sonstige-leistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.control.sonstigeleistung</td><td>2</td><td>1.000</td><td>2.214</td><td class="dev">1.214</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.postkorb.tkeasybatch.poolkonfigurationenloeschen</td><td>1</td><td>1.000</td><td>2.187</td><td class="dev">1.187</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.vorgang.attribute</td><td>1</td><td>1.000</td><td>2.187</td><td class="dev">1.187</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rehasport.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.rehasport.pem</td><td>4</td><td>2.333</td><td>1.176</td><td class="dev">1.157</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialausgleich-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.sozialausgleich.batch.bbgueberschreitungberechnen</td><td>1</td><td>1.000</td><td>2.151</td><td class="dev">1.151</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.postkorb.api.attribute.referenzobjekt</td><td>4</td><td>2.500</td><td>1.355</td><td class="dev">1.145</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rsa-clearing.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.rsaclearing.intern.eai.reporter</td><td>1</td><td>1.000</td><td>2.139</td><td class="dev">1.139</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>abr-sonst-leistungserbringer.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.armsle.hk.kim.fehler</td><td>1</td><td>1.000</td><td>2.138</td><td class="dev">1.138</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.armsle.vorgang</td><td>1</td><td>1.000</td><td>2.138</td><td class="dev">1.138</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>meinetk.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.meinetk.epa.widerspruch</td><td>1</td><td>1.000</td><td>2.137</td><td class="dev">1.137</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-asv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.asv.suche.leistungsbereich</td><td>1</td><td>1.000</td><td>2.121</td><td class="dev">1.121</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zahnersatz.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.zahnersatz.oks</td><td>1</td><td>1.000</td><td>2.116</td><td class="dev">1.116</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versichertenbestandsfuehrung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.versicherter.batch.bestandsumstellung</td><td>2</td><td>1.000</td><td>2.115</td><td class="dev">1.115</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.versicherter.batch.offenedienstzeiten</td><td>2</td><td>1.000</td><td>2.115</td><td class="dev">1.115</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsmanagement.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistungsmanagement.entity.khsaufenthalt.intern</td><td>2</td><td>1.000</td><td>2.113</td><td class="dev">1.113</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenz-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.metadaten.intern</td><td>5</td><td>2.500</td><td>1.400</td><td class="dev">1.100</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zentralregistratur.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.zentralregistratur</td><td>1</td><td>1.000</td><td>2.097</td><td class="dev">1.097</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fahrkosten.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.fahrkosten.scandatenverarbeitung</td><td>1</td><td>1.000</td><td>2.096</td><td class="dev">1.096</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeperson.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeperson.online.anspruchfeststellen</td><td>2</td><td>1.000</td><td>2.077</td><td class="dev">1.077</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>apothekenabrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.apotheke.pruefung.basis</td><td>1</td><td>1.000</td><td>2.059</td><td class="dev">1.059</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.apotheke.verordnung.image.archiv.anforderungsverfahren.typ</td><td>1</td><td>1.000</td><td>2.059</td><td class="dev">1.059</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberleistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.arbeitgeberleistung.aufwendungsausgleich.control.antrag.aagantragserzeuger.impl</td><td>2</td><td>1.000</td><td>2.056</td><td class="dev">1.056</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenz.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.massenschriftgut.pflege</td><td>1</td><td>1.000</td><td>2.044</td><td class="dev">1.044</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenklasse.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.dokumentenklasse.base.export</td><td>1</td><td>1.000</td><td>2.039</td><td class="dev">1.039</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-insolvenzgeld.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.da.insolvenzgeld.xml.file</td><td>1</td><td>1.000</td><td>2.023</td><td class="dev">1.023</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vertrieb.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.vertrieb.gebietszuordnung.batch.test</td><td>2</td><td>1.000</td><td>2.018</td><td class="dev">1.018</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>chroniker.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.chroniker.service</td><td>2</td><td>1.000</td><td>2.007</td><td class="dev">1.007</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozess-beispiel.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.proc.prozessbeispiel.prozessdaten.intern</td><td>5</td><td>2.167</td><td>1.162</td><td class="dev">1.004</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>eessi-institution.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.institution.xml.repository.v03m01</td><td>1</td><td>1.000</td><td>2.000</td><td class="dev">1.000</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>selvabrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.selvabrechnung.datenannahme.batch.neu.rechnung.writer.persistenz</td><td>1</td><td>1.000</td><td>1.968</td><td class="dev">0.968</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kim-log.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.kimlog.api</td><td>3</td><td>2.000</td><td>1.063</td><td class="dev">0.938</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versorgungsbezug-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.zahlstelle.type</td><td>1</td><td>1.000</td><td>1.936</td><td class="dev">0.936</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozess.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.prozess.vorgang</td><td>3</td><td>2.000</td><td>1.067</td><td class="dev">0.933</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.krankenhausverzeichnis.entity.leistung</td><td>2</td><td>1.000</td><td>1.928</td><td class="dev">0.928</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>systemanforderungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.systemanforderung.entity.brief.impl</td><td>3</td><td>2.000</td><td>1.083</td><td class="dev">0.917</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.einstufungsverlauf.suche</td><td>3</td><td>2.000</td><td>1.083</td><td class="dev">0.917</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sonstiger-geschaeftspartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.sonstigergeschaeftspartner.entity.sonstigergeschaeftspartner.intern</td><td>4</td><td>2.000</td><td>1.091</td><td class="dev">0.909</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versorgungsabrechnung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.versorgungsabrechnung.suche.rolle</td><td>1</td><td>1.000</td><td>1.904</td><td class="dev">0.904</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenaufnahme.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.dokumentenarchiv.imail</td><td>2</td><td>1.000</td><td>1.891</td><td class="dev">0.891</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gerichtsverzeichnis.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.gerichtsverzeichnis.domain.model.entities</td><td>3</td><td>2.000</td><td>1.115</td><td class="dev">0.885</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vollstreckung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vollstreckung.davostype</td><td>3</td><td>2.000</td><td>1.133</td><td class="dev">0.867</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gesundheitsprojekte.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.gesundheitsmassnahmen.entity.kursleiter</td><td>2</td><td>1.000</td><td>1.851</td><td class="dev">0.851</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eel.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eel.basis.control</td><td>2</td><td>1.000</td><td>1.848</td><td class="dev">0.848</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>konfigurierbare-leistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.konfigurierbareleistung.fall.util</td><td>1</td><td>1.000</td><td>1.840</td><td class="dev">0.840</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zusatzvertrag.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.zusatzvertrag.zusatzvertragleistung.entity</td><td>1</td><td>1.000</td><td>1.838</td><td class="dev">0.838</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.zusatzvertrag.praemienauszahlung.tarif.pruefer.vertragspruefer.tarif.s01.pruefungen</td><td>2</td><td>1.000</td><td>1.838</td><td class="dev">0.838</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>melderegisterabgleich.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.melderegisterabgleich.generiert.xmeld2605.xinneres.nachrichtentypen._7</td><td>4</td><td>2.000</td><td>1.182</td><td class="dev">0.818</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kurverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kurvrz.application.port.type</td><td>1</td><td>1.000</td><td>1.815</td><td class="dev">0.815</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-aerzte-hybrid-drg.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.aerzte.hybriddrg.abrechnung.job.datenannahme.ta.enums</td><td>1</td><td>1.000</td><td>1.795</td><td class="dev">0.795</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.aerzte.hybriddrg.abrechnung.job.fehlerdatei.annahme.readerwriter.parse</td><td>1</td><td>1.000</td><td>1.795</td><td class="dev">0.795</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sonst-leistungsrueckforderung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.sonstleistungsrueckforderung.akte</td><td>2</td><td>2.000</td><td>1.242</td><td class="dev">0.758</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kvnr-meldungen.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kvnrmeldungen.batch.loeschen.nachablauf</td><td>2</td><td>1.000</td><td>1.756</td><td class="dev">0.756</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang-querschnittssysteme.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.vorgang.prozessapi.observer</td><td>3</td><td>2.000</td><td>1.250</td><td class="dev">0.750</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-za-leistungsantraege.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.elag.api.type.pmb</td><td>1</td><td>1.000</td><td>1.750</td><td class="dev">0.750</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kassenwechselmeldungen.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kassenwechsel.batch.archivierung</td><td>2</td><td>1.000</td><td>1.742</td><td class="dev">0.742</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>behandlerverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.behandler.entity.behandler.intern</td><td>1</td><td>1.000</td><td>1.734</td><td class="dev">0.734</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>eel-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.eelbasis.berechnung.konstellation.versorgungskrankengeld</td><td>3</td><td>2.000</td><td>1.273</td><td class="dev">0.727</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>akquise.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.akquise.batch.vpsemail</td><td>2</td><td>1.000</td><td>1.718</td><td class="dev">0.718</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kostenerstattung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.kostenerstattung.control.batch.budgetmeldungen.erstellungsjob</td><td>2</td><td>1.000</td><td>1.716</td><td class="dev">0.716</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungen-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.control.ersatzanspruch</td><td>1</td><td>1.000</td><td>1.699</td><td class="dev">0.699</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>crmbasis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kundenkontakt.entity.kontakt.attribute.medium</td><td>2</td><td>1.000</td><td>1.689</td><td class="dev">0.689</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rehasport.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.rehasport</td><td>1</td><td>1.000</td><td>1.682</td><td class="dev">0.682</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialversicherungsabkommen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.sva.util</td><td>1</td><td>1.000</td><td>1.670</td><td class="dev">0.670</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>generische-kostenerstattung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kostenerstattung.generisch.port.out</td><td>1</td><td>1.000</td><td>1.667</td><td class="dev">0.667</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krebsregister-abrechnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.krebsregister.abrechnung.datenuebernahme.struktur.xml</td><td>2</td><td>1.000</td><td>1.665</td><td class="dev">0.665</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbestandsfuehrung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.arbeitgeber.pkm</td><td>1</td><td>1.000</td><td>1.660</td><td class="dev">0.660</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.arbeitgeber.rollen.zahlstelle.zahlstelleerzeuger</td><td>1</td><td>1.000</td><td>1.660</td><td class="dev">0.660</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>duebak-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.duebakmeldungen.konto</td><td>1</td><td>1.000</td><td>1.652</td><td class="dev">0.652</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eel.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eel.eaua.loeschen</td><td>1</td><td>1.000</td><td>1.642</td><td class="dev">0.642</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eel.eaua.web</td><td>2</td><td>1.000</td><td>1.642</td><td class="dev">0.642</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pzr.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.pzr.prozessapi.gateway</td><td>1</td><td>1.000</td><td>1.640</td><td class="dev">0.640</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>generische-kostenerstattung.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.kostenerstattung.generisch.auszahlen</td><td>2</td><td>1.000</td><td>1.636</td><td class="dev">0.636</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenkassenverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.krankenkasse.control.krankenkassendatenaktualisierung</td><td>1</td><td>1.000</td><td>1.620</td><td class="dev">0.620</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>tk-patientenquittung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.tkvalue.anforderung</td><td>1</td><td>1.000</td><td>1.614</td><td class="dev">0.614</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-mitteilungsverfahren-rv.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.da.mitteilungsverfahren.rv.jobs.mrvexport</td><td>1</td><td>1.000</td><td>1.594</td><td class="dev">0.594</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>interessent.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.interessent.control.query.request</td><td>1</td><td>1.000</td><td>1.569</td><td class="dev">0.569</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>diseasemanagement.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.dmp.job.dmppfrkomorbi.eai</td><td>2</td><td>1.000</td><td>1.558</td><td class="dev">0.558</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zusatzvertrag-extern.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.zusatzvertrag.risikovertrag.eai</td><td>2</td><td>1.000</td><td>1.556</td><td class="dev">0.556</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>everordnungmanager.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.everordnungmanager.ti</td><td>1</td><td>1.000</td><td>1.545</td><td class="dev">0.545</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>praevention.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.leistung.praevention.kostenerstatten.prozessapi.gateway</td><td>1</td><td>1.000</td><td>1.545</td><td class="dev">0.545</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.einstufungsverlauf.einkommenspruefung.prozessapi.intern</td><td>2</td><td>1.000</td><td>1.525</td><td class="dev">0.525</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kur.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.kur.av.bewilligungeinleiten.prozessimpl.usertask</td><td>2</td><td>1.000</td><td>1.524</td><td class="dev">0.524</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haertefall.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.haertefall.belastungsgrenzepruefen.prozessimpl.usertask</td><td>2</td><td>1.000</td><td>1.518</td><td class="dev">0.518</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.basis.vdek.archivierung</td><td>2</td><td>1.000</td><td>1.517</td><td class="dev">0.517</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>ik-inhaber-verzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.ik.control.institutionskennzeichenpflege</td><td>1</td><td>1.000</td><td>1.516</td><td class="dev">0.516</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeunterstuetzungsgeld.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.pflegeunterstuetzungsgeld.leistung.belege.type</td><td>2</td><td>1.000</td><td>1.510</td><td class="dev">0.510</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>diga.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.diga.batch.fallumhaengen.verarbeitung.verarbeiter.pruefer.einzelpruefungen</td><td>1</td><td>1.000</td><td>1.510</td><td class="dev">0.510</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.diga.everordnung.datenpruefung</td><td>1</td><td>1.000</td><td>1.510</td><td class="dev">0.510</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenzpartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenzpartner.domain.service</td><td>1</td><td>1.000</td><td>1.500</td><td class="dev">0.500</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rechnungswesen.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.rechnungswesen.betragauszahlen.prozessimpl.servicetask</td><td>2</td><td>1.000</td><td>1.500</td><td class="dev">0.500</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>haftpflichtversicherer.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.regresse.hpv.control.teilungsabkommenquery</td><td>1</td><td>1.000</td><td>1.500</td><td class="dev">0.500</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>insolvenzmanagement.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.insolvenzmanagement.klaerungversicherungsverhaeltnis.impl</td><td>1</td><td>1.000</td><td>1.486</td><td class="dev">0.486</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenarchiv.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.dokumentenarchiv.batch.unfallfragenbogen.tkjob</td><td>1</td><td>1.000</td><td>1.474</td><td class="dev">0.474</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versorgungsangebot.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.versorgungsangebot.batch.versorgungsvertragexport.partnerdaten.eai</td><td>1</td><td>1.000</td><td>1.473</td><td class="dev">0.473</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozess.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.prozess.abbruch</td><td>2</td><td>1.000</td><td>1.470</td><td class="dev">0.470</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kim-log.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kimlog.loeschanforderung</td><td>2</td><td>1.000</td><td>1.460</td><td class="dev">0.460</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fahrkosten.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.fahrkosten.prozess.fahrtpruefen</td><td>2</td><td>1.000</td><td>1.455</td><td class="dev">0.455</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>abr-sonst-leistungserbringer.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.armsle.hk.abrechnungspruefung.prozessimpl.gateway</td><td>2</td><td>1.000</td><td>1.453</td><td class="dev">0.453</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeperson.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.pflegeperson.pflegepersonermitteln.prozessimpl.proko</td><td>2</td><td>1.000</td><td>1.426</td><td class="dev">0.426</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vollmacht.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.vollmacht.schnittstelle.controller.briefe.sterbedatum</td><td>1</td><td>1.000</td><td>1.408</td><td class="dev">0.408</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.vollmacht.schnittstelle.controller.gericht.data</td><td>1</td><td>1.000</td><td>1.408</td><td class="dev">0.408</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.vollmacht.schnittstelle.database.transaction</td><td>1</td><td>1.000</td><td>1.408</td><td class="dev">0.408</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenz-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.reduceddatasource.factory</td><td>2</td><td>1.000</td><td>1.400</td><td class="dev">0.400</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kinderkrankengeld.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.kinderkrankengeld.kanaldaten</td><td>1</td><td>1.000</td><td>1.394</td><td class="dev">0.394</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>geschaeftspartner.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.tkpartner.schnittstelle.api.entity.ansprechperson</td><td>2</td><td>1.000</td><td>1.392</td><td class="dev">0.392</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>interessent-pflege.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.interessent.control.pflege.antragspruefung</td><td>1</td><td>1.000</td><td>1.392</td><td class="dev">0.392</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>studienverlauf.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.studium.eai.studienundschulende</td><td>1</td><td>1.000</td><td>1.382</td><td class="dev">0.382</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>geschaeftspartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.tkpartner.control.ocr.suche</td><td>2</td><td>1.000</td><td>1.380</td><td class="dev">0.380</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.tkpartner.control.auftrag.suche</td><td>2</td><td>1.000</td><td>1.380</td><td class="dev">0.380</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.vorgang.api.aenderung.status.builder</td><td>1</td><td>1.000</td><td>1.355</td><td class="dev">0.355</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>erv.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.erv.batch.eai</td><td>1</td><td>1.000</td><td>1.350</td><td class="dev">0.350</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsaushilfe-ausland.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.auslandsaushilfe.kostenmeldungannahme.zahnarzt</td><td>1</td><td>1.000</td><td>1.325</td><td class="dev">0.325</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gebietsabgrenzung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.gebietsabgrenzung.control.gebietspflege.job.beenden</td><td>1</td><td>1.000</td><td>1.322</td><td class="dev">0.322</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>praevention.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.control.praevention</td><td>2</td><td>1.000</td><td>1.321</td><td class="dev">0.321</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-beitragsdifferenzierung-pv.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.da.beitragsdifferenzierung.pv.adapter.datenschutzcockpit</td><td>2</td><td>1.000</td><td>1.313</td><td class="dev">0.313</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeversicherung.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.pflegeversicherung.leistung.grundanspruch</td><td>2</td><td>1.000</td><td>1.295</td><td class="dev">0.295</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.proc.pflegeversicherung.zusatzzahlung.bescheid.prozessapi.gateway</td><td>1</td><td>1.000</td><td>1.295</td><td class="dev">0.295</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gebuehrenordnung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.gebuehrenordnung.control.zahnarzt.multiplikator</td><td>2</td><td>1.000</td><td>1.285</td><td class="dev">0.285</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>eel-basis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.eelbasis.berechnung.konstellation</td><td>2</td><td>1.000</td><td>1.273</td><td class="dev">0.273</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-uv-traeger.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.regresse.datenaustausch.uv.eai</td><td>1</td><td>1.000</td><td>1.269</td><td class="dev">0.269</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rechnungswesen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.nebenbuch.forderungsvorgang.control.forderungsvorgang.dstzugehoerigkeit</td><td>1</td><td>1.000</td><td>1.255</td><td class="dev">0.255</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.nebenbuch.kontenpflege.control.umbuchung.intern</td><td>2</td><td>1.000</td><td>1.255</td><td class="dev">0.255</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vorgang-querschnittssysteme.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.postkorb.dokapi.attribute.meldungstyp</td><td>2</td><td>1.000</td><td>1.250</td><td class="dev">0.250</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>organisationsverwaltung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.organisation.organisationsverzeichnis.tuplezugriff</td><td>1</td><td>1.000</td><td>1.248</td><td class="dev">0.248</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sonst-leistungsrueckforderung.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.sonstleistungsrueckforderung.beleg.folgeverarbeitung</td><td>2</td><td>1.000</td><td>1.242</td><td class="dev">0.242</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arzneimittelverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.apotheke.abda.batch.dateien.abdastruktur.modul.apo.lwapo697klinikbaustein</td><td>2</td><td>1.000</td><td>1.230</td><td class="dev">0.230</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zusatzvertrag-batch.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.zusatzvertrag.batch.praemienauszahlung.pakonsistenz.s04</td><td>2</td><td>1.000</td><td>1.218</td><td class="dev">0.218</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>akquise.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.akquise.potenzialkunde.kontaktherstellen.prozessimpl.usertask</td><td>2</td><td>1.000</td><td>1.199</td><td class="dev">0.199</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-sonstigeleistungserbringer.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.sle.dateneingang.base.pruefung</td><td>1</td><td>1.000</td><td>1.199</td><td class="dev">0.199</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zahnersatz.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.zahnersatz.haertefall.prozessimpl.milestone</td><td>2</td><td>1.000</td><td>1.191</td><td class="dev">0.191</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>melderegisterabgleich.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.melderegisterabgleich.batch</td><td>1</td><td>1.000</td><td>1.182</td><td class="dev">0.182</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fusionsarchiv-leistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="high"><td class="name">de.tk.biz.comp.fusionsarchiv.leistung.allgemein</td><td>4</td><td>1.200</td><td>1.018</td><td class="dev">0.182</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>rehasport.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.rehasport.anbieterwechsel.proko</td><td>2</td><td>1.000</td><td>1.176</td><td class="dev">0.176</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozess-beispiel.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.prozessbeispiel.belegverarbeiten.prozessapi.messaging</td><td>1</td><td>1.000</td><td>1.162</td><td class="dev">0.162</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>arbeitgeberbestandsfuehrung.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.arbeitgeber.rollen.betriebsstaette</td><td>1</td><td>1.000</td><td>1.156</td><td class="dev">0.156</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>vollstreckung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.vollstreckung.erledigungsmitteilung</td><td>2</td><td>1.000</td><td>1.133</td><td class="dev">0.133</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>must.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.must.rechnungbearbeiten.prozessapi.gateway</td><td>1</td><td>1.000</td><td>1.131</td><td class="dev">0.131</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>gerichtsverzeichnis.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.gerichtsverzeichnis.adapter.in.suche</td><td>2</td><td>1.000</td><td>1.115</td><td class="dev">0.115</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi.leistung.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.leistung.api.hzv.service</td><td>2</td><td>1.000</td><td>1.099</td><td class="dev">0.099</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>zahlstellenkonto.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.zahlstellenkonto.domain.entity.bausteine.grunddaten</td><td>1</td><td>1.000</td><td>1.093</td><td class="dev">0.093</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sonstiger-geschaeftspartner.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.sonstigergeschaeftspartner.control.sonstigergeschaeftspartnerdebuginfo</td><td>2</td><td>1.000</td><td>1.091</td><td class="dev">0.091</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hochschul-meldungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.hochschulmeldungen.batch.versand</td><td>2</td><td>1.000</td><td>1.089</td><td class="dev">0.089</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>systemanforderungen.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.systemanforderung.entity.krankenhausdubletten</td><td>1</td><td>1.000</td><td>1.083</td><td class="dev">0.083</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>einstufungsverlauf.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.einstufungsverlauf.einnahmenachweis</td><td>1</td><td>1.000</td><td>1.083</td><td class="dev">0.083</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>mutterschaftsgeld.proc</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.proc.mutterschaftsgeld.prozess.prozessapi.module</td><td>1</td><td>1.000</td><td>1.078</td><td class="dev">0.078</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>prozess.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.prozess.migration</td><td>1</td><td>1.000</td><td>1.067</td><td class="dev">0.067</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>kim-log.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kimlog.api.archivdaten</td><td>1</td><td>1.000</td><td>1.063</td><td class="dev">0.063</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>fusionsarchiv-leistung.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.fusionsarchiv.leistung.aufall.zahlung</td><td>1</td><td>1.000</td><td>1.018</td><td class="dev">0.018</td><td class="side">LOW</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eel.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eel.eaua.damdau</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eel.eel.kg</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>korrespondenz-datenmodelle.generiert</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.rente.rente.anrechenbarevorversicherungszeiten</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.tkvalue.patientenquittung</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.zzztestvorlagenmtextclassicqs.apothekenabrechnungen</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.versorgungsangebot.selvabrechnung</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.zzztestvorlagenqs.kostenerstattung.inland</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.versichertenbestandsfuehrung.versicherung.kuenstlersozialkasse.versichertendaten</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.tkkonto.tkkonto</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.zzztestvorlagenmtextclassicqs.ta130401.schleife</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.leistungsrueckforderung.beitragsrechnungenbvg</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.vertrieb.vertrieb.summenbericht</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.bonusprogramm.bonusmitteilung</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.korrespondenz.datenmodelle.zzztestvorlagenmtextclassicqs</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>datenaustausch-eessi-xml.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.national.v06m00.s080ndf</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m05.h061</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m05.x005</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m01.a004</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.national.v04m00.s080na</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m04.x050</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m04.r003</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m04.x100</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m04.common</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m01.h131</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.national.v06m00.s028naf</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m01.x007</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m03.r008</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.national.v04m00.s085naf</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.national.v06m00.s085na</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m01.s046</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m01.a100n</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m01.x002</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.national.v07m00.s116naf</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.eessi.xml.document.international.v04m02.a010</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>krankenhausaufenthalt-basis.type</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistung.control.datenaustausch.krankenhaus.fehler</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistung.krankenhaus.diagnosen.placeholder</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>sozialhilfetraeger-abrechnung.leistung.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.sozialhilfetraeger.abrechnung.leistung.api.krankenhaus</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.sozialhilfetraeger.abrechnung.leistung.api.zahnarzt.bema4</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>crm-vorgang.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kundenkontakt.vorgangapi.kanal</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.kundenkontakt.vorgangapi.impuls</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenaufnahme.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.dokumentenaufnahme.api.extraktion.table</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.dokumentenaufnahme.imailapi</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>dokumentenarchiv.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.dokumentenarchiv.api.personalisiertesecurity</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.dokumentenarchiv.api.archiviertedokumente.mapping</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-abfrage-mitgliedschaft.biz.impl</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.da.abfrage.mitgliedschaft.xml.svtosv.erzeuger</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.da.abfrage.mitgliedschaft.xml.verarbeitungsergebnis.zugriff</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>crm.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.kundenkontakt.api.erzeugung</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.kundenkontakt.api</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>versichertenbestandsfuehrung.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.versicherter.api.online.fvbestandspruefung.komponenten</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.versicherter.api.online.fvbestandspruefung</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>hilfsmittelverzeichnis.biz</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.hilfsmittelverzeichnis.entity.hilfsmittel</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.hilfsmittelverzeichnis.control.steuerungsinformationen</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>pflegeversicherung.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.pflegeversicherung.meinetk.pflegeportal.allgemein</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.pflegeversicherung.kassenwechsel.abschlussmeldung.interfaces</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>leistungsrueckforderung.leistung.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.leistungsrueckforderung.leistung.api.vorgang</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.leistungsrueckforderung.leistung.api.krankenhaus.ambulant</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-insolvenzgeld.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.da.insolvenzgeld.dto</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.da.insolvenzgeld.builder.insolvenzereignis</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</table></section>
+<section class="bundle">
+<h2>da-basis.biz.api</h2>
+<table>
+<thead>
+<tr><th>Node</th><th>Level</th><th>nodeDependencyLevel</th><th>Bundle-&Oslash;</th><th>Abweichung</th><th>Seite</th></tr>
+</thead>
+<tbody>
+<tr class="low"><td class="name">de.tk.biz.comp.datenaustausch.basis.postkorbmeldung</td><td>2</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">LOW</td></tr>
+<tr class="high"><td class="name">de.tk.biz.comp.datenaustausch.basis.datenbeschafferki</td><td>1</td><td>1.000</td><td>1.000</td><td class="dev">0.000</td><td class="side">HIGH</td></tr>
+</tbody></table></section>
+<footer><p class="meta">de.tk.dependencyanalyse:packagegraph-analyzer</p></footer>
+</body>
+</html>

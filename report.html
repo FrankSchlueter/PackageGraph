@@ -25,6 +25,7 @@ td.ok { color: #1a7f37; font-weight: 600; }
 td.warn { color: #9a6700; font-weight: 600; }
 td.error { color: #cf222e; font-weight: 600; }
 table.stats td { font-variant-numeric: tabular-nums; }
+tr.total { background: #f6f8fa; }
 .empty { color: #6e7781; font-style: italic; }
 details { margin: 0.5em 0; }
 summary { cursor: pointer; font-weight: 500; }
@@ -33,7 +34,7 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #d0d7de; }
 </head>
 <body>
 <header><h1>PackageGraph Outlier Report</h1>
-<p class="meta">Datei: packageGraph.gml &middot; erstellt: 2026-10-24 14:19:57</p>
+<p class="meta">Datei: packageGraph.gml &middot; erstellt: 2026-10-24 15:45:25</p>
 <p class="meta">Knoten: 21801 &middot; Kanten: 155736 &middot; Bundles: 290 &middot; Top-5-Auswertung</p>
 </header>
 <section id="summary">
@@ -52,67 +53,61 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #d0d7de; }
 <tr><td>80 %</td><td class="dev">1998</td><td class="dev">76.53 %</td><td class="dev">35704</td></tr>
 <tr><td>95 %</td><td class="dev">1998</td><td class="dev">76.53 %</td><td class="dev">35704</td></tr>
 </table>
-<p><b>Modul-DAG azyklisch:</b> <b style='color:#cf222e'>NEIN</b></p>
-<p><b>SCC-Hinweis:</b> Beim Kontrahieren der Bundles zu Subsystemen entstehen 1 Zyklen. Die betroffenen SCS-Knoten bilden jeweils eine stark zusammenhängende Komponente &mdash; die fachliche Schichtung muss diese Rueckkopplung aufbrechen.</p>
-<ul>
-<li>SCS [0, 1, 2, 3, 4, 5, 6, 7, 8] bilden einen Zyklus (9 Subsysteme)</li>
-</ul>
+<p><b>Modul-DAG azyklisch:</b> ja</p>
 <table>
 <tr><th>Subsystem</th><th>Bundles</th><th>Packages</th><th>dom. Produkt</th><th>Schicht</th><th>ReinP</th><th>ReinS</th></tr>
-<tr><td>SCS1</td><td class="dev">257</td><td class="dev">8419</td><td class="name">Geschaeftspartner</td><td>PROZESSDATEN</td><td class="dev">0.057</td><td class="dev">0.657</td></tr>
-<tr><td>SCS0</td><td class="dev">19</td><td class="dev">843</td><td class="name">Vorgangssystem</td><td>PROZESSDATEN</td><td class="dev">0.324</td><td class="dev">0.460</td></tr>
-<tr><td>SCS6</td><td class="dev">21</td><td class="dev">725</td><td class="name">Geschaeftspartner</td><td>BASIS</td><td class="dev">0.310</td><td class="dev">0.477</td></tr>
-<tr><td>SCS3</td><td class="dev">19</td><td class="dev">716</td><td class="name">Arbeitgeberbeitrag</td><td>PROZESSDATEN</td><td class="dev">0.299</td><td class="dev">0.723</td></tr>
-<tr><td>SCS8</td><td class="dev">22</td><td class="dev">675</td><td class="name">Kur</td><td>PROZESSDATEN</td><td class="dev">0.250</td><td class="dev">0.421</td></tr>
-<tr><td>SCS4</td><td class="dev">26</td><td class="dev">608</td><td class="name">Leistungen-Basis</td><td>PROZESSDATEN</td><td class="dev">0.252</td><td class="dev">0.887</td></tr>
-<tr><td>SCS7</td><td class="dev">22</td><td class="dev">603</td><td class="name">CRM</td><td>PROZESSDATEN</td><td class="dev">0.353</td><td class="dev">0.481</td></tr>
-<tr><td>SCS2</td><td class="dev">20</td><td class="dev">543</td><td class="name">Einstufungsverlauf</td><td>STAMMDATEN</td><td class="dev">0.267</td><td class="dev">0.462</td></tr>
-<tr><td>SCS5</td><td class="dev">22</td><td class="dev">362</td><td class="name">Gerichtsverzeichnis</td><td>PROZESSDATEN</td><td class="dev">0.171</td><td class="dev">0.558</td></tr>
+<tr><td>SCS0</td><td class="dev">104</td><td class="dev">6067</td><td class="name">Geschaeftspartner</td><td>PROZESSDATEN</td><td class="dev">0.088</td><td class="dev">0.585</td></tr>
+<tr><td>SCS1</td><td class="dev">40</td><td class="dev">2200</td><td class="name">CRM</td><td>PROZESSDATEN</td><td class="dev">0.125</td><td class="dev">0.716</td></tr>
+<tr><td>SCS2</td><td class="dev">93</td><td class="dev">1595</td><td class="name">Einstufungsverlauf</td><td>PROZESSDATEN</td><td class="dev">0.124</td><td class="dev">0.492</td></tr>
+<tr><td>SCS3</td><td class="dev">27</td><td class="dev">590</td><td class="name">DA Mitteilungsverfahren RV</td><td>PROZESSDATEN</td><td class="dev">0.305</td><td class="dev">0.803</td></tr>
+<tr><td>SCS4</td><td class="dev">28</td><td class="dev">536</td><td class="name">SozV-Meldungen</td><td>PROZESSDATEN</td><td class="dev">0.271</td><td class="dev">0.576</td></tr>
+<tr><td>SCS5</td><td class="dev">100</td><td class="dev">406</td><td class="name">DA Zahnaerzte Leistungsantraege (ELAG)</td><td>PROZESSDATEN</td><td class="dev">0.131</td><td class="dev">0.736</td></tr>
+<tr><td>SCS6</td><td class="dev">20</td><td class="dev">358</td><td class="name">Kiss24-TKeasy</td><td>PROZESSDATEN</td><td class="dev">0.182</td><td class="dev">0.637</td></tr>
+<tr><td>SCS7</td><td class="dev">12</td><td class="dev">189</td><td class="name">Mutterschaftsgeld (MUG)</td><td>STAMMDATEN</td><td class="dev">0.243</td><td class="dev">0.418</td></tr>
 </table>
 </section>
 <section>
 <h2>Subsystem-Beziehungsgraph</h2>
 <p>Self-contained SVG &mdash; keine externen Tools noetig. Knoten sind Subsysteme (inkl. <em>Core</em> und <em>Overlay</em>). Kantenstaerke ist logarithmisch aus der aggregierten Cardinality zwischen den Bundle-Paaren zweier Subsysteme skaliert. <b>Rot</b> markiert bidirektionale Kopplung (R%uuml;ckkopplung / SCC). Die staerksten Kanten sind im Graph beschriftet; die vollst&auml;ndige Top-Liste steht in der Tabelle darunter.</p>
 <div style="text-align:center;overflow-x:auto;background:#fafbfc;padding:1em;border:1px solid #d0d7de;border-radius:6px">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 980" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;background:#fafbfc;display:block;margin:0 auto"><defs><marker id="ar-bl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker><marker id="ar-rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker></defs><text x="750" y="32" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#1f2328">Subsystem-Beziehungen (aggregierte Cardinality)</text><g class="edges"><path d="M 969.8 265.5 Q 970.5 318.9 1023.3 327.2" fill="none" stroke="#cf222e" stroke-width="5.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="908.7" y="278.9" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="926.7" y="289.9" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">281.5k</text><path d="M 956.7 274.0 Q 950.0 418.7 1063.7 508.4" fill="none" stroke="#cf222e" stroke-width="5.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="887.9" y="378.7" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="905.9" y="389.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">73.9k</text><path d="M 941.6 278.4 Q 878.8 491.5 999.1 678.2" fill="none" stroke="#cf222e" stroke-width="4.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="817.8" y="451.5" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="835.8" y="462.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">22.9k</text><path d="M 926.0 278.4 Q 790.8 515.9 853.6 781.8" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="729.4" y="475.9" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="747.4" y="486.9" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">21.2k</text><path d="M 911.0 274.0 Q 703.1 488.6 677.1 786.2" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="642.7" y="448.6" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="660.7" y="459.6" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">18.0k</text><path d="M 897.8 265.5 Q 789.0 543.8 529.1 691.1" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="728.3" y="503.8" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="746.3" y="514.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">20.1k</text><path d="M 887.5 253.7 Q 727.7 475.3 459.7 528.7" fill="none" stroke="#cf222e" stroke-width="5.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="668.1" y="435.3" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="686.1" y="446.3" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">29.0k</text><path d="M 881.0 239.5 Q 713.3 385.1 493.5 353.3" fill="none" stroke="#cf222e" stroke-width="4.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="653.3" y="345.1" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="671.3" y="356.1" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">17.6k</text><path d="M 878.8 224.0 Q 750.0 290.1 621.2 224.0" fill="none" stroke="#cf222e" stroke-width="4.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1067.1 423.2 Q 1038.8 468.5 1078.7 503.9" fill="none" stroke="#cf222e" stroke-width="5.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="976.3" y="428.5" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="994.3" y="439.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">32.9k</text><path d="M 1051.4 423.2 Q 967.6 541.3 1014.8 678.2" fill="none" stroke="#cf222e" stroke-width="4.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="906.9" y="501.3" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="924.9" y="512.3" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">24.1k</text><path d="M 1036.4 418.8 Q 868.4 564.1 868.6 786.2" fill="none" stroke="#cf222e" stroke-width="4.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="808.0" y="524.1" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="826.0" y="535.1" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">22.5k</text><path d="M 1023.3 410.3 Q 781.2 537.0 690.2 794.7" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="719.8" y="497.0" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="737.8" y="508.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">18.8k</text><path d="M 1013.0 398.5 Q 722.1 466.6 539.3 702.9" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="661.0" y="426.6" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="679.0" y="437.6" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">19.8k</text><path d="M 1006.5 384.3 Q 764.5 559.5 466.2 542.9" fill="none" stroke="#cf222e" stroke-width="5.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="705.2" y="519.5" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="723.2" y="530.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">32.2k</text><path d="M 1004.3 368.8 Q 750.0 468.8 495.7 368.8" fill="none" stroke="#cf222e" stroke-width="4.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="691.1" y="428.8" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="709.1" y="439.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">16.1k</text><path d="M 1006.5 353.3 Q 786.7 385.1 619.0 239.5" fill="none" stroke="#cf222e" stroke-width="4.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1063.7 608.4 Q 1015.4 631.2 1029.8 682.6" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1050.5 600.0 Q 916.2 654.0 881.8 794.7" fill="none" stroke="#cf222e" stroke-width="3.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1040.3 588.1 Q 820.4 619.5 700.5 806.5" fill="none" stroke="#cf222e" stroke-width="3.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1033.8 573.9 Q 761.6 549.6 545.8 717.2" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1031.5 558.4 Q 750.0 458.4 468.5 558.4" fill="none" stroke="#cf222e" stroke-width="4.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1033.8 542.9 Q 735.5 559.5 493.5 384.3" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1040.3 528.7 Q 772.3 475.3 612.5 253.7" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 960.7 762.4 Q 907.7 755.4 892.1 806.5" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 954.2 748.1 Q 811.9 720.9 707.0 820.7" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 952.0 732.7 Q 750.0 640.1 548.0 732.7" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 954.2 717.2 Q 738.4 549.6 466.2 573.9" fill="none" stroke="#cf222e" stroke-width="4.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 960.7 702.9 Q 777.9 466.6 487.0 398.5" fill="none" stroke="#cf222e" stroke-width="3.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 970.9 691.1 Q 711.0 543.8 602.2 265.5" fill="none" stroke="#cf222e" stroke-width="3.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 790.8 836.2 Q 750.0 801.7 709.2 836.2" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 793.0 820.7 Q 688.1 720.9 545.8 748.1" fill="none" stroke="#cf222e" stroke-width="3.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 799.5 806.5 Q 679.6 619.5 459.7 588.1" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 809.8 794.7 Q 718.8 537.0 476.7 410.3" fill="none" stroke="#cf222e" stroke-width="3.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 822.9 786.2 Q 796.9 488.6 589.0 274.0" fill="none" stroke="#cf222e" stroke-width="3.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 607.9 806.5 Q 592.3 755.4 539.3 762.4" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 618.2 794.7 Q 583.8 654.0 449.5 600.0" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 631.4 786.2 Q 631.6 564.1 463.6 418.8" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 646.4 781.8 Q 709.2 515.9 574.0 278.4" fill="none" stroke="#cf222e" stroke-width="3.2" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 470.2 682.6 Q 484.6 631.2 436.3 608.4" fill="none" stroke="#cf222e" stroke-width="4.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 485.2 678.2 Q 532.4 541.3 448.6 423.2" fill="none" stroke="#cf222e" stroke-width="3.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 500.9 678.2 Q 621.2 491.5 558.4 278.4" fill="none" stroke="#cf222e" stroke-width="3.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 421.3 503.9 Q 461.2 468.5 432.9 423.2" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 436.3 508.4 Q 550.0 418.7 543.3 274.0" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 476.7 327.2 Q 529.5 318.9 530.2 265.5" fill="none" stroke="#cf222e" stroke-width="3.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/></g><g class="nodes"><rect x="680.0" y="139.0" width="140.0" height="62.0" rx="8" ry="8" fill="#bfd4fe" stroke="#1f2328" stroke-width="1.2"/><text x="750.0" y="156.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">Core</text><text x="750.0" y="170.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">1998 Packages</text><text x="750.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">265 Bundles (Kandidat)</text><rect x="863.8" y="193.0" width="140.0" height="62.0" rx="8" ry="8" fill="#ffd8a8" stroke="#1f2328" stroke-width="1.2"/><text x="933.8" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">Overlay</text><text x="933.8" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">8306 Packages</text><text x="933.8" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">10 Bundles</text><rect x="989.3" y="337.8" width="140.0" height="62.0" rx="8" ry="8" fill="#ffcecb" stroke="#1f2328" stroke-width="1.2"/><text x="1059.3" y="354.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS1</text><text x="1059.3" y="368.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Geschaeftspartner</text><text x="1059.3" y="382.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">8419 Pkg / 257 B</text><rect x="1016.5" y="527.4" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="1086.5" y="544.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS0</text><text x="1086.5" y="558.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Vorgangssystem</text><text x="1086.5" y="572.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">843 Pkg / 19 B</text><rect x="937.0" y="701.7" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="1007.0" y="718.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS6</text><text x="1007.0" y="732.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Geschaeftspartner</text><text x="1007.0" y="746.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">725 Pkg / 21 B</text><rect x="775.8" y="805.2" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="845.8" y="822.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS3</text><text x="845.8" y="836.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Arbeitgeberbeitrag</text><text x="845.8" y="850.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">716 Pkg / 19 B</text><rect x="584.2" y="805.2" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="654.2" y="822.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS8</text><text x="654.2" y="836.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Kur</text><text x="654.2" y="850.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">675 Pkg / 22 B</text><rect x="423.0" y="701.7" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="493.0" y="718.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS4</text><text x="493.0" y="732.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Leistungen-Basis</text><text x="493.0" y="746.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">608 Pkg / 26 B</text><rect x="343.5" y="527.4" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="413.5" y="544.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS7</text><text x="413.5" y="558.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">CRM</text><text x="413.5" y="572.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">603 Pkg / 22 B</text><rect x="370.7" y="337.8" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="440.7" y="354.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS2</text><text x="440.7" y="368.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Einstufungsverlauf</text><text x="440.7" y="382.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">543 Pkg / 20 B</text><rect x="496.2" y="193.0" width="140.0" height="62.0" rx="8" ry="8" fill="#ffe2c0" stroke="#1f2328" stroke-width="1.2"/><text x="566.2" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS5</text><text x="566.2" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Gerichtsverzeichnis</text><text x="566.2" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">362 Pkg / 22 B</text></g><g class="legend"><rect x="20" y="912" width="1460" height="42" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1" opacity="0.92"/><line x1="40" y1="930" x2="100" y2="930" stroke="#0969da" stroke-width="2.5" marker-end="url(#ar-bl)"/><text x="110" y="934" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">einseitige Abhängigkeit</text><line x1="320" y1="930" x2="380" y2="930" stroke="#cf222e" stroke-width="2.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)"/><text x="390" y="934" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">bidirektionale Kopplung (SCC / Zyklus)</text><text x="720" y="934" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">Knotenfarbe SCS: </text><rect x="800" y="920" width="14" height="14" fill="#dafbe1" stroke="#1f2328" stroke-width="0.6"/><text x="817" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">≥0.50</text><rect x="855" y="920" width="14" height="14" fill="#fff8c5" stroke="#1f2328" stroke-width="0.6"/><text x="872" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">≥0.25</text><rect x="910" y="920" width="14" height="14" fill="#ffe2c0" stroke="#1f2328" stroke-width="0.6"/><text x="927" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">≥0.15</text><rect x="965" y="920" width="14" height="14" fill="#ffcecb" stroke="#1f2328" stroke-width="0.6"/><text x="982" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">&lt;0.15 ReinP</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 980" preserveAspectRatio="xMidYMid meet" style="max-width:100%;height:auto;background:#fafbfc;display:block;margin:0 auto"><defs><marker id="ar-bl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker><marker id="ar-rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker></defs><text x="750" y="32" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#1f2328">Subsystem-Beziehungen (aggregierte Cardinality)</text><g class="edges"><path d="M 969.8 265.5 Q 970.5 318.9 1023.3 327.2" fill="none" stroke="#cf222e" stroke-width="3.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 956.7 274.0 Q 950.0 418.7 1063.7 508.4" fill="none" stroke="#cf222e" stroke-width="5.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="887.9" y="378.7" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="905.9" y="389.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">219.0k</text><path d="M 941.6 278.4 Q 878.8 491.5 999.1 678.2" fill="none" stroke="#cf222e" stroke-width="5.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="817.8" y="451.5" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="835.8" y="462.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">83.6k</text><path d="M 926.0 278.4 Q 790.8 515.9 853.6 781.8" fill="none" stroke="#cf222e" stroke-width="5.3" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="729.4" y="475.9" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="747.4" y="486.9" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">63.0k</text><path d="M 911.0 274.0 Q 703.1 488.6 677.1 786.2" fill="none" stroke="#cf222e" stroke-width="5.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="642.7" y="448.6" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="660.7" y="459.6" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">43.6k</text><path d="M 897.8 265.5 Q 789.0 543.8 529.1 691.1" fill="none" stroke="#cf222e" stroke-width="4.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="728.3" y="503.8" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="746.3" y="514.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">27.6k</text><path d="M 887.5 253.7 Q 727.7 475.3 459.7 528.7" fill="none" stroke="#cf222e" stroke-width="4.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="668.1" y="435.3" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="686.1" y="446.3" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">10.4k</text><path d="M 881.0 239.5 Q 713.3 385.1 493.5 353.3" fill="none" stroke="#cf222e" stroke-width="5.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="653.3" y="345.1" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="671.3" y="356.1" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">38.1k</text><path d="M 878.8 224.0 Q 750.0 290.1 621.2 224.0" fill="none" stroke="#cf222e" stroke-width="4.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 1063.7 608.4 Q 1015.4 631.2 1029.8 682.6" fill="none" stroke="#cf222e" stroke-width="5.3" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="955.0" y="591.2" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="973.0" y="602.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">62.8k</text><path d="M 1050.5 600.0 Q 916.2 654.0 881.8 794.7" fill="none" stroke="#cf222e" stroke-width="5.3" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="855.5" y="614.0" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="873.5" y="625.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">56.7k</text><path d="M 1040.3 588.1 Q 820.4 619.5 700.5 806.5" fill="none" stroke="#cf222e" stroke-width="4.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="759.3" y="579.5" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="777.3" y="590.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">22.4k</text><path d="M 1033.8 573.9 Q 761.6 549.6 545.8 717.2" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="700.2" y="509.6" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="718.2" y="520.6" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">18.8k</text><path d="M 1031.5 558.4 Q 750.0 458.4 468.5 558.4" fill="none" stroke="#cf222e" stroke-width="4.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="691.1" y="418.4" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="709.1" y="429.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">9.4k</text><path d="M 1033.8 542.9 Q 735.5 559.5 493.5 384.3" fill="none" stroke="#cf222e" stroke-width="4.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="676.2" y="519.5" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="694.2" y="530.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">10.9k</text><path d="M 1040.3 528.7 Q 772.3 475.3 612.5 253.7" fill="none" stroke="#cf222e" stroke-width="4.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 960.7 762.4 Q 907.7 755.4 892.1 806.5" fill="none" stroke="#cf222e" stroke-width="4.8" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="845.3" y="715.4" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="863.3" y="726.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">19.6k</text><path d="M 954.2 748.1 Q 811.9 720.9 707.0 820.7" fill="none" stroke="#cf222e" stroke-width="4.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><rect x="749.8" y="680.9" width="36" height="16" rx="2" fill="#fafbfc" stroke="#cf222e" stroke-width="0.6" opacity="0.9"/><text x="767.8" y="691.9" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#cf222e" font-weight="bold">12.3k</text><path d="M 952.0 732.7 Q 750.0 640.1 548.0 732.7" fill="none" stroke="#cf222e" stroke-width="4.3" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 954.2 717.2 Q 738.4 549.6 466.2 573.9" fill="none" stroke="#cf222e" stroke-width="4.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 960.7 702.9 Q 777.9 466.6 487.0 398.5" fill="none" stroke="#cf222e" stroke-width="4.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 970.9 691.1 Q 711.0 543.8 602.2 265.5" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 790.8 836.2 Q 750.0 801.7 709.2 836.2" fill="none" stroke="#cf222e" stroke-width="4.3" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 793.0 820.7 Q 688.1 720.9 545.8 748.1" fill="none" stroke="#cf222e" stroke-width="4.2" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 799.5 806.5 Q 679.6 619.5 459.7 588.1" fill="none" stroke="#cf222e" stroke-width="4.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 809.8 794.7 Q 718.8 537.0 476.7 410.3" fill="none" stroke="#cf222e" stroke-width="4.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 822.9 786.2 Q 796.9 488.6 589.0 274.0" fill="none" stroke="#cf222e" stroke-width="3.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 607.9 806.5 Q 592.3 755.4 539.3 762.4" fill="none" stroke="#cf222e" stroke-width="3.9" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 618.2 794.7 Q 583.8 654.0 449.5 600.0" fill="none" stroke="#cf222e" stroke-width="3.4" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 631.4 786.2 Q 631.6 564.1 463.6 418.8" fill="none" stroke="#cf222e" stroke-width="3.7" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 646.4 781.8 Q 709.2 515.9 574.0 278.4" fill="none" stroke="#cf222e" stroke-width="3.6" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 470.2 682.6 Q 484.6 631.2 436.3 608.4" fill="none" stroke="#cf222e" stroke-width="3.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 485.2 678.2 Q 532.4 541.3 448.6 423.2" fill="none" stroke="#cf222e" stroke-width="3.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 500.9 678.2 Q 621.2 491.5 558.4 278.4" fill="none" stroke="#cf222e" stroke-width="3.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 421.3 503.9 Q 461.2 468.5 432.9 423.2" fill="none" stroke="#cf222e" stroke-width="3.0" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 436.3 508.4 Q 550.0 418.7 543.3 274.0" fill="none" stroke="#cf222e" stroke-width="3.1" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/><path d="M 476.7 327.2 Q 529.5 318.9 530.2 265.5" fill="none" stroke="#cf222e" stroke-width="3.2" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)" opacity="0.7"/></g><g class="nodes"><rect x="680.0" y="139.0" width="140.0" height="62.0" rx="8" ry="8" fill="#bfd4fe" stroke="#1f2328" stroke-width="1.2"/><text x="750.0" y="156.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">Core</text><text x="750.0" y="170.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">1998 Packages</text><text x="750.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">265 Bundles (Kandidat)</text><rect x="863.8" y="193.0" width="140.0" height="62.0" rx="8" ry="8" fill="#ffd8a8" stroke="#1f2328" stroke-width="1.2"/><text x="933.8" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">Overlay</text><text x="933.8" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">8306 Packages</text><text x="933.8" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">10 Bundles</text><rect x="989.3" y="337.8" width="140.0" height="62.0" rx="8" ry="8" fill="#e1e4e8" stroke="#1f2328" stroke-width="1.2"/><text x="1059.3" y="354.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SmallCand</text><text x="1059.3" y="368.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">5 Packages</text><text x="1059.3" y="382.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">&lt;Mindestgroesse</text><rect x="1016.5" y="527.4" width="140.0" height="62.0" rx="8" ry="8" fill="#ffcecb" stroke="#1f2328" stroke-width="1.2"/><text x="1086.5" y="544.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS0</text><text x="1086.5" y="558.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Geschaeftspartner</text><text x="1086.5" y="572.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">6067 Pkg / 104 B</text><rect x="937.0" y="701.7" width="140.0" height="62.0" rx="8" ry="8" fill="#ffcecb" stroke="#1f2328" stroke-width="1.2"/><text x="1007.0" y="718.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS1</text><text x="1007.0" y="732.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">CRM</text><text x="1007.0" y="746.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">2200 Pkg / 40 B</text><rect x="775.8" y="805.2" width="140.0" height="62.0" rx="8" ry="8" fill="#ffcecb" stroke="#1f2328" stroke-width="1.2"/><text x="845.8" y="822.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS2</text><text x="845.8" y="836.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Einstufungsverlauf</text><text x="845.8" y="850.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">1595 Pkg / 93 B</text><rect x="584.2" y="805.2" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="654.2" y="822.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS3</text><text x="654.2" y="836.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">DA Mitteilungsverfahr…</text><text x="654.2" y="850.2" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">590 Pkg / 27 B</text><rect x="423.0" y="701.7" width="140.0" height="62.0" rx="8" ry="8" fill="#fff8c5" stroke="#1f2328" stroke-width="1.2"/><text x="493.0" y="718.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS4</text><text x="493.0" y="732.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">SozV-Meldungen</text><text x="493.0" y="746.7" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">536 Pkg / 28 B</text><rect x="343.5" y="527.4" width="140.0" height="62.0" rx="8" ry="8" fill="#ffcecb" stroke="#1f2328" stroke-width="1.2"/><text x="413.5" y="544.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS5</text><text x="413.5" y="558.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">DA Zahnaerzte Leistun…</text><text x="413.5" y="572.4" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">406 Pkg / 100 B</text><rect x="370.7" y="337.8" width="140.0" height="62.0" rx="8" ry="8" fill="#ffe2c0" stroke="#1f2328" stroke-width="1.2"/><text x="440.7" y="354.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS6</text><text x="440.7" y="368.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Kiss24-TKeasy</text><text x="440.7" y="382.8" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">358 Pkg / 20 B</text><rect x="496.2" y="193.0" width="140.0" height="62.0" rx="8" ry="8" fill="#ffe2c0" stroke="#1f2328" stroke-width="1.2"/><text x="566.2" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1f2328">SCS7</text><text x="566.2" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">Mutterschaftsgeld (MU…</text><text x="566.2" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="normal" fill="#1f2328">189 Pkg / 12 B</text></g><g class="legend"><rect x="20" y="912" width="1460" height="42" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1" opacity="0.92"/><line x1="40" y1="930" x2="100" y2="930" stroke="#0969da" stroke-width="2.5" marker-end="url(#ar-bl)"/><text x="110" y="934" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">einseitige Abhängigkeit</text><line x1="320" y1="930" x2="380" y2="930" stroke="#cf222e" stroke-width="2.5" marker-start="url(#ar-rd)" marker-end="url(#ar-rd)"/><text x="390" y="934" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">bidirektionale Kopplung (SCC / Zyklus)</text><text x="720" y="934" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">Knotenfarbe SCS: </text><rect x="800" y="920" width="14" height="14" fill="#dafbe1" stroke="#1f2328" stroke-width="0.6"/><text x="817" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">≥0.50</text><rect x="855" y="920" width="14" height="14" fill="#fff8c5" stroke="#1f2328" stroke-width="0.6"/><text x="872" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">≥0.25</text><rect x="910" y="920" width="14" height="14" fill="#ffe2c0" stroke="#1f2328" stroke-width="0.6"/><text x="927" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">≥0.15</text><rect x="965" y="920" width="14" height="14" fill="#ffcecb" stroke="#1f2328" stroke-width="0.6"/><text x="982" y="934" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1f2328">&lt;0.15 ReinP</text></g></svg>
 </div>
 <h3>Top-30 Kanten nach Cardinality</h3>
 <table>
 <thead><tr><th>#</th><th>Quelle</th><th>Ziel</th><th>A &rarr; B</th><th>B &rarr; A</th><th>max</th><th>Typ</th></tr></thead>
 <tbody>
-<tr style="background:#fff5f5"><td class="dev">1</td><td class="name">Overlay</td><td class="name">SCS1</td><td class="dev">281522</td><td class="dev">280006</td><td class="dev"><b>281.5k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">2</td><td class="name">Overlay</td><td class="name">SCS0</td><td class="dev">73901</td><td class="dev">27499</td><td class="dev"><b>73.9k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">3</td><td class="name">SCS1</td><td class="name">SCS0</td><td class="dev">32878</td><td class="dev">21644</td><td class="dev"><b>32.9k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">4</td><td class="name">SCS1</td><td class="name">SCS7</td><td class="dev">32236</td><td class="dev">16781</td><td class="dev"><b>32.2k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">5</td><td class="name">Overlay</td><td class="name">SCS7</td><td class="dev">28971</td><td class="dev">15021</td><td class="dev"><b>29.0k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">6</td><td class="name">SCS1</td><td class="name">SCS6</td><td class="dev">18624</td><td class="dev">24104</td><td class="dev"><b>24.1k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">7</td><td class="name">Overlay</td><td class="name">SCS6</td><td class="dev">20399</td><td class="dev">22937</td><td class="dev"><b>22.9k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">8</td><td class="name">SCS1</td><td class="name">SCS3</td><td class="dev">22508</td><td class="dev">18544</td><td class="dev"><b>22.5k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">9</td><td class="name">Overlay</td><td class="name">SCS3</td><td class="dev">21188</td><td class="dev">20211</td><td class="dev"><b>21.2k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">10</td><td class="name">Overlay</td><td class="name">SCS4</td><td class="dev">20064</td><td class="dev">18647</td><td class="dev"><b>20.1k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">11</td><td class="name">SCS1</td><td class="name">SCS4</td><td class="dev">19794</td><td class="dev">18133</td><td class="dev"><b>19.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">12</td><td class="name">SCS1</td><td class="name">SCS8</td><td class="dev">15902</td><td class="dev">18828</td><td class="dev"><b>18.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">13</td><td class="name">Overlay</td><td class="name">SCS8</td><td class="dev">15272</td><td class="dev">18006</td><td class="dev"><b>18.0k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">14</td><td class="name">Overlay</td><td class="name">SCS2</td><td class="dev">13561</td><td class="dev">17637</td><td class="dev"><b>17.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">15</td><td class="name">SCS1</td><td class="name">SCS2</td><td class="dev">14066</td><td class="dev">16065</td><td class="dev"><b>16.1k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">16</td><td class="name">Overlay</td><td class="name">SCS5</td><td class="dev">11800</td><td class="dev">10635</td><td class="dev"><b>11.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">17</td><td class="name">SCS1</td><td class="name">SCS5</td><td class="dev">11710</td><td class="dev">9478</td><td class="dev"><b>11.7k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">18</td><td class="name">SCS6</td><td class="name">SCS7</td><td class="dev">3413</td><td class="dev">1363</td><td class="dev"><b>3.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">19</td><td class="name">SCS0</td><td class="name">SCS7</td><td class="dev">3256</td><td class="dev">1873</td><td class="dev"><b>3.3k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">20</td><td class="name">SCS4</td><td class="name">SCS7</td><td class="dev">2835</td><td class="dev">1010</td><td class="dev"><b>2.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">21</td><td class="name">SCS0</td><td class="name">SCS2</td><td class="dev">928</td><td class="dev">2640</td><td class="dev"><b>2.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">22</td><td class="name">SCS0</td><td class="name">SCS6</td><td class="dev">940</td><td class="dev">2521</td><td class="dev"><b>2.5k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">23</td><td class="name">SCS3</td><td class="name">SCS7</td><td class="dev">2451</td><td class="dev">1297</td><td class="dev"><b>2.5k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">24</td><td class="name">SCS7</td><td class="name">SCS2</td><td class="dev">594</td><td class="dev">2376</td><td class="dev"><b>2.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">25</td><td class="name">SCS8</td><td class="name">SCS7</td><td class="dev">2340</td><td class="dev">906</td><td class="dev"><b>2.3k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">26</td><td class="name">SCS3</td><td class="name">SCS5</td><td class="dev">2199</td><td class="dev">888</td><td class="dev"><b>2.2k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">27</td><td class="name">SCS0</td><td class="name">SCS3</td><td class="dev">2007</td><td class="dev">2067</td><td class="dev"><b>2.1k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">28</td><td class="name">SCS0</td><td class="name">SCS8</td><td class="dev">958</td><td class="dev">2036</td><td class="dev"><b>2.0k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">29</td><td class="name">SCS6</td><td class="name">SCS4</td><td class="dev">1749</td><td class="dev">1180</td><td class="dev"><b>1.7k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
-<tr style="background:#fff5f5"><td class="dev">30</td><td class="name">SCS6</td><td class="name">SCS8</td><td class="dev">1149</td><td class="dev">1735</td><td class="dev"><b>1.7k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">1</td><td class="name">Overlay</td><td class="name">SCS0</td><td class="dev">219024</td><td class="dev">218685</td><td class="dev"><b>219.0k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">2</td><td class="name">Overlay</td><td class="name">SCS1</td><td class="dev">83635</td><td class="dev">80040</td><td class="dev"><b>83.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">3</td><td class="name">Overlay</td><td class="name">SCS2</td><td class="dev">62997</td><td class="dev">57541</td><td class="dev"><b>63.0k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">4</td><td class="name">SCS0</td><td class="name">SCS1</td><td class="dev">60564</td><td class="dev">62836</td><td class="dev"><b>62.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">5</td><td class="name">SCS0</td><td class="name">SCS2</td><td class="dev">56728</td><td class="dev">42578</td><td class="dev"><b>56.7k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">6</td><td class="name">Overlay</td><td class="name">SCS3</td><td class="dev">43586</td><td class="dev">20845</td><td class="dev"><b>43.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">7</td><td class="name">Overlay</td><td class="name">SCS6</td><td class="dev">38136</td><td class="dev">11233</td><td class="dev"><b>38.1k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">8</td><td class="name">Overlay</td><td class="name">SCS4</td><td class="dev">20329</td><td class="dev">27619</td><td class="dev"><b>27.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">9</td><td class="name">SCS0</td><td class="name">SCS3</td><td class="dev">22430</td><td class="dev">14185</td><td class="dev"><b>22.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">10</td><td class="name">SCS1</td><td class="name">SCS2</td><td class="dev">19594</td><td class="dev">16699</td><td class="dev"><b>19.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">11</td><td class="name">SCS0</td><td class="name">SCS4</td><td class="dev">18573</td><td class="dev">18816</td><td class="dev"><b>18.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">12</td><td class="name">SCS1</td><td class="name">SCS3</td><td class="dev">12265</td><td class="dev">6569</td><td class="dev"><b>12.3k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">13</td><td class="name">SCS0</td><td class="name">SCS6</td><td class="dev">10919</td><td class="dev">9610</td><td class="dev"><b>10.9k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">14</td><td class="name">Overlay</td><td class="name">SCS5</td><td class="dev">10439</td><td class="dev">8587</td><td class="dev"><b>10.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">15</td><td class="name">SCS0</td><td class="name">SCS5</td><td class="dev">8600</td><td class="dev">9369</td><td class="dev"><b>9.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">16</td><td class="name">Overlay</td><td class="name">SCS7</td><td class="dev">8127</td><td class="dev">6046</td><td class="dev"><b>8.1k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">17</td><td class="name">SCS0</td><td class="name">SCS7</td><td class="dev">7291</td><td class="dev">3881</td><td class="dev"><b>7.3k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">18</td><td class="name">SCS1</td><td class="name">SCS4</td><td class="dev">4578</td><td class="dev">6456</td><td class="dev"><b>6.5k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">19</td><td class="name">SCS2</td><td class="name">SCS3</td><td class="dev">6189</td><td class="dev">3970</td><td class="dev"><b>6.2k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">20</td><td class="name">SCS2</td><td class="name">SCS4</td><td class="dev">4376</td><td class="dev">5271</td><td class="dev"><b>5.3k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">21</td><td class="name">SCS1</td><td class="name">SCS5</td><td class="dev">4432</td><td class="dev">3452</td><td class="dev"><b>4.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">22</td><td class="name">SCS1</td><td class="name">SCS6</td><td class="dev">3583</td><td class="dev">3144</td><td class="dev"><b>3.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">23</td><td class="name">SCS2</td><td class="name">SCS6</td><td class="dev">2916</td><td class="dev">2594</td><td class="dev"><b>2.9k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">24</td><td class="name">SCS2</td><td class="name">SCS5</td><td class="dev">2806</td><td class="dev">2837</td><td class="dev"><b>2.8k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">25</td><td class="name">SCS1</td><td class="name">SCS7</td><td class="dev">2715</td><td class="dev">1928</td><td class="dev"><b>2.7k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">26</td><td class="name">SCS3</td><td class="name">SCS4</td><td class="dev">1425</td><td class="dev">2420</td><td class="dev"><b>2.4k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">27</td><td class="name">SCS3</td><td class="name">SCS6</td><td class="dev">462</td><td class="dev">1605</td><td class="dev"><b>1.6k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">28</td><td class="name">SCS3</td><td class="name">SCS7</td><td class="dev">727</td><td class="dev">1202</td><td class="dev"><b>1.2k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">29</td><td class="name">SCS2</td><td class="name">SCS7</td><td class="dev">1178</td><td class="dev">1128</td><td class="dev"><b>1.2k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
+<tr style="background:#fff5f5"><td class="dev">30</td><td class="name">SCS4</td><td class="name">SCS5</td><td class="dev">1029</td><td class="dev">868</td><td class="dev"><b>1.0k</b></td><td><span style="color:#cf222e;font-weight:bold">Zyklus</span></td></tr>
 </tbody>
 </table>
-<p><b>Hinweis:</b> Der Modul-DAG ist zyklisch.  Subsystem-Paare bilden stark zusammenh&auml;ngende Komponenten &mdash; diese Knoten sind die dringendsten Kandidaten fuer eine fachliche Auftrennung in eigene Bounded Contexts.</p>
 </section>
 <section>
 <h2>Overlay &amp; Kritische Bundles</h2>
@@ -189,12 +184,35 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #d0d7de; }
 <p><b>Zentrale Erkenntnis:</b> Die Anwendung hat keinen sauberen Schichten-Stack. Was sich als 'Overlay' darstellt, sind die Punkte, an denen die fachliche Schichtung bricht &mdash; insbesondere die <em>EESSI-Datenaustausch-Bundles</em> (zusammen 3853 Pkg) und <em>krankenhausaufenthalt.biz</em> (1307 Pkg). Diese vier Bundles vermitteln zwischen 3 und 9 Subsystemen und sind die ersten Kandidaten fuer eine Auftrennung in eigene Bounded Contexts.</p>
 </section>
 <section>
-<h2>Iterative Auslagerung</h2>
-<p class="empty">Keine Auslagerungen durchgefuehrt.</p>
+<h2>Ungewollte Beziehungen &mdash; vorher / nachher</h2>
+<p>Nach der Auslagerung von <b>2299 Packages</b> wurde das System neu geclustert (Leiden, Bundle-Ebene). Erwartet wird eine <b>Reduktion der ungewollten Beziehungen</b> &mdash; andernfalls ist das Vorgehen fehlerhaft.</p>
+<table class="stats">
+<tr><th>Kategorie</th><th>vorher</th><th>nachher</th><th>&Delta; (nachher&minus;vorher)</th><th>&Delta; %</th></tr>
+<tr><td>SCS &harr; SCS</td><td class="dev">92.5k</td><td class="dev">79.3k</td><td class="dev">-13184</td><td class="ok">-14.3%</td></tr>
+<tr><td>Core &rarr; SCS</td><td class="dev">29.4k</td><td class="dev">25.7k</td><td class="dev">-3671</td><td class="ok">-12.5%</td></tr>
+<tr><td>Overlay &rarr; SCS</td><td class="dev">99.3k</td><td class="dev">85.6k</td><td class="dev">-13714</td><td class="ok">-13.8%</td></tr>
+<tr class="total"><td><b>GESAMT (ungewollte Beziehungen)</b></td><td class="dev"><b>221.2k</b></td><td class="dev"><b>190.6k</b></td><td class="dev"><b>-30569</b></td><td class="ok"><b>-13.8%</b></td></tr>
+</table>
+<h3>Auslagerungsschritt</h3>
+<table>
+<thead><tr><th>#</th><th>Package</th><th>Bundle</th><th>&Delta; Metrik</th><th>Reduktion</th></tr></thead>
+<tbody>
+<tr><td class="dev">1</td><td class="name"><batch></td><td class="name">2299 Packages (34 nachtraeglich)</td><td class="dev">30.6k</td><td class="dev">13.8 %</td></tr>
+</tbody>
+</table>
 </section>
 <section>
 <h2>SmallCandidates</h2>
-<p class="empty">Keine Packages in SmallCandidates (alle SCS haben genuegend Packages).</p>
+<p>5 Packages, deren SCS nach Auslagerung unter die Mindestgroesse gefallen sind. Diese Packages sind <em>keine</em> Cross-Cutting-Bundles und gehoeren deshalb nicht ins Overlay &mdash; sie sollten manuell einem SCS zugeordnet oder zu einem groesseren SCS verschmolzen werden.</p>
+<table>
+<thead><tr><th>Bundle</th><th>Packages</th></tr></thead>
+<tbody>
+<tr><td class="name">prozess-beispiel.proc.api</td><td class="dev">2</td></tr>
+<tr><td class="name">leistungen-pruefungen.biz</td><td class="dev">1</td></tr>
+<tr><td class="name">leistungsrueckforderung.type</td><td class="dev">1</td></tr>
+<tr><td class="name">versorgungsangebot.biz.api</td><td class="dev">1</td></tr>
+</tbody>
+</table>
 </section>
 <section>
 <h2>Core-Bundles (95 %-Variante)</h2>
@@ -470,414 +488,550 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #d0d7de; }
 </section>
 <section>
 <h2>Subsystem-Details</h2>
-<h3>SCS1 &middot; Geschaeftspartner &middot; 8419 Packages &middot; 257 Bundles</h3>
+<h3>SCS0 &middot; Geschaeftspartner &middot; 6067 Packages &middot; 104 Bundles</h3>
 <details open><summary>Bundles dieses Subsystems</summary>
 <ul>
-<li class="name">abr-sonst-leistungserbringer.biz.api</li>
-<li class="name">abr-sonst-leistungserbringer.biz.impl</li>
 <li class="name">abr-sonst-leistungserbringer.proc</li>
 <li class="name">adress-service.biz</li>
-<li class="name">adress-service.biz.api</li>
-<li class="name">akquise.biz.api</li>
 <li class="name">apothekenabrechnung.biz</li>
-<li class="name">apothekenabrechnung.biz.api</li>
-<li class="name">arbeitgeberbeitrag-systemanforderungen.biz</li>
 <li class="name">arbeitgeberbestandsfuehrung.biz</li>
-<li class="name">arbeitgeberbestandsfuehrung.biz.api</li>
-<li class="name">arbeitsunfaehigkeit.aust.biz.api</li>
 <li class="name">arbeitsunfaehigkeit.biz</li>
-<li class="name">arbeitsunfaehigkeit.biz.api</li>
-<li class="name">arbeitsunfaehigkeit.biz.impl</li>
-<li class="name">arbeitsunfaehigkeit.eel.biz.api</li>
-<li class="name">arztgebuehrenpositionen.biz</li>
-<li class="name">asv-basis.biz</li>
-<li class="name">au-steuerung.biz.api</li>
-<li class="name">au-steuerung.biz.impl</li>
-<li class="name">basis.biz</li>
-<li class="name">bearbeitungsinformation.biz</li>
+<li class="name">arzneimittelverzeichnis.biz</li>
+<li class="name">bankverzeichnis.biz</li>
 <li class="name">behandlerverzeichnis.biz</li>
-<li class="name">beitrag.biz</li>
-<li class="name">beitrag.biz.api</li>
-<li class="name">beitragserstattung-aus-rente.biz</li>
 <li class="name">betriebsnummernverzeichnis.biz</li>
-<li class="name">chroniker.biz</li>
-<li class="name">chroniker.biz.api</li>
-<li class="name">crm-type.biz</li>
-<li class="name">crm-vorgang.biz.api</li>
-<li class="name">crm.biz.api</li>
-<li class="name">crmbasis.biz</li>
-<li class="name">da-abfrage-mitgliedschaft.biz.impl</li>
+<li class="name">bonusprogramm.biz</li>
 <li class="name">da-aerzte-asv.biz</li>
 <li class="name">da-aerzte-hybrid-drg.biz.impl</li>
 <li class="name">da-aerzte-hzv.biz</li>
 <li class="name">da-aerzte-kollektiv.biz</li>
-<li class="name">da-aerzte-kollektiv.biz.api</li>
-<li class="name">da-basis.biz</li>
 <li class="name">da-basis.biz.api</li>
-<li class="name">da-beitragsdifferenzierung-pv.biz.impl</li>
+<li class="name">da-insolvenzgeld.biz.api</li>
 <li class="name">da-insolvenzgeld.biz.impl</li>
+<li class="name">da-isd.biz.impl</li>
 <li class="name">da-mitteilungsverfahren-rv.biz.api</li>
-<li class="name">da-sonstigeleistungserbringer.biz</li>
-<li class="name">da-sonstigeleistungserbringer.biz.api</li>
-<li class="name">da-za-leistungsantraege.biz.api</li>
-<li class="name">datenaustausch-eel-uebergreifend.biz</li>
-<li class="name">datenaustausch-eel.biz</li>
-<li class="name">datenaustausch-eel.biz.api</li>
+<li class="name">da-zahnaerzte.biz</li>
 <li class="name">datenaustausch-eel.biz.impl</li>
-<li class="name">datenaustausch-eel.proc</li>
 <li class="name">datenaustausch-eessi-basis.biz</li>
-<li class="name">datenaustausch-eessi.biz.api</li>
 <li class="name">datenaustausch-finanzverwaltung.biz</li>
-<li class="name">datenaustausch-geldleistungen-basis.biz.impl</li>
-<li class="name">datenschutzcockpit.biz.api</li>
-<li class="name">dhd.biz.api</li>
-<li class="name">dhd.biz.impl</li>
-<li class="name">diga.biz</li>
+<li class="name">datenaustausch-geldleistungen-basis.biz.api</li>
+<li class="name">diga.proc</li>
 <li class="name">diseasemanagement.biz</li>
 <li class="name">dokumentenarchiv-vorgang.biz.api</li>
-<li class="name">dokumentenarchiv.biz.api</li>
-<li class="name">dokumentenaufnahme-uebergreifend.biz</li>
 <li class="name">dokumentenaufnahme.biz</li>
 <li class="name">dokumentenaufnahme.biz.api</li>
-<li class="name">dokumentenklasse.biz</li>
-<li class="name">duebak-meldungen.biz</li>
-<li class="name">duebak-meldungen.biz.api</li>
-<li class="name">e-nachricht.biz.impl</li>
-<li class="name">eel.biz</li>
-<li class="name">eessi-institution.biz</li>
-<li class="name">eingabe-protokoll.biz</li>
-<li class="name">einstufungsverlauf-basis.biz</li>
-<li class="name">einstufungsverlauf.biz.api</li>
+<li class="name">eel-basis.biz</li>
 <li class="name">entsendung.biz</li>
-<li class="name">entsendung.biz.api</li>
-<li class="name">erv.biz.impl</li>
-<li class="name">everordnungmanager.biz.api</li>
 <li class="name">everordnungmanager.biz.impl</li>
+<li class="name">fahrkosten.biz.impl</li>
 <li class="name">fahrkosten.proc</li>
-<li class="name">fusionsarchiv-allgemein.biz</li>
-<li class="name">fusionsarchiv-arbeitgeberleistung.biz</li>
-<li class="name">fusionsarchiv-beitrag.biz</li>
 <li class="name">fusionsarchiv-beleg.biz</li>
-<li class="name">fusionsarchiv-crm.biz</li>
-<li class="name">fusionsarchiv-dmp.biz</li>
-<li class="name">fusionsarchiv-krankenhaus.biz</li>
 <li class="name">fusionsarchiv-leistung.biz</li>
-<li class="name">fv-meldungen.biz</li>
-<li class="name">fv-meldungen.biz.api</li>
+<li class="name">gebietsabgrenzung.type</li>
 <li class="name">gebuehrenordnung.biz</li>
-<li class="name">generische-kostenerstattung.biz.api</li>
 <li class="name">generische-kostenerstattung.biz.impl</li>
-<li class="name">generische-kostenerstattung.proc</li>
-<li class="name">gericht.biz</li>
-<li class="name">geschaeftspartner-systemanforderungen.biz</li>
-<li class="name">geschaeftspartner.biz.impl</li>
-<li class="name">gesundheitskarte.biz.api</li>
+<li class="name">geschaeftspartner.biz</li>
 <li class="name">gesundheitsprojekte.biz</li>
-<li class="name">gesundheitsprojekte.biz.api</li>
-<li class="name">gkkmitgliederarchiv.biz</li>
 <li class="name">gutachterverzeichnis.biz</li>
-<li class="name">haertefall-basis.biz</li>
 <li class="name">haeusliche-krankenpflege.biz</li>
-<li class="name">haeusliche-krankenpflege.biz.api</li>
-<li class="name">haftpflichtversicherer.biz.api</li>
+<li class="name">haftpflichtversicherer.biz</li>
+<li class="name">haushaltshilfe.biz</li>
 <li class="name">hilfsmittelversorgung.biz</li>
-<li class="name">hochschul-meldungen.biz</li>
 <li class="name">hzv.biz</li>
-<li class="name">icd.biz</li>
-<li class="name">icdverzeichnis.biz</li>
-<li class="name">implantattraeger.biz.api</li>
-<li class="name">indikationsverzeichnis.biz.impl</li>
 <li class="name">interessent-pflege.biz</li>
-<li class="name">kassenwechsel-leistungsdaten.biz.api</li>
-<li class="name">kassenwechselmeldungen.biz.api</li>
-<li class="name">ki-pilot.biz</li>
-<li class="name">kim-log.biz.api</li>
-<li class="name">kim-log.biz.impl</li>
-<li class="name">kinderkrankengeld.biz</li>
-<li class="name">kinderkrankengeld.proc</li>
-<li class="name">konfigurierbare-leistung.biz</li>
-<li class="name">korrespondenz-type.biz</li>
-<li class="name">korrespondenz-uebergreifend.biz</li>
-<li class="name">korrespondenz.biz</li>
+<li class="name">kieferorthopaedie.biz</li>
+<li class="name">korrespondenz-basis.biz</li>
+<li class="name">korrespondenz.biz.api</li>
+<li class="name">korrespondenz.proc</li>
 <li class="name">korrespondenzpartner.biz</li>
-<li class="name">kostenerstattungswahl-basis.biz</li>
-<li class="name">kostenerstattungswahl.biz</li>
+<li class="name">kostenerstattung.biz</li>
 <li class="name">krankenhausaufenthalt-basis.type</li>
-<li class="name">krankenhausaufenthalt.biz.api</li>
-<li class="name">krankenhausaufenthalt.biz.impl</li>
-<li class="name">krankenhausverzeichnis.biz</li>
-<li class="name">krebsregister-abrechnung.biz</li>
-<li class="name">kunde-vor-ort.biz.api</li>
+<li class="name">kur.proc</li>
 <li class="name">kv-verzeichnis-rollen.biz</li>
-<li class="name">kv-verzeichnis.biz</li>
-<li class="name">kvnr-meldungen.biz.api</li>
-<li class="name">kvnr-meldungen.biz.impl</li>
-<li class="name">leistung-services.biz.impl</li>
-<li class="name">leistung-services.hh.biz.api</li>
-<li class="name">leistung-services.khs.biz.api</li>
-<li class="name">leistung-services.psycho.biz.api</li>
-<li class="name">leistung-uebergreifend.biz</li>
-<li class="name">leistungen-basis.biz.api</li>
-<li class="name">leistungen-datenaustausch.biz</li>
-<li class="name">leistungen-pruefungen.biz</li>
-<li class="name">leistungsmanagement.biz.impl</li>
-<li class="name">leistungsrueckforderung.leistung.api</li>
-<li class="name">leistungsrueckforderung.type</li>
+<li class="name">leistungen-basis.biz</li>
+<li class="name">leistungen-basis.proc</li>
+<li class="name">leistungsaushilfe-ausland.biz</li>
+<li class="name">leistungsmanagement.biz</li>
+<li class="name">leistungsuebersicht.biz</li>
 <li class="name">leistungsuebersicht.biz.impl</li>
-<li class="name">mandatsakte.biz</li>
-<li class="name">mbkarchiv.biz</li>
-<li class="name">mdkverzeichnis.biz</li>
-<li class="name">medizinproduktregress.biz.api</li>
-<li class="name">medizinproduktregress.biz.impl</li>
 <li class="name">meinetk.biz</li>
-<li class="name">melderegisterabgleich.biz.api</li>
-<li class="name">meldungen-basis.biz</li>
-<li class="name">meldungen-basis.biz.api</li>
+<li class="name">melderegisterabgleich.biz.impl</li>
 <li class="name">mitgliederbeitrag.biz</li>
-<li class="name">mitgliederbeitrag.biz.api</li>
-<li class="name">mitteilungsmanagement-basis.biz</li>
-<li class="name">mitteilungsmanagement.biz</li>
-<li class="name">must.biz.impl</li>
-<li class="name">mutterschaftsgeld.biz</li>
-<li class="name">neuaufnahmemanager.biz</li>
-<li class="name">neuaufnahmemanager.biz.api</li>
-<li class="name">organisationsverwaltung-uebergreifend.biz</li>
-<li class="name">personalisierte-secpruefung.biz.api</li>
+<li class="name">mitteilungsmanagement-xsd.biz</li>
+<li class="name">must.biz.api</li>
+<li class="name">organisationsverwaltung.biz</li>
 <li class="name">pflegeperson.biz.impl</li>
-<li class="name">pflegeunterstuetzungsgeld.biz</li>
-<li class="name">pflegeunterstuetzungsgeld.biz.api</li>
+<li class="name">pflegeversicherung.biz.api</li>
 <li class="name">pflegeversicherung.proc</li>
-<li class="name">praevention.biz</li>
-<li class="name">praevention.biz.api</li>
-<li class="name">praeventionskurs.biz</li>
-<li class="name">proko-schriftgut-beispiel.proc</li>
-<li class="name">proto-kostenerstattungen.proc</li>
-<li class="name">prozess-beispiel.biz.api</li>
-<li class="name">prozess-beispiel.proc.api</li>
-<li class="name">prozess.biz</li>
-<li class="name">prozessereignismanager.biz.api</li>
-<li class="name">prozessereignismanager.biz.impl</li>
+<li class="name">praevention.proc</li>
+<li class="name">prozess-beispiel.proc</li>
+<li class="name">prozess.biz.api</li>
 <li class="name">prozessereignismanager.proc</li>
-<li class="name">pzr.biz.api</li>
-<li class="name">pzr.biz.impl</li>
-<li class="name">rechnungswesen-type.biz</li>
 <li class="name">rechnungswesen.biz.api</li>
-<li class="name">rechnungswesen.proc</li>
-<li class="name">rechnungswesen.proc.api</li>
-<li class="name">rechtsakte.biz</li>
-<li class="name">regiplan.biz</li>
-<li class="name">rehasport.biz.impl</li>
-<li class="name">rehasport.proc</li>
 <li class="name">rente.biz</li>
-<li class="name">rente.biz.api</li>
-<li class="name">rvtraeger.biz</li>
-<li class="name">sap-eam-stammdaten.biz</li>
-<li class="name">schriftgut-archiv.biz</li>
-<li class="name">schriftgut.biz</li>
 <li class="name">selvabrechnung.biz</li>
-<li class="name">selvteilnahme.biz</li>
 <li class="name">sonst-leistungsrueckforderung.biz.impl</li>
-<li class="name">sonstige-leistung.biz.api</li>
-<li class="name">sonstiger-geschaeftspartner-systemanforderungen.biz</li>
+<li class="name">sonstiger-geschaeftspartner.biz</li>
 <li class="name">sozialausgleich-meldungen.biz</li>
+<li class="name">sozialhilfetraeger.biz</li>
 <li class="name">sozialversicherungsabkommen.biz</li>
-<li class="name">sozv-meldungen.biz</li>
-<li class="name">stoppuhr.biz</li>
 <li class="name">studienverlauf.biz</li>
-<li class="name">systemanforderungen.biz</li>
-<li class="name">testdaten-diga.biz</li>
-<li class="name">testdaten-korrespondenz.biz</li>
 <li class="name">testdaten-kur.biz.impl</li>
-<li class="name">testdaten-versicherter.biz</li>
-<li class="name">tim.biz.api</li>
-<li class="name">tim.biz.impl</li>
-<li class="name">tk-patientenquittung.biz</li>
-<li class="name">tk-termin.biz.impl</li>
-<li class="name">tk-vorsorge-planer.biz</li>
-<li class="name">tk-vorsorge-planer.biz.api</li>
+<li class="name">testdatenmanagement.biz</li>
 <li class="name">tk.de.biz</li>
 <li class="name">tkkonto.biz</li>
-<li class="name">tkschriftgut-basis.biz</li>
-<li class="name">tracking.biz</li>
 <li class="name">unfall-basis.biz</li>
 <li class="name">unfall.biz</li>
 <li class="name">unfall.biz.api</li>
-<li class="name">uvtraeger.biz</li>
-<li class="name">verordnung-util.biz.api</li>
-<li class="name">verordnung-util.biz.impl</li>
 <li class="name">versichertenbestandsfuehrung.biz.api</li>
-<li class="name">versichertenbestandsfuehrung.biz.impl</li>
-<li class="name">versorgungsabrechnung.biz.api</li>
 <li class="name">versorgungsabrechnung.biz.impl</li>
-<li class="name">versorgungsamtsbescheid.biz</li>
-<li class="name">versorgungsangebot.biz</li>
-<li class="name">versorgungsangebot.biz.api</li>
-<li class="name">versorgungsbezug-meldungen.biz.api</li>
-<li class="name">vertrag.biz</li>
-<li class="name">vertrieb.biz.api</li>
-<li class="name">vertriebspartner.biz</li>
-<li class="name">vollmacht-uebergreifend.biz.impl</li>
+<li class="name">vertrieb.biz</li>
+<li class="name">vollmacht.biz.api</li>
 <li class="name">vollmacht.biz.impl</li>
 <li class="name">vorgang-intern.biz</li>
 <li class="name">vorgang-querschnittssysteme.biz.api</li>
-<li class="name">vorgang-type.biz</li>
-<li class="name">vorgang.biz.api</li>
-<li class="name">vps.biz</li>
+<li class="name">vorgang.biz</li>
+<li class="name">zahnersatz.biz</li>
 <li class="name">zahnersatz.proc</li>
-<li class="name">zentralregistratur.biz</li>
-<li class="name">zusatzvertrag-batch.biz</li>
 <li class="name">zusatzvertrag.biz</li>
-<li class="name">zusatzvertrag.biz.api</li>
-<li class="name">zuzahlung-basis.biz</li>
 <li class="name">zuzahlung.biz</li>
 </ul>
 </details>
 <details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
 <table>
 <tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">17285</td><td class="name">vorgang.biz.api</td></tr>
-<tr><td class="name">17286</td><td class="name">zusatzvertrag.biz</td></tr>
+<tr><td class="name">17284</td><td class="name">kostenerstattung.biz</td></tr>
 <tr><td class="name">4970</td><td class="name">arbeitsunfaehigkeit.biz</td></tr>
+<tr><td class="name">17286</td><td class="name">zusatzvertrag.biz</td></tr>
 <tr><td class="name">3640</td><td class="name">mitgliederbeitrag.biz</td></tr>
 <tr><td class="name">17280</td><td class="name">da-aerzte-kollektiv.biz</td></tr>
 <tr><td class="name">17281</td><td class="name">abr-sonst-leistungserbringer.proc</td></tr>
-<tr><td class="name">17283</td><td class="name">systemanforderungen.biz</td></tr>
 <tr><td class="name">3638</td><td class="name">entsendung.biz</td></tr>
-<tr><td class="name">2306</td><td class="name">da-sonstigeleistungserbringer.biz</td></tr>
-<tr><td class="name">2305</td><td class="name">fahrkosten.proc</td></tr>
+<tr><td class="name">11987</td><td class="name">kostenerstattung.biz</td></tr>
 <tr><td class="name">2303</td><td class="name">entsendung.biz</td></tr>
 <tr><td class="name">2302</td><td class="name">gebuehrenordnung.biz</td></tr>
 <tr><td class="name">2300</td><td class="name">fusionsarchiv-beleg.biz</td></tr>
 <tr><td class="name">4961</td><td class="name">apothekenabrechnung.biz</td></tr>
-<tr><td class="name">3632</td><td class="name">crmbasis.biz</td></tr>
-<tr><td class="name">3633</td><td class="name">zusatzvertrag-batch.biz</td></tr>
-<tr><td class="name">4964</td><td class="name">krankenhausverzeichnis.biz</td></tr>
 <tr><td class="name">4965</td><td class="name">arbeitgeberbestandsfuehrung.biz</td></tr>
+<tr><td class="name">11984</td><td class="name">apothekenabrechnung.biz</td></tr>
+<tr><td class="name">4967</td><td class="name">vorgang.biz</td></tr>
 <tr><td class="name">2308</td><td class="name">entsendung.biz</td></tr>
-<tr><td class="name">17295</td><td class="name">sozv-meldungen.biz</td></tr>
+<tr><td class="name">21313</td><td class="name">apothekenabrechnung.biz</td></tr>
+<tr><td class="name">3651</td><td class="name">dokumentenaufnahme.biz</td></tr>
+<tr><td class="name">4982</td><td class="name">rente.biz</td></tr>
+<tr><td class="name">17292</td><td class="name">geschaeftspartner.biz</td></tr>
 </table>
 </details>
-<h3>SCS0 &middot; Vorgangssystem &middot; 843 Packages &middot; 19 Bundles</h3>
+<h3>SCS1 &middot; CRM &middot; 2200 Packages &middot; 40 Bundles</h3>
 <details open><summary>Bundles dieses Subsystems</summary>
 <ul>
+<li class="name">abr-sonst-leistungserbringer.biz.impl</li>
+<li class="name">akquise.biz.api</li>
+<li class="name">akquise.proc</li>
+<li class="name">arbeitgeberbeitrag.biz</li>
 <li class="name">arbeitgeberbestandsfuehrung-uebergreifend.biz</li>
-<li class="name">arbeitsagentur.biz</li>
-<li class="name">asv-verzeichnis.biz</li>
-<li class="name">fusionsarchiv-pflegeperson.biz</li>
-<li class="name">integrierteversorgung.biz</li>
-<li class="name">interessent.biz</li>
-<li class="name">kur.biz.api</li>
+<li class="name">arbeitgeberbestandsfuehrung.biz.api</li>
+<li class="name">beitrag.biz</li>
+<li class="name">beitragserstattung-aus-rente.biz</li>
+<li class="name">crm-type.biz</li>
+<li class="name">crm.biz</li>
+<li class="name">crmbasis.biz</li>
+<li class="name">da-sonstigeleistungserbringer.biz</li>
+<li class="name">datenaustausch-eel.biz</li>
+<li class="name">datenaustausch-eel.biz.api</li>
+<li class="name">datenaustausch-eel.proc</li>
+<li class="name">diga.biz</li>
+<li class="name">diga.biz.api</li>
+<li class="name">dokumentenarchiv.biz</li>
+<li class="name">dokumentenarchiv.biz.api</li>
+<li class="name">eel.biz</li>
+<li class="name">einstufungsverlauf.biz.api</li>
+<li class="name">fahrkosten.biz.api</li>
+<li class="name">gerichtsverzeichnis.biz.impl</li>
+<li class="name">haertefall.biz</li>
+<li class="name">hilfsmittelverzeichnis.biz</li>
+<li class="name">kinderkrankengeld.biz</li>
+<li class="name">kinderkrankengeld.proc</li>
+<li class="name">krankenhausaufenthalt.biz.api</li>
 <li class="name">kurverzeichnis.biz</li>
-<li class="name">leistungen-basis.proc</li>
-<li class="name">mutterschaftsgeld.proc</li>
-<li class="name">prozessdatencontainer.biz</li>
+<li class="name">personalverzeichnis.biz</li>
+<li class="name">pflegeperson.biz.api</li>
+<li class="name">pflegeunterstuetzungsgeld.biz</li>
+<li class="name">prozess.biz</li>
 <li class="name">pzr.proc</li>
-<li class="name">selvteilnahme.biz.api</li>
-<li class="name">sonstige-leistung.biz</li>
-<li class="name">sonstigerleistungserbringer.biz</li>
-<li class="name">sozialhilfetraeger-abrechnung.biz</li>
-<li class="name">vertrieb.biz</li>
-<li class="name">vorgang.biz</li>
-<li class="name">zusatzvertrag-extern.biz</li>
+<li class="name">rehasport.proc</li>
+<li class="name">tk-vorsorge-planer.biz</li>
+<li class="name">tracking-prozesse.biz</li>
+<li class="name">versorgungsangebot.biz</li>
+<li class="name">widerspruch.biz</li>
+<li class="name">zusatzvertrag-batch.biz</li>
 </ul>
 </details>
 <details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
 <table>
 <tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">21300</td><td class="name">sonstige-leistung.biz</td></tr>
-<tr><td class="name">16195</td><td class="name">vorgang.biz</td></tr>
-<tr><td class="name">8094</td><td class="name">vertrieb.biz</td></tr>
-<tr><td class="name">20457</td><td class="name">interessent.biz</td></tr>
-<tr><td class="name">4969</td><td class="name">mutterschaftsgeld.proc</td></tr>
-<tr><td class="name">11745</td><td class="name">vorgang.biz</td></tr>
-<tr><td class="name">2304</td><td class="name">zusatzvertrag-extern.biz</td></tr>
-<tr><td class="name">2544</td><td class="name">vorgang.biz</td></tr>
-<tr><td class="name">2785</td><td class="name">sonstige-leistung.biz</td></tr>
-<tr><td class="name">1695</td><td class="name">vertrieb.biz</td></tr>
-<tr><td class="name">4720</td><td class="name">kurverzeichnis.biz</td></tr>
-<tr><td class="name">18139</td><td class="name">sozialhilfetraeger-abrechnung.biz</td></tr>
-<tr><td class="name">3635</td><td class="name">sozialhilfetraeger-abrechnung.biz</td></tr>
-<tr><td class="name">3877</td><td class="name">vorgang.biz</td></tr>
-<tr><td class="name">4967</td><td class="name">vorgang.biz</td></tr>
-<tr><td class="name">18147</td><td class="name">mutterschaftsgeld.proc</td></tr>
-<tr><td class="name">18389</td><td class="name">kurverzeichnis.biz</td></tr>
-<tr><td class="name">4740</td><td class="name">vertrieb.biz</td></tr>
-<tr><td class="name">21559</td><td class="name">sozialhilfetraeger-abrechnung.biz</td></tr>
-<tr><td class="name">21317</td><td class="name">sonstige-leistung.biz</td></tr>
+<tr><td class="name">18135</td><td class="name">diga.biz</td></tr>
+<tr><td class="name">17289</td><td class="name">hilfsmittelverzeichnis.biz</td></tr>
+<tr><td class="name">21786</td><td class="name">abr-sonst-leistungserbringer.biz.impl</td></tr>
+<tr><td class="name">18137</td><td class="name">zusatzvertrag-batch.biz</td></tr>
+<tr><td class="name">20452</td><td class="name">crm.biz</td></tr>
+<tr><td class="name">20450</td><td class="name">crm.biz</td></tr>
+<tr><td class="name">21780</td><td class="name">widerspruch.biz</td></tr>
+<tr><td class="name">21308</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
+<tr><td class="name">11988</td><td class="name">gerichtsverzeichnis.biz.impl</td></tr>
+<tr><td class="name">2306</td><td class="name">da-sonstigeleistungserbringer.biz</td></tr>
+<tr><td class="name">5817</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
+<tr><td class="name">2783</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
+<tr><td class="name">5810</td><td class="name">crmbasis.biz</td></tr>
+<tr><td class="name">3632</td><td class="name">crmbasis.biz</td></tr>
+<tr><td class="name">21314</td><td class="name">crm.biz</td></tr>
+<tr><td class="name">19479</td><td class="name">zusatzvertrag-batch.biz</td></tr>
+<tr><td class="name">21310</td><td class="name">abr-sonst-leistungserbringer.biz.impl</td></tr>
+<tr><td class="name">17298</td><td class="name">crmbasis.biz</td></tr>
+<tr><td class="name">21316</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
+<tr><td class="name">20468</td><td class="name">zusatzvertrag-batch.biz</td></tr>
 </table>
 </details>
-<h3>SCS6 &middot; Geschaeftspartner &middot; 725 Packages &middot; 21 Bundles</h3>
+<h3>SCS2 &middot; Einstufungsverlauf &middot; 1595 Packages &middot; 93 Bundles</h3>
 <details open><summary>Bundles dieses Subsystems</summary>
 <ul>
 <li class="name">akquise.biz.impl</li>
-<li class="name">akquise.proc</li>
-<li class="name">begleiter.biz</li>
-<li class="name">da-zahnaerzte.biz</li>
-<li class="name">dokumentenarchiv.biz</li>
-<li class="name">dokumentenklasse-vorgang.biz.api</li>
+<li class="name">arbeitgeberleistung.biz</li>
+<li class="name">arbeitsagentur.biz</li>
+<li class="name">arbeitsunfaehigkeit.biz.api</li>
+<li class="name">arbeitsunfaehigkeit.proc</li>
+<li class="name">au-steuerung.biz.api</li>
+<li class="name">beitrag.biz.api</li>
+<li class="name">da-abfrage-mitgliedschaft.biz.impl</li>
+<li class="name">da-basis.biz</li>
+<li class="name">da-uv-traeger.biz</li>
+<li class="name">datenaustausch-geldleistungen-basis.biz.impl</li>
+<li class="name">dokumentenklasse.biz</li>
+<li class="name">dokumentenklasse.biz.api</li>
+<li class="name">duebak-meldungen.biz</li>
+<li class="name">duebak-meldungen.biz.api</li>
+<li class="name">e-nachricht.biz.impl</li>
+<li class="name">einstufungsverlauf.biz</li>
+<li class="name">einstufungsverlauf.proc</li>
+<li class="name">erv.biz.api</li>
+<li class="name">erv.biz.impl</li>
+<li class="name">fusionsarchiv-arbeitgeberleistung.biz</li>
+<li class="name">fusionsarchiv-beitrag.biz</li>
+<li class="name">fusionsarchiv-pflegeperson.biz</li>
+<li class="name">fusionsarchiv-stammdaten.biz</li>
+<li class="name">fv-meldungen.biz</li>
 <li class="name">gebietsabgrenzung.biz</li>
-<li class="name">gebietsabgrenzung.biz.api</li>
-<li class="name">geschaeftspartner.biz</li>
+<li class="name">generische-kostenerstattung.proc</li>
+<li class="name">gericht.biz</li>
+<li class="name">geschaeftspartner.biz.impl</li>
+<li class="name">gesundheitsdividende.biz</li>
+<li class="name">gesundheitskarte.batch</li>
+<li class="name">gesundheitskarte.biz.api</li>
+<li class="name">gesundheitsprojekte.biz.api</li>
+<li class="name">haeusliche-krankenpflege.biz.api</li>
 <li class="name">haushaltshilfe.biz.api</li>
-<li class="name">hochschulverzeichnis.biz.impl</li>
+<li class="name">heilmittelverzeichnis.biz</li>
+<li class="name">hochschul-meldungen.biz</li>
+<li class="name">icdverzeichnis.biz</li>
+<li class="name">ik-inhaber-verzeichnis.biz</li>
+<li class="name">ik-inhaber-verzeichnis.biz.impl</li>
+<li class="name">indikationsverzeichnis.biz.impl</li>
+<li class="name">insolvenzmanagement.biz</li>
+<li class="name">integrierteversorgung.biz</li>
+<li class="name">kassenwechselmeldungen.biz.api</li>
 <li class="name">kassenwechselmeldungen.biz.impl</li>
-<li class="name">korrespondenz.proc.api</li>
+<li class="name">ki-pilot.biz</li>
+<li class="name">kostenerstattungswahl-basis.biz</li>
+<li class="name">krankenhausaufenthalt.biz.impl</li>
 <li class="name">krankenkassenverzeichnis.biz</li>
-<li class="name">leistungsmanagement.biz.api</li>
-<li class="name">must.proc</li>
+<li class="name">krebsregister-stammdaten.biz</li>
+<li class="name">kvnr-meldungen.biz.api</li>
+<li class="name">kvnr-meldungen.biz.impl</li>
+<li class="name">leistung-services.biz.impl</li>
+<li class="name">leistung-services.hk.biz.api</li>
+<li class="name">leistung-services.psycho.biz.api</li>
+<li class="name">leistung-uebergreifend.biz</li>
+<li class="name">leistungen-basis.proc.api</li>
+<li class="name">mdkverzeichnis.biz</li>
+<li class="name">meldungen-basis.biz</li>
+<li class="name">mitteilungsmanagement-basis.biz</li>
+<li class="name">must.biz.impl</li>
+<li class="name">mutterschaftsgeld.biz.api</li>
+<li class="name">neuaufnahmemanager.biz</li>
+<li class="name">organisationsverwaltung-uebergreifend.biz</li>
 <li class="name">personalisierte-secpruefung.biz</li>
-<li class="name">seminarverwaltung.biz</li>
-<li class="name">tkschriftgut.type</li>
-<li class="name">tracking-prozesse.biz</li>
+<li class="name">personalisierte-secpruefung.biz.api</li>
+<li class="name">pflegeperson.proc</li>
+<li class="name">pflegeunterstuetzungsgeld.biz.api</li>
+<li class="name">praevention.biz.api</li>
+<li class="name">proko-schriftgut-beispiel.proc</li>
+<li class="name">prozess.biz.impl</li>
+<li class="name">prozessdatencontainer.biz</li>
+<li class="name">prozessereignismanager.biz.impl</li>
+<li class="name">psychotherapie.biz.api</li>
+<li class="name">rechnungswesen-type.biz</li>
+<li class="name">rehasport.biz.impl</li>
+<li class="name">selvteilnahme.biz.api</li>
+<li class="name">sonstige-leistung-basis.biz</li>
+<li class="name">sonstige-leistung.biz.api</li>
+<li class="name">sozialhilfetraeger-abrechnung.leistung.api</li>
+<li class="name">systemanforderungen.biz</li>
+<li class="name">tim.biz.api</li>
+<li class="name">tim.biz.impl</li>
+<li class="name">tk-patientenquittung.biz</li>
+<li class="name">tk-vorsorge-planer.biz.api</li>
+<li class="name">tkschriftgut-basis.biz</li>
+<li class="name">uvtraeger.biz</li>
+<li class="name">versichertenbestandsfuehrung-basis.biz</li>
+<li class="name">vollmacht-uebergreifend.biz.impl</li>
+<li class="name">vollstreckung.biz</li>
+<li class="name">vorgang.biz.api</li>
+<li class="name">zahnersatz.biz.api</li>
 <li class="name">zusatzvertrag-extern.biz.api</li>
 </ul>
 </details>
 <details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
 <table>
 <tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">18016</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">20211</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">17042</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">18496</td><td class="name">akquise.biz.impl</td></tr>
-<tr><td class="name">20570</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">16078</td><td class="name">kassenwechselmeldungen.biz.impl</td></tr>
-<tr><td class="name">18376</td><td class="name">kassenwechselmeldungen.biz.impl</td></tr>
-<tr><td class="name">19580</td><td class="name">dokumentenarchiv.biz</td></tr>
-<tr><td class="name">18371</td><td class="name">geschaeftspartner.biz</td></tr>
+<tr><td class="name">21302</td><td class="name">dokumentenklasse.biz</td></tr>
+<tr><td class="name">17285</td><td class="name">vorgang.biz.api</td></tr>
+<tr><td class="name">19465</td><td class="name">fusionsarchiv-stammdaten.biz</td></tr>
+<tr><td class="name">8091</td><td class="name">pflegeperson.proc</td></tr>
+<tr><td class="name">17283</td><td class="name">systemanforderungen.biz</td></tr>
 <tr><td class="name">21305</td><td class="name">gebietsabgrenzung.biz</td></tr>
-<tr><td class="name">20215</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">2548</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">3759</td><td class="name">dokumentenarchiv.biz</td></tr>
-<tr><td class="name">1457</td><td class="name">kassenwechselmeldungen.biz.impl</td></tr>
-<tr><td class="name">2666</td><td class="name">da-zahnaerzte.biz</td></tr>
-<tr><td class="name">10658</td><td class="name">kassenwechselmeldungen.biz.impl</td></tr>
-<tr><td class="name">13924</td><td class="name">gebietsabgrenzung.biz</td></tr>
-<tr><td class="name">1574</td><td class="name">da-zahnaerzte.biz</td></tr>
-<tr><td class="name">2663</td><td class="name">geschaeftspartner.biz</td></tr>
-<tr><td class="name">2541</td><td class="name">begleiter.biz</td></tr>
+<tr><td class="name">5816</td><td class="name">gericht.biz</td></tr>
+<tr><td class="name">1452</td><td class="name">datenaustausch-geldleistungen-basis.biz.impl</td></tr>
+<tr><td class="name">12832</td><td class="name">fv-meldungen.biz</td></tr>
+<tr><td class="name">10654</td><td class="name">leistung-services.psycho.biz.api</td></tr>
+<tr><td class="name">2307</td><td class="name">einstufungsverlauf.biz</td></tr>
+<tr><td class="name">21311</td><td class="name">mdkverzeichnis.biz</td></tr>
+<tr><td class="name">17296</td><td class="name">dokumentenklasse.biz.api</td></tr>
+<tr><td class="name">19473</td><td class="name">duebak-meldungen.biz</td></tr>
+<tr><td class="name">1469</td><td class="name">sozialhilfetraeger-abrechnung.leistung.api</td></tr>
+<tr><td class="name">5820</td><td class="name">einstufungsverlauf.proc</td></tr>
+<tr><td class="name">12843</td><td class="name">geschaeftspartner.biz.impl</td></tr>
+<tr><td class="name">11994</td><td class="name">gesundheitskarte.batch</td></tr>
+<tr><td class="name">15087</td><td class="name">generische-kostenerstattung.proc</td></tr>
+<tr><td class="name">18114</td><td class="name">mdkverzeichnis.biz</td></tr>
 </table>
 </details>
-<h3>SCS3 &middot; Arbeitgeberbeitrag &middot; 716 Packages &middot; 19 Bundles</h3>
+<h3>SCS3 &middot; DA Mitteilungsverfahren RV &middot; 590 Packages &middot; 27 Bundles</h3>
 <details open><summary>Bundles dieses Subsystems</summary>
 <ul>
-<li class="name">arbeitgeberbeitrag.biz</li>
-<li class="name">arzneimittelverzeichnis.biz</li>
-<li class="name">arztgebuehrenpositionen-api.biz</li>
+<li class="name">arbeitsunfaehigkeit.aust.biz.api</li>
+<li class="name">arztgebuehrenpositionen.biz</li>
+<li class="name">behandlerverzeichnis.biz.api</li>
+<li class="name">chroniker.biz</li>
+<li class="name">crm.biz.api</li>
 <li class="name">da-mitteilungsverfahren-rv.biz.impl</li>
-<li class="name">dokumentenklasse.biz.api</li>
+<li class="name">dokumentenaufnahme-uebergreifend.biz</li>
 <li class="name">eel.biz.api</li>
-<li class="name">gesundheitskarte.batch</li>
-<li class="name">implantattraeger.biz</li>
-<li class="name">kieferorthopaedie.biz</li>
+<li class="name">eessi-institution.biz</li>
+<li class="name">fv-meldungen.biz.api</li>
+<li class="name">geocodingservice.biz</li>
+<li class="name">gesundheitsdividende.proc</li>
+<li class="name">gkkmitgliederarchiv.biz</li>
+<li class="name">kassenwechsel-leistungsdaten.biz.impl</li>
+<li class="name">kieferorthopaedie-uebergreifend.biz</li>
+<li class="name">korrespondenz-uebergreifend.biz</li>
 <li class="name">kur-fall.biz.impl</li>
-<li class="name">leistung-services.himi.biz.api</li>
-<li class="name">leistung-services.hk.biz.api</li>
-<li class="name">leistung-services.ze.biz.api</li>
-<li class="name">mitteilungsmanagement-xsd.biz</li>
-<li class="name">prozessereignismanager-querschnitt.biz.api</li>
-<li class="name">psychotherapie.biz.api</li>
+<li class="name">kur.biz.api</li>
+<li class="name">melderegisterabgleich.biz.api</li>
+<li class="name">must.proc</li>
+<li class="name">mutterschaftsgeld.biz</li>
+<li class="name">pzr.biz.impl</li>
+<li class="name">regiplan.biz</li>
+<li class="name">rsa-clearing.biz</li>
+<li class="name">sonstige-leistung.biz</li>
+<li class="name">testdaten-pflegeversicherung.biz.impl</li>
+<li class="name">zusatzvertrag-extern.biz</li>
+</ul>
+</details>
+<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
+<table>
+<tr><th>Package</th><th>Bundle</th></tr>
+<tr><td class="name">20576</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">21543</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">21300</td><td class="name">sonstige-leistung.biz</td></tr>
+<tr><td class="name">19223</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">2791</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">8092</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">10656</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">2668</td><td class="name">gesundheitsdividende.proc</td></tr>
+<tr><td class="name">3514</td><td class="name">dokumentenaufnahme-uebergreifend.biz</td></tr>
+<tr><td class="name">10538</td><td class="name">pzr.biz.impl</td></tr>
+<tr><td class="name">18018</td><td class="name">must.proc</td></tr>
+<tr><td class="name">12711</td><td class="name">zusatzvertrag-extern.biz</td></tr>
+<tr><td class="name">914</td><td class="name">sonstige-leistung.biz</td></tr>
+<tr><td class="name">20223</td><td class="name">behandlerverzeichnis.biz.api</td></tr>
+<tr><td class="name">20584</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">3890</td><td class="name">mutterschaftsgeld.biz</td></tr>
+<tr><td class="name">19591</td><td class="name">sonstige-leistung.biz</td></tr>
+<tr><td class="name">2441</td><td class="name">mutterschaftsgeld.biz</td></tr>
+<tr><td class="name">9070</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
+<tr><td class="name">21317</td><td class="name">sonstige-leistung.biz</td></tr>
+</table>
+</details>
+<h3>SCS4 &middot; SozV-Meldungen &middot; 536 Packages &middot; 28 Bundles</h3>
+<details open><summary>Bundles dieses Subsystems</summary>
+<ul>
+<li class="name">abr-sonst-leistungserbringer.biz.api</li>
+<li class="name">arbeitsunfaehigkeit.biz.impl</li>
+<li class="name">crm-vorgang.biz.api</li>
+<li class="name">da-aerzte-kollektiv.biz.api</li>
+<li class="name">datenaustausch-eel-uebergreifend.biz</li>
+<li class="name">eel.proc</li>
+<li class="name">gesundheitskarte.biz</li>
+<li class="name">hauptzollamt.biz</li>
+<li class="name">implantattraeger.biz.api</li>
+<li class="name">kim-log.biz.api</li>
+<li class="name">kim-log.biz.impl</li>
+<li class="name">korrespondenz-vorlagen.generiert</li>
+<li class="name">leistung-services.hh.biz.api</li>
+<li class="name">leistung-services.ke.biz.api</li>
+<li class="name">mandatsakte.biz</li>
+<li class="name">mitgliederbeitrag.biz.api</li>
+<li class="name">praevention.biz</li>
+<li class="name">prozessereignismanager.biz.api</li>
+<li class="name">pzr.biz.api</li>
+<li class="name">rechtsakte.biz</li>
+<li class="name">schriftgut.biz</li>
+<li class="name">selvteilnahme.biz</li>
+<li class="name">sonstigerleistungserbringer.biz</li>
+<li class="name">sozv-meldungen.biz</li>
+<li class="name">testdaten-versicherter.biz</li>
 <li class="name">versorgungsbezug-meldungen.biz</li>
-<li class="name">zahlstellenkonto.biz.impl</li>
+<li class="name">vertriebspartner.biz</li>
+<li class="name">vps.biz</li>
+</ul>
+</details>
+<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
+<table>
+<tr><th>Package</th><th>Bundle</th></tr>
+<tr><td class="name">19103</td><td class="name">praevention.biz</td></tr>
+<tr><td class="name">20573</td><td class="name">hauptzollamt.biz</td></tr>
+<tr><td class="name">19463</td><td class="name">sozv-meldungen.biz</td></tr>
+<tr><td class="name">2426</td><td class="name">sozv-meldungen.biz</td></tr>
+<tr><td class="name">2425</td><td class="name">crm-vorgang.biz.api</td></tr>
+<tr><td class="name">2545</td><td class="name">vertriebspartner.biz</td></tr>
+<tr><td class="name">6909</td><td class="name">versorgungsbezug-meldungen.biz</td></tr>
+<tr><td class="name">3752</td><td class="name">versorgungsbezug-meldungen.biz</td></tr>
+<tr><td class="name">5933</td><td class="name">datenaustausch-eel-uebergreifend.biz</td></tr>
+<tr><td class="name">6902</td><td class="name">sozv-meldungen.biz</td></tr>
+<tr><td class="name">11743</td><td class="name">kim-log.biz.impl</td></tr>
+<tr><td class="name">20342</td><td class="name">gesundheitskarte.biz</td></tr>
+<tr><td class="name">19595</td><td class="name">crm-vorgang.biz.api</td></tr>
+<tr><td class="name">17295</td><td class="name">sozv-meldungen.biz</td></tr>
+<tr><td class="name">19352</td><td class="name">gesundheitskarte.biz</td></tr>
+<tr><td class="name">21672</td><td class="name">crm-vorgang.biz.api</td></tr>
+<tr><td class="name">19234</td><td class="name">gesundheitskarte.biz</td></tr>
+<tr><td class="name">17055</td><td class="name">vertriebspartner.biz</td></tr>
+<tr><td class="name">1352</td><td class="name">gesundheitskarte.biz</td></tr>
+<tr><td class="name">17294</td><td class="name">vertriebspartner.biz</td></tr>
+</table>
+</details>
+<h3>SCS5 &middot; DA Zahnaerzte Leistungsantraege (ELAG) &middot; 406 Packages &middot; 100 Bundles</h3>
+<details open><summary>Bundles dieses Subsystems</summary>
+<ul>
+<li class="name">adress-service.biz.api</li>
+<li class="name">arbeitgeberbeitrag-systemanforderungen.biz</li>
+<li class="name">arbeitgeberbeitrag.biz.api</li>
+<li class="name">arbeitsunfaehigkeit.eel.biz.api</li>
+<li class="name">arzneimittelverzeichnis.biz.api</li>
+<li class="name">arztgebuehrenpositionen-api.biz</li>
+<li class="name">asv-basis.biz</li>
+<li class="name">au-steuerung.proc</li>
+<li class="name">basis.biz</li>
+<li class="name">bearbeitungsinformation.biz</li>
+<li class="name">begleiter.biz</li>
+<li class="name">bonusprogramm.biz.api</li>
+<li class="name">chroniker.biz.api</li>
+<li class="name">da-aerzte-hzv.biz.api</li>
+<li class="name">da-sonstigeleistungserbringer.biz.api</li>
+<li class="name">da-za-leistungsantraege.biz.impl</li>
+<li class="name">datenaustausch-eessi.biz.api</li>
+<li class="name">datenaustausch-eessi.leistung.api</li>
+<li class="name">datenschutzcockpit.biz.api</li>
+<li class="name">dhd.biz.api</li>
+<li class="name">dhd.biz.impl</li>
+<li class="name">dividende.biz</li>
+<li class="name">dokumentenklasse-vorgang.biz.api</li>
+<li class="name">eingabe-protokoll.biz</li>
+<li class="name">entsendung-dokumente.biz.impl</li>
+<li class="name">entsendung.biz.api</li>
+<li class="name">fusionsarchiv-allgemein.biz</li>
+<li class="name">fusionsarchiv-crm.biz</li>
+<li class="name">fusionsarchiv-dmp.biz</li>
+<li class="name">fusionsarchiv-krankenhaus.biz</li>
+<li class="name">fusionsarchiv-krankenhaus.type</li>
+<li class="name">gebietsabgrenzung.biz.api</li>
+<li class="name">generische-kostenerstattung.biz.api</li>
+<li class="name">gerichtsverzeichnis.biz.api</li>
+<li class="name">geschaeftspartner-systemanforderungen.biz</li>
+<li class="name">haertefall-basis.biz</li>
+<li class="name">haertefall.biz.api</li>
+<li class="name">haftpflichtversicherer.biz.api</li>
+<li class="name">hochschulverzeichnis.biz.impl</li>
+<li class="name">hzv.biz.api</li>
+<li class="name">icd.biz</li>
+<li class="name">implantattraeger.biz</li>
+<li class="name">kassenwechsel-leistungsdaten.biz.api</li>
+<li class="name">kinderkrankengeld.biz.api</li>
+<li class="name">konfigurierbare-leistung.biz</li>
+<li class="name">korrespondenz-type.biz</li>
+<li class="name">korrespondenz.proc.api</li>
+<li class="name">krankenhausverzeichnis-systemanforderungen.biz</li>
+<li class="name">krebsregister-abrechnung.biz</li>
+<li class="name">kunde-vor-ort.biz</li>
+<li class="name">kunde-vor-ort.biz.api</li>
+<li class="name">leistung-services.himi.biz.api</li>
+<li class="name">leistung-services.khs.biz.api</li>
+<li class="name">leistung-services.sl.biz.api</li>
+<li class="name">leistung-services.ze.biz.api</li>
+<li class="name">leistungen-basis.biz.api</li>
+<li class="name">leistungen-datenaustausch.biz</li>
+<li class="name">leistungsmanagement.biz.api</li>
+<li class="name">leistungsmanagement.biz.impl</li>
+<li class="name">leistungsuebersicht-impl.biz</li>
+<li class="name">mbkarchiv.biz</li>
+<li class="name">medizinproduktregress.biz.api</li>
+<li class="name">meinetk-basis.biz</li>
+<li class="name">microservice-pilot.biz.impl</li>
+<li class="name">mitteilungsmanagement.biz.api</li>
+<li class="name">neuaufnahmemanager.biz.api</li>
+<li class="name">organisationsverwaltung.biz.api</li>
+<li class="name">proto-kostenerstattungen.proc</li>
+<li class="name">prozess-beispiel.biz.api</li>
+<li class="name">prozess-beispiel.biz.impl</li>
+<li class="name">prozessereignismanager-querschnitt.biz.api</li>
+<li class="name">prozessereignismanager-referenzen.biz.api</li>
+<li class="name">rechnungswesen.proc</li>
+<li class="name">rechnungswesen.proc.api</li>
+<li class="name">rehasport.biz.api</li>
+<li class="name">rente.biz.api</li>
+<li class="name">rvtraeger.biz</li>
+<li class="name">sap-eam-stammdaten.biz</li>
+<li class="name">sonstiger-geschaeftspartner-systemanforderungen.biz</li>
+<li class="name">testdaten-diga.biz</li>
+<li class="name">testdaten-korrespondenz.biz</li>
+<li class="name">testdaten-krankenhausaufenthalt.biz.impl</li>
+<li class="name">tk-patientenquittung.biz.api</li>
+<li class="name">tk-termin.biz.impl</li>
+<li class="name">tkschriftgut.type</li>
+<li class="name">uvtraeger.biz.api</li>
+<li class="name">verordnung-util.biz.api</li>
+<li class="name">verordnung-util.biz.impl</li>
+<li class="name">versichertenbestandsfuehrung.biz.impl</li>
+<li class="name">versichertenbestandsfuehrung.proc</li>
+<li class="name">versorgungsabrechnung.biz.api</li>
+<li class="name">versorgungsamtsbescheid-basis.biz</li>
+<li class="name">versorgungsbezug-meldungen.biz.api</li>
+<li class="name">vertrag.biz</li>
+<li class="name">vertriebspartner.biz.api</li>
+<li class="name">vorgang-type.biz</li>
+<li class="name">widerspruch.biz.api</li>
+<li class="name">zusatzvertrag.biz.api</li>
+<li class="name">zuzahlung-basis.biz</li>
 <li class="name">zuzahlung.biz.api</li>
 </ul>
 </details>
@@ -885,287 +1039,117 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #d0d7de; }
 <table>
 <tr><th>Package</th><th>Bundle</th></tr>
 <tr><td class="name">19467</td><td class="name">implantattraeger.biz</td></tr>
-<tr><td class="name">20576</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">21543</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">19223</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">2791</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">18492</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
-<tr><td class="name">8092</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">21308</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
-<tr><td class="name">8096</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">10656</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">5817</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
-<tr><td class="name">10416</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
-<tr><td class="name">13803</td><td class="name">arzneimittelverzeichnis.biz</td></tr>
-<tr><td class="name">6909</td><td class="name">versorgungsbezug-meldungen.biz</td></tr>
-<tr><td class="name">2783</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
-<tr><td class="name">1210</td><td class="name">zahlstellenkonto.biz.impl</td></tr>
-<tr><td class="name">10770</td><td class="name">da-mitteilungsverfahren-rv.biz.impl</td></tr>
-<tr><td class="name">3752</td><td class="name">versorgungsbezug-meldungen.biz</td></tr>
-<tr><td class="name">19228</td><td class="name">implantattraeger.biz</td></tr>
-<tr><td class="name">20588</td><td class="name">arbeitgeberbeitrag.biz</td></tr>
-</table>
-</details>
-<h3>SCS8 &middot; Kur &middot; 675 Packages &middot; 22 Bundles</h3>
-<details open><summary>Bundles dieses Subsystems</summary>
-<ul>
-<li class="name">da-aerzte-hzv.biz.api</li>
-<li class="name">da-isd.biz.impl</li>
-<li class="name">einstufungsverlauf.proc</li>
-<li class="name">gebietsabgrenzung.type</li>
-<li class="name">geocodingservice.biz</li>
-<li class="name">hauptzollamt.biz</li>
-<li class="name">heilmittelverzeichnis.biz</li>
-<li class="name">ik-inhaber-verzeichnis.biz.impl</li>
-<li class="name">korrespondenz-adapter.biz</li>
-<li class="name">korrespondenz-vorlagen.generiert</li>
-<li class="name">korrespondenz.biz.api</li>
-<li class="name">kostenerstattung.biz</li>
-<li class="name">kunde-vor-ort.biz</li>
-<li class="name">kur.proc</li>
-<li class="name">leistungsmanagement.biz</li>
-<li class="name">meinetk-basis.biz</li>
-<li class="name">organisationsverwaltung.biz</li>
-<li class="name">pcschriftgut-extern.biz</li>
-<li class="name">sozialhilfetraeger.biz</li>
-<li class="name">versorgungsamtsbescheid-basis.biz</li>
-<li class="name">vollmacht.biz.api</li>
-<li class="name">zahnersatz.biz</li>
-</ul>
-</details>
-<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
-<table>
-<tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">20335</td><td class="name">einstufungsverlauf.proc</td></tr>
-<tr><td class="name">20334</td><td class="name">kostenerstattung.biz</td></tr>
-<tr><td class="name">19587</td><td class="name">zahnersatz.biz</td></tr>
-<tr><td class="name">21784</td><td class="name">korrespondenz.biz.api</td></tr>
-<tr><td class="name">17284</td><td class="name">kostenerstattung.biz</td></tr>
-<tr><td class="name">20573</td><td class="name">hauptzollamt.biz</td></tr>
-<tr><td class="name">18253</td><td class="name">da-isd.biz.impl</td></tr>
-<tr><td class="name">17045</td><td class="name">versorgungsamtsbescheid-basis.biz</td></tr>
-<tr><td class="name">1580</td><td class="name">kur.proc</td></tr>
-<tr><td class="name">11987</td><td class="name">kostenerstattung.biz</td></tr>
-<tr><td class="name">11866</td><td class="name">einstufungsverlauf.proc</td></tr>
-<tr><td class="name">11506</td><td class="name">zahnersatz.biz</td></tr>
-<tr><td class="name">1576</td><td class="name">kur.proc</td></tr>
-<tr><td class="name">13809</td><td class="name">zahnersatz.biz</td></tr>
-<tr><td class="name">4600</td><td class="name">kostenerstattung.biz</td></tr>
-<tr><td class="name">3875</td><td class="name">sozialhilfetraeger.biz</td></tr>
-<tr><td class="name">3996</td><td class="name">kur.proc</td></tr>
-<tr><td class="name">10532</td><td class="name">kostenerstattung.biz</td></tr>
-<tr><td class="name">3876</td><td class="name">kostenerstattung.biz</td></tr>
-<tr><td class="name">12951</td><td class="name">kostenerstattung.biz</td></tr>
-</table>
-</details>
-<h3>SCS4 &middot; Leistungen-Basis &middot; 608 Packages &middot; 26 Bundles</h3>
-<details open><summary>Bundles dieses Subsystems</summary>
-<ul>
-<li class="name">arbeitsunfaehigkeit.proc</li>
-<li class="name">bankverzeichnis.biz</li>
-<li class="name">bonusprogramm.biz.api</li>
-<li class="name">da-uv-traeger.biz</li>
-<li class="name">datenaustausch-geldleistungen-basis.biz.api</li>
-<li class="name">fahrkosten.biz.api</li>
-<li class="name">gerichtsverzeichnis.biz.api</li>
-<li class="name">haertefall.biz</li>
-<li class="name">haertefall.biz.api</li>
-<li class="name">haushaltshilfe.biz</li>
-<li class="name">insolvenzmanagement.biz</li>
-<li class="name">leistung-services.ke.biz.api</li>
-<li class="name">leistungen-basis.biz</li>
-<li class="name">leistungsaushilfe-ausland.biz</li>
-<li class="name">leistungsrueckforderung.biz</li>
-<li class="name">leistungsuebersicht-impl.biz</li>
-<li class="name">leistungsuebersicht.biz</li>
-<li class="name">mutterschaftsgeld.biz.api</li>
-<li class="name">pflegeperson.biz.api</li>
-<li class="name">praevention.proc</li>
-<li class="name">prozess.biz.api</li>
-<li class="name">rehasport.biz.api</li>
-<li class="name">tk-patientenquittung.biz.api</li>
-<li class="name">versichertenbestandsfuehrung-basis.biz</li>
-<li class="name">versichertenbestandsfuehrung.proc</li>
-<li class="name">vollstreckung.biz</li>
-</ul>
-</details>
-<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
-<table>
-<tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">20697</td><td class="name">haushaltshilfe.biz</td></tr>
-<tr><td class="name">19345</td><td class="name">leistungsuebersicht.biz</td></tr>
-<tr><td class="name">16196</td><td class="name">insolvenzmanagement.biz</td></tr>
-<tr><td class="name">17040</td><td class="name">haertefall.biz</td></tr>
-<tr><td class="name">19460</td><td class="name">leistungen-basis.biz</td></tr>
-<tr><td class="name">16073</td><td class="name">leistungsrueckforderung.biz</td></tr>
-<tr><td class="name">11624</td><td class="name">haertefall.biz</td></tr>
-<tr><td class="name">1216</td><td class="name">leistungen-basis.biz</td></tr>
-<tr><td class="name">10417</td><td class="name">haushaltshilfe.biz</td></tr>
-<tr><td class="name">11628</td><td class="name">haertefall.biz</td></tr>
-<tr><td class="name">2664</td><td class="name">leistungsaushilfe-ausland.biz</td></tr>
-<tr><td class="name">13927</td><td class="name">haertefall.biz</td></tr>
-<tr><td class="name">5931</td><td class="name">haertefall.biz</td></tr>
-<tr><td class="name">10653</td><td class="name">datenaustausch-geldleistungen-basis.biz.api</td></tr>
-<tr><td class="name">19349</td><td class="name">versichertenbestandsfuehrung-basis.biz</td></tr>
-<tr><td class="name">5935</td><td class="name">haertefall.biz</td></tr>
-<tr><td class="name">12952</td><td class="name">bankverzeichnis.biz</td></tr>
-<tr><td class="name">1218</td><td class="name">leistungsrueckforderung.biz</td></tr>
-<tr><td class="name">17057</td><td class="name">leistungen-basis.biz</td></tr>
-<tr><td class="name">19238</td><td class="name">tk-patientenquittung.biz.api</td></tr>
-</table>
-</details>
-<h3>SCS7 &middot; CRM &middot; 603 Packages &middot; 22 Bundles</h3>
-<details open><summary>Bundles dieses Subsystems</summary>
-<ul>
-<li class="name">au-steuerung.proc</li>
-<li class="name">bonusprogramm.biz</li>
-<li class="name">crm.biz</li>
-<li class="name">da-insolvenzgeld.biz.api</li>
-<li class="name">diga.proc</li>
-<li class="name">dividende.biz</li>
-<li class="name">fusionsarchiv-krankenhaus.type</li>
-<li class="name">gesundheitskarte.biz</li>
-<li class="name">ik-inhaber-verzeichnis.biz</li>
-<li class="name">kinderkrankengeld.biz.api</li>
-<li class="name">korrespondenz.proc</li>
-<li class="name">krebsregister-stammdaten.biz</li>
-<li class="name">leistung-services.sl.biz.api</li>
-<li class="name">leistungen-basis.proc.api</li>
-<li class="name">organisationsverwaltung.biz.api</li>
-<li class="name">prozess-beispiel.biz.impl</li>
-<li class="name">prozess-beispiel.proc</li>
-<li class="name">prozess.biz.impl</li>
-<li class="name">sonstige-leistung-basis.biz</li>
-<li class="name">uvtraeger.biz.api</li>
-<li class="name">vertriebspartner.biz.api</li>
-<li class="name">zahnersatz.biz.api</li>
-</ul>
-</details>
-<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
-<table>
-<tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">20332</td><td class="name">bonusprogramm.biz</td></tr>
-<tr><td class="name">20452</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">20450</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">2551</td><td class="name">bonusprogramm.biz</td></tr>
-<tr><td class="name">1220</td><td class="name">prozess-beispiel.proc</td></tr>
-<tr><td class="name">18490</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">13804</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">2427</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">11868</td><td class="name">fusionsarchiv-krankenhaus.type</td></tr>
-<tr><td class="name">11626</td><td class="name">sonstige-leistung-basis.biz</td></tr>
-<tr><td class="name">13806</td><td class="name">prozess-beispiel.proc</td></tr>
-<tr><td class="name">12712</td><td class="name">krebsregister-stammdaten.biz</td></tr>
-<tr><td class="name">4726</td><td class="name">diga.proc</td></tr>
-<tr><td class="name">3517</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">19478</td><td class="name">prozess-beispiel.proc</td></tr>
-<tr><td class="name">20225</td><td class="name">prozess-beispiel.proc</td></tr>
-<tr><td class="name">19599</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">21314</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">18027</td><td class="name">crm.biz</td></tr>
-<tr><td class="name">20342</td><td class="name">gesundheitskarte.biz</td></tr>
-</table>
-</details>
-<h3>SCS2 &middot; Einstufungsverlauf &middot; 543 Packages &middot; 20 Bundles</h3>
-<details open><summary>Bundles dieses Subsystems</summary>
-<ul>
-<li class="name">arbeitgeberbeitrag.biz.api</li>
-<li class="name">datenaustausch-eessi.leistung.api</li>
-<li class="name">eel-basis.biz</li>
-<li class="name">eel.proc</li>
-<li class="name">einstufungsverlauf.biz</li>
-<li class="name">fahrkosten.biz.impl</li>
-<li class="name">gesundheitsdividende.proc</li>
-<li class="name">haftpflichtversicherer.biz</li>
-<li class="name">kieferorthopaedie-uebergreifend.biz</li>
-<li class="name">korrespondenz-basis.biz</li>
-<li class="name">krankenhausverzeichnis-systemanforderungen.biz</li>
-<li class="name">melderegisterabgleich.biz.impl</li>
-<li class="name">must.biz.api</li>
-<li class="name">personalverzeichnis.biz</li>
-<li class="name">pflegeversicherung.biz.api</li>
-<li class="name">prozessereignismanager-referenzen.biz.api</li>
-<li class="name">sonstiger-geschaeftspartner.biz</li>
-<li class="name">sozv-meldungen.biz.api</li>
-<li class="name">testdatenmanagement.biz</li>
-<li class="name">widerspruch.biz</li>
-</ul>
-</details>
-<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
-<table>
-<tr><th>Package</th><th>Bundle</th></tr>
 <tr><td class="name">20455</td><td class="name">datenaustausch-eessi.leistung.api</td></tr>
-<tr><td class="name">18252</td><td class="name">melderegisterabgleich.biz.impl</td></tr>
-<tr><td class="name">19342</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">21780</td><td class="name">widerspruch.biz</td></tr>
-<tr><td class="name">2790</td><td class="name">eel-basis.biz</td></tr>
+<tr><td class="name">16079</td><td class="name">icd.biz</td></tr>
+<tr><td class="name">19585</td><td class="name">sap-eam-stammdaten.biz</td></tr>
+<tr><td class="name">17045</td><td class="name">versorgungsamtsbescheid-basis.biz</td></tr>
+<tr><td class="name">9062</td><td class="name">versichertenbestandsfuehrung.biz.impl</td></tr>
+<tr><td class="name">11746</td><td class="name">rvtraeger.biz</td></tr>
+<tr><td class="name">13925</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
 <tr><td class="name">12716</td><td class="name">datenaustausch-eessi.leistung.api</td></tr>
-<tr><td class="name">2668</td><td class="name">gesundheitsdividende.proc</td></tr>
-<tr><td class="name">11869</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">11627</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">11748</td><td class="name">korrespondenz-basis.biz</td></tr>
-<tr><td class="name">13807</td><td class="name">sonstiger-geschaeftspartner.biz</td></tr>
-<tr><td class="name">12950</td><td class="name">fahrkosten.biz.impl</td></tr>
-<tr><td class="name">3753</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">10892</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">11742</td><td class="name">fahrkosten.biz.impl</td></tr>
-<tr><td class="name">10895</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">19108</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">11862</td><td class="name">widerspruch.biz</td></tr>
-<tr><td class="name">2307</td><td class="name">einstufungsverlauf.biz</td></tr>
-<tr><td class="name">18146</td><td class="name">melderegisterabgleich.biz.impl</td></tr>
+<tr><td class="name">11868</td><td class="name">fusionsarchiv-krankenhaus.type</td></tr>
+<tr><td class="name">1456</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
+<tr><td class="name">2541</td><td class="name">begleiter.biz</td></tr>
+<tr><td class="name">12953</td><td class="name">tk-termin.biz.impl</td></tr>
+<tr><td class="name">13922</td><td class="name">tkschriftgut.type</td></tr>
+<tr><td class="name">3878</td><td class="name">konfigurierbare-leistung.biz</td></tr>
+<tr><td class="name">19356</td><td class="name">hochschulverzeichnis.biz.impl</td></tr>
+<tr><td class="name">19238</td><td class="name">tk-patientenquittung.biz.api</td></tr>
+<tr><td class="name">19110</td><td class="name">konfigurierbare-leistung.biz</td></tr>
+<tr><td class="name">17173</td><td class="name">widerspruch.biz.api</td></tr>
+<tr><td class="name">5828</td><td class="name">arbeitgeberbeitrag.biz.api</td></tr>
 </table>
 </details>
-<h3>SCS5 &middot; Gerichtsverzeichnis &middot; 362 Packages &middot; 22 Bundles</h3>
+<h3>SCS6 &middot; Kiss24-TKeasy &middot; 358 Packages &middot; 20 Bundles</h3>
 <details open><summary>Bundles dieses Subsystems</summary>
 <ul>
-<li class="name">arbeitgeberleistung.biz</li>
-<li class="name">arzneimittelverzeichnis.biz.api</li>
+<li class="name">asv-verzeichnis.biz</li>
 <li class="name">aub-verarbeitung.biz.impl</li>
-<li class="name">behandlerverzeichnis.biz.api</li>
-<li class="name">da-za-leistungsantraege.biz.impl</li>
-<li class="name">diga.biz.api</li>
-<li class="name">entsendung-dokumente.biz.impl</li>
-<li class="name">erv.biz.api</li>
-<li class="name">fusionsarchiv-stammdaten.biz</li>
-<li class="name">gerichtsverzeichnis.biz.impl</li>
-<li class="name">gesundheitsdividende.biz</li>
-<li class="name">hilfsmittelverzeichnis.biz</li>
-<li class="name">hzv.biz.api</li>
-<li class="name">kassenwechsel-leistungsdaten.biz.impl</li>
-<li class="name">microservice-pilot.biz.impl</li>
-<li class="name">mitteilungsmanagement.biz.api</li>
-<li class="name">pflegeperson.proc</li>
-<li class="name">rsa-clearing.biz</li>
-<li class="name">sozialhilfetraeger-abrechnung.leistung.api</li>
-<li class="name">testdaten-krankenhausaufenthalt.biz.impl</li>
-<li class="name">testdaten-pflegeversicherung.biz.impl</li>
-<li class="name">widerspruch.biz.api</li>
+<li class="name">da-beitragsdifferenzierung-pv.biz.impl</li>
+<li class="name">da-za-leistungsantraege.biz.api</li>
+<li class="name">interessent.biz</li>
+<li class="name">korrespondenz-adapter.biz</li>
+<li class="name">korrespondenz.biz</li>
+<li class="name">kv-verzeichnis.biz</li>
+<li class="name">leistungsrueckforderung.biz</li>
+<li class="name">medizinproduktregress.biz.impl</li>
+<li class="name">meldungen-basis.biz.api</li>
+<li class="name">pcschriftgut-extern.biz</li>
+<li class="name">praeventionskurs.biz</li>
+<li class="name">schriftgut-archiv.biz</li>
+<li class="name">sozialhilfetraeger-abrechnung.biz</li>
+<li class="name">sozv-meldungen.biz.api</li>
+<li class="name">stoppuhr.biz</li>
+<li class="name">tracking.biz</li>
+<li class="name">versorgungsamtsbescheid.biz</li>
+<li class="name">zentralregistratur.biz</li>
 </ul>
 </details>
 <details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
 <table>
 <tr><th>Package</th><th>Bundle</th></tr>
-<tr><td class="name">17289</td><td class="name">hilfsmittelverzeichnis.biz</td></tr>
-<tr><td class="name">11061</td><td class="name">microservice-pilot.biz.impl</td></tr>
-<tr><td class="name">7200</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
-<tr><td class="name">12395</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
-<tr><td class="name">14331</td><td class="name">kassenwechsel-leistungsdaten.biz.impl</td></tr>
-<tr><td class="name">19465</td><td class="name">fusionsarchiv-stammdaten.biz</td></tr>
-<tr><td class="name">14571</td><td class="name">gesundheitsdividende.biz</td></tr>
-<tr><td class="name">3761</td><td class="name">gesundheitsdividende.biz</td></tr>
-<tr><td class="name">8091</td><td class="name">pflegeperson.proc</td></tr>
+<tr><td class="name">5140</td><td class="name">meldungen-basis.biz.api</td></tr>
+<tr><td class="name">17961</td><td class="name">schriftgut-archiv.biz</td></tr>
+<tr><td class="name">7686</td><td class="name">korrespondenz.biz</td></tr>
+<tr><td class="name">21783</td><td class="name">korrespondenz.biz</td></tr>
+<tr><td class="name">6354</td><td class="name">praeventionskurs.biz</td></tr>
+<tr><td class="name">9863</td><td class="name">zentralregistratur.biz</td></tr>
+<tr><td class="name">9984</td><td class="name">meldungen-basis.biz.api</td></tr>
+<tr><td class="name">8412</td><td class="name">praeventionskurs.biz</td></tr>
+<tr><td class="name">2670</td><td class="name">da-beitragsdifferenzierung-pv.biz.impl</td></tr>
+<tr><td class="name">19581</td><td class="name">sozialhilfetraeger-abrechnung.biz</td></tr>
+<tr><td class="name">16073</td><td class="name">leistungsrueckforderung.biz</td></tr>
 <tr><td class="name">470</td><td class="name">aub-verarbeitung.biz.impl</td></tr>
-<tr><td class="name">8890</td><td class="name">hilfsmittelverzeichnis.biz</td></tr>
-<tr><td class="name">3084</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
-<tr><td class="name">11988</td><td class="name">gerichtsverzeichnis.biz.impl</td></tr>
-<tr><td class="name">13925</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
-<tr><td class="name">13926</td><td class="name">gesundheitsdividende.biz</td></tr>
-<tr><td class="name">1699</td><td class="name">pflegeperson.proc</td></tr>
-<tr><td class="name">1456</td><td class="name">da-za-leistungsantraege.biz.impl</td></tr>
-<tr><td class="name">11067</td><td class="name">pflegeperson.proc</td></tr>
-<tr><td class="name">9977</td><td class="name">gerichtsverzeichnis.biz.impl</td></tr>
-<tr><td class="name">8646</td><td class="name">gerichtsverzeichnis.biz.impl</td></tr>
+<tr><td class="name">16072</td><td class="name">korrespondenz.biz</td></tr>
+<tr><td class="name">12715</td><td class="name">da-beitragsdifferenzierung-pv.biz.impl</td></tr>
+<tr><td class="name">1215</td><td class="name">zentralregistratur.biz</td></tr>
+<tr><td class="name">8407</td><td class="name">korrespondenz.biz</td></tr>
+<tr><td class="name">6108</td><td class="name">korrespondenz.biz</td></tr>
+<tr><td class="name">18139</td><td class="name">sozialhilfetraeger-abrechnung.biz</td></tr>
+<tr><td class="name">3635</td><td class="name">sozialhilfetraeger-abrechnung.biz</td></tr>
+<tr><td class="name">1218</td><td class="name">leistungsrueckforderung.biz</td></tr>
+</table>
+</details>
+<h3>SCS7 &middot; Mutterschaftsgeld (MUG) &middot; 189 Packages &middot; 12 Bundles</h3>
+<details open><summary>Bundles dieses Subsystems</summary>
+<ul>
+<li class="name">apothekenabrechnung.biz.api</li>
+<li class="name">au-steuerung.biz.impl</li>
+<li class="name">einstufungsverlauf-basis.biz</li>
+<li class="name">everordnungmanager.biz.api</li>
+<li class="name">kostenerstattungswahl.biz</li>
+<li class="name">krankenhausverzeichnis.biz</li>
+<li class="name">leistungsrueckforderung.leistung.api</li>
+<li class="name">mitteilungsmanagement.biz</li>
+<li class="name">mutterschaftsgeld.proc</li>
+<li class="name">seminarverwaltung.biz</li>
+<li class="name">vertrieb.biz.api</li>
+<li class="name">zahlstellenkonto.biz.impl</li>
+</ul>
+</details>
+<details><summary>Top-20 Packages nach Zaehlung im Subsystem</summary>
+<table>
+<tr><th>Package</th><th>Bundle</th></tr>
+<tr><td class="name">18412</td><td class="name">mutterschaftsgeld.proc</td></tr>
+<tr><td class="name">18259</td><td class="name">kostenerstattungswahl.biz</td></tr>
+<tr><td class="name">12390</td><td class="name">krankenhausverzeichnis.biz</td></tr>
+<tr><td class="name">16597</td><td class="name">vertrieb.biz.api</td></tr>
+<tr><td class="name">4850</td><td class="name">mitteilungsmanagement.biz</td></tr>
+<tr><td class="name">7040</td><td class="name">einstufungsverlauf-basis.biz</td></tr>
+<tr><td class="name">21306</td><td class="name">leistungsrueckforderung.leistung.api</td></tr>
+<tr><td class="name">4969</td><td class="name">mutterschaftsgeld.proc</td></tr>
+<tr><td class="name">4607</td><td class="name">krankenhausverzeichnis.biz</td></tr>
+<tr><td class="name">1210</td><td class="name">zahlstellenkonto.biz.impl</td></tr>
+<tr><td class="name">9737</td><td class="name">zahlstellenkonto.biz.impl</td></tr>
+<tr><td class="name">11462</td><td class="name">krankenhausverzeichnis.biz</td></tr>
+<tr><td class="name">8888</td><td class="name">au-steuerung.biz.impl</td></tr>
+<tr><td class="name">4964</td><td class="name">krankenhausverzeichnis.biz</td></tr>
+<tr><td class="name">2948</td><td class="name">kostenerstattungswahl.biz</td></tr>
+<tr><td class="name">4968</td><td class="name">seminarverwaltung.biz</td></tr>
+<tr><td class="name">12798</td><td class="name">mutterschaftsgeld.proc</td></tr>
+<tr><td class="name">8662</td><td class="name">mitteilungsmanagement.biz</td></tr>
+<tr><td class="name">20863</td><td class="name">mitteilungsmanagement.biz</td></tr>
+<tr><td class="name">16242</td><td class="name">krankenhausverzeichnis.biz</td></tr>
 </table>
 </details>
 </section>

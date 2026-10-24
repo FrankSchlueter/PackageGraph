@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultWeightedEdge;
 
 import de.tk.dependencyanalyse.packagegraph.graph.PackageGraph;
 import de.tk.dependencyanalyse.packagegraph.graph.PackageGraphBuilder;
@@ -55,11 +56,11 @@ public final class LevelCalculator {
             List<Integer> nbl = new ArrayList<>();
             List<Integer> inl = new ArrayList<>();
             String v = ids.get(i);
-            for (DefaultEdge e : pg.graph().outgoingEdgesOf(v)) {
+            for (DefaultWeightedEdge e : pg.graph().outgoingEdgesOf(v)) {
                 Integer ti = index.get(pg.graph().getEdgeTarget(e));
                 if (ti != null) nbl.add(ti);
             }
-            for (DefaultEdge e : pg.graph().incomingEdgesOf(v)) {
+            for (DefaultWeightedEdge e : pg.graph().incomingEdgesOf(v)) {
                 Integer si = index.get(pg.graph().getEdgeSource(e));
                 if (si != null) inl.add(si);
             }

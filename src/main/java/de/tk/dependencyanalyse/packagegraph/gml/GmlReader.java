@@ -1,9 +1,15 @@
 package de.tk.dependencyanalyse.packagegraph.gml;
 
-import java.io.BufferedReader;
+import java.io.CharArrayReader;
 import java.io.IOException;
 import java.io.PushbackReader;
 import java.io.Reader;
+import java.io.StringReader;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.CharacterCodingException;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CodingErrorAction;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -51,12 +57,25 @@ public final class GmlReader {
     /** Kanten-Attribut {@code target} (Pflicht). */
     public static final String ATTR_TARGET = "target";
 
+    /**
+     * Strikter UTF-8-Decoder: meldet ungueltige Bytefolgen, statt sie
+     * zu ersetzen. Wird in {@link #openReader(Path)} genutzt, um echtes
+     * UTF-8 von Latin-1 zu unterscheiden.
+     */
+    private static final CharsetDecoder UTF8_DECODER =
+            StandardCharsets.UTF_8.newDecoder()
+                    .onMalformedInput(CodingErrorAction.REPORT)
+                    .onUnmappableCharacter(CodingErrorAction.REPORT);
+
+    /** Byte-Order-Mark fuer UTF-8 (EF BB BF). */
+    private static final byte[] BOM_UTF8 = { (byte) 0xEF, (byte) 0xBB, (byte) 0xBF };
+
     /** Liest die Datei und liefert Knoten + Kanten-Attribut-Maps. */
     public static Graph read(Path path) throws IOException {
         List<Map<String, String>> nodes = new ArrayList<>();
         List<Map<String, String>> edges = new ArrayList<>();
-        try (BufferedReader br = Files.newBufferedReader(path, StandardCharsets.UTF_8);
-             PushbackReader r = new PushbackReader(br, 16)) {
+        PushbackReader r = new PushbackReader(openReader(path), 8);
+        {
             Parser p = new Parser(r);
             List<Map<String, String>> blocks = p.parseAll();
             for (Map<String, String> b : blocks) {
@@ -69,6 +88,47 @@ public final class GmlReader {
             }
         }
         return new Graph(nodes, edges);
+    }
+
+    // ---------------------------------------------------------------------
+    // Encoding-Erkennung
+    // ---------------------------------------------------------------------
+
+    /**
+     * Dekodiert den kompletten Dateiinhalt als Text.
+     *
+     * <p>Reihenfolge:
+     * <ol>
+     *   <li>UTF-8-BOM vorangestellt -&gt; BOM abschneiden, UTF-8 verwenden.</li>
+     *   <li>Sonst striktes UTF-8 versuchen. Bei ungueltiger Bytefolge
+     *       auf ISO-8859-1 zurueckfallen.</li>
+     * </ol>
+     *
+     * <p>ISO-8859-1 kann niemals scheitern, der Aufrufer bekommt also
+     * immer eine lesbare Datei.
+     */
+    private static Reader openReader(Path path) throws IOException {
+        byte[] bytes = Files.readAllBytes(path);
+        int offset = 0;
+
+        // BOM pruefen und gegebenenfalls abschneiden.
+        if (bytes.length >= BOM_UTF8.length
+                && bytes[0] == BOM_UTF8[0]
+                && bytes[1] == BOM_UTF8[1]
+                && bytes[2] == BOM_UTF8[2]) {
+            offset = BOM_UTF8.length;
+        }
+
+        CharsetDecoder decoder = UTF8_DECODER;
+        CharBuffer decoded;
+        try {
+            decoded = decoder.decode(ByteBuffer.wrap(bytes, offset, bytes.length - offset));
+        } catch (CharacterCodingException e) {
+            // Kein valides UTF-8 -> ISO-8859-1.
+            return new StringReader(
+                    new String(bytes, offset, bytes.length - offset, StandardCharsets.ISO_8859_1));
+        }
+        return new CharArrayReader(decoded.toString().toCharArray());
     }
 
     /** Ergebnis: alle Knoten- und Kanten-Blocks. */

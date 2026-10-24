@@ -1,0 +1,115 @@
+// SCS-Zerlegung: Subsystem-Graph
+// Kantenstaerke = Summe der Cardinalities zwischen den Bundles
+// Bidirektionale Kanten (rot) weisen auf Rueckkopplung hin
+digraph Subsysteme {
+  rankdir=LR;
+  graph [fontname="Helvetica", fontsize=11, bgcolor="#fafbfc", pad="0.5", nodesep="0.6", ranksep="1.2"];
+  node  [shape=box, style="filled,rounded", fontname="Helvetica", fontsize=10];
+  edge  [fontname="Helvetica", fontsize=9];
+
+  "SCS1" [label="SCS1\n257 Bundles / 8419 Packages\nGeschaeftspartner\nPROZESSDATEN", fillcolor="#ffcecb"];
+  "SCS0" [label="SCS0\n19 Bundles / 843 Packages\nVorgangssystem\nPROZESSDATEN", fillcolor="#fff8c5"];
+  "SCS6" [label="SCS6\n21 Bundles / 725 Packages\nGeschaeftspartner\nBASIS", fillcolor="#fff8c5"];
+  "SCS3" [label="SCS3\n19 Bundles / 716 Packages\nArbeitgeberbeitrag\nPROZESSDATEN", fillcolor="#fff8c5"];
+  "SCS8" [label="SCS8\n22 Bundles / 675 Packages\nKur\nPROZESSDATEN", fillcolor="#fff8c5"];
+  "SCS4" [label="SCS4\n26 Bundles / 608 Packages\nLeistungen-Basis\nPROZESSDATEN", fillcolor="#fff8c5"];
+  "SCS7" [label="SCS7\n22 Bundles / 603 Packages\nCRM\nPROZESSDATEN", fillcolor="#fff8c5"];
+  "SCS2" [label="SCS2\n20 Bundles / 543 Packages\nEinstufungsverlauf\nSTAMMDATEN", fillcolor="#fff8c5"];
+  "SCS5" [label="SCS5\n22 Bundles / 362 Packages\nGerichtsverzeichnis\nPROZESSDATEN", fillcolor="#ffe2c0"];
+  "Core" [label="Core\n0 Packages\n0 Bundles", fillcolor="#bfd4fe", shape=component];
+  "Overlay" [label="Overlay\n8306 Packages\n10 Bundles", fillcolor="#ffd8a8", shape=component];
+
+  "SCS7" -> "SCS8" [label="906", penwidth="3.4", color="#cf222e", style="bold"];
+  "SCS8" -> "SCS7" [label="2.3k", penwidth="3.4", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS5" [label="376", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS5" -> "SCS7" [label="1.5k", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS6" [label="1.4k", penwidth="3.5", color="#cf222e", style="bold"];
+  "SCS6" -> "SCS7" [label="3.4k", penwidth="3.5", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS3" [label="1.3k", penwidth="3.4", color="#cf222e", style="bold"];
+  "SCS3" -> "SCS7" [label="2.5k", penwidth="3.4", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS4" [label="1.0k", penwidth="3.5", color="#cf222e", style="bold"];
+  "SCS4" -> "SCS7" [label="2.8k", penwidth="3.5", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS1" [label="16.8k", penwidth="4.5", color="#cf222e", style="bold"];
+  "SCS1" -> "SCS7" [label="32.2k", penwidth="4.5", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS2" [label="594", penwidth="3.4", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS7" [label="2.4k", penwidth="3.4", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "SCS0" [label="1.9k", penwidth="3.5", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS7" [label="3.3k", penwidth="3.5", color="#cf222e", style="bold", constraint=false];
+  "SCS7" -> "Overlay" [label="15.0k", penwidth="4.5", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS7" [label="29.0k", penwidth="4.5", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS5" [label="475", penwidth="2.7", color="#cf222e", style="bold"];
+  "SCS5" -> "SCS8" [label="532", penwidth="2.7", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS6" [label="1.7k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS6" -> "SCS8" [label="1.1k", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS3" [label="1.5k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS3" -> "SCS8" [label="472", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS4" [label="1.5k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS4" -> "SCS8" [label="1.0k", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS1" [label="18.8k", penwidth="4.3", color="#cf222e", style="bold"];
+  "SCS1" -> "SCS8" [label="15.9k", penwidth="4.3", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS2" [label="1.4k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS8" [label="783", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "SCS0" [label="2.0k", penwidth="3.3", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS8" [label="958", penwidth="3.3", color="#cf222e", style="bold", constraint=false];
+  "SCS8" -> "Overlay" [label="18.0k", penwidth="4.3", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS8" [label="15.3k", penwidth="4.3", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "SCS6" [label="755", penwidth="3.0", color="#cf222e", style="bold"];
+  "SCS6" -> "SCS5" [label="1.1k", penwidth="3.0", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "SCS3" [label="888", penwidth="3.3", color="#cf222e", style="bold"];
+  "SCS3" -> "SCS5" [label="2.2k", penwidth="3.3", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "SCS4" [label="875", penwidth="2.9", color="#cf222e", style="bold"];
+  "SCS4" -> "SCS5" [label="731", penwidth="2.9", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "SCS1" [label="9.5k", penwidth="4.1", color="#cf222e", style="bold"];
+  "SCS1" -> "SCS5" [label="11.7k", penwidth="4.1", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "SCS2" [label="541", penwidth="2.9", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS5" [label="712", penwidth="2.9", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "SCS0" [label="1.6k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS5" [label="975", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS5" -> "Overlay" [label="10.6k", penwidth="4.1", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS5" [label="11.8k", penwidth="4.1", color="#cf222e", style="bold", constraint=false];
+  "SCS6" -> "SCS3" [label="1.4k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS3" -> "SCS6" [label="1.2k", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS6" -> "SCS4" [label="1.7k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS4" -> "SCS6" [label="1.2k", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS6" -> "SCS1" [label="24.1k", penwidth="4.4", color="#cf222e", style="bold"];
+  "SCS1" -> "SCS6" [label="18.6k", penwidth="4.4", color="#cf222e", style="bold", constraint=false];
+  "SCS6" -> "SCS2" [label="1.0k", penwidth="3.1", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS6" [label="1.2k", penwidth="3.1", color="#cf222e", style="bold", constraint=false];
+  "SCS6" -> "SCS0" [label="2.5k", penwidth="3.4", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS6" [label="940", penwidth="3.4", color="#cf222e", style="bold", constraint=false];
+  "SCS6" -> "Overlay" [label="22.9k", penwidth="4.4", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS6" [label="20.4k", penwidth="4.4", color="#cf222e", style="bold", constraint=false];
+  "SCS3" -> "SCS4" [label="1.2k", penwidth="3.1", color="#cf222e", style="bold"];
+  "SCS4" -> "SCS3" [label="920", penwidth="3.1", color="#cf222e", style="bold", constraint=false];
+  "SCS3" -> "SCS1" [label="18.5k", penwidth="4.4", color="#cf222e", style="bold"];
+  "SCS1" -> "SCS3" [label="22.5k", penwidth="4.4", color="#cf222e", style="bold", constraint=false];
+  "SCS3" -> "SCS2" [label="1.1k", penwidth="3.1", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS3" [label="1.2k", penwidth="3.1", color="#cf222e", style="bold", constraint=false];
+  "SCS3" -> "SCS0" [label="2.1k", penwidth="3.3", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS3" [label="2.0k", penwidth="3.3", color="#cf222e", style="bold", constraint=false];
+  "SCS3" -> "Overlay" [label="20.2k", penwidth="4.3", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS3" [label="21.2k", penwidth="4.3", color="#cf222e", style="bold", constraint=false];
+  "SCS4" -> "SCS1" [label="18.1k", penwidth="4.3", color="#cf222e", style="bold"];
+  "SCS1" -> "SCS4" [label="19.8k", penwidth="4.3", color="#cf222e", style="bold", constraint=false];
+  "SCS4" -> "SCS2" [label="978", penwidth="3.1", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS4" [label="1.4k", penwidth="3.1", color="#cf222e", style="bold", constraint=false];
+  "SCS4" -> "SCS0" [label="1.7k", penwidth="3.2", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS4" [label="1.6k", penwidth="3.2", color="#cf222e", style="bold", constraint=false];
+  "SCS4" -> "Overlay" [label="18.6k", penwidth="4.3", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS4" [label="20.1k", penwidth="4.3", color="#cf222e", style="bold", constraint=false];
+  "SCS1" -> "SCS2" [label="14.1k", penwidth="4.2", color="#cf222e", style="bold"];
+  "SCS2" -> "SCS1" [label="16.1k", penwidth="4.2", color="#cf222e", style="bold", constraint=false];
+  "SCS1" -> "SCS0" [label="32.9k", penwidth="4.5", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS1" [label="21.6k", penwidth="4.5", color="#cf222e", style="bold", constraint=false];
+  "SCS1" -> "Overlay" [label="280.0k", penwidth="5.0", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS1" [label="281.5k", penwidth="5.0", color="#cf222e", style="bold", constraint=false];
+  "SCS2" -> "SCS0" [label="2.6k", penwidth="3.4", color="#cf222e", style="bold"];
+  "SCS0" -> "SCS2" [label="928", penwidth="3.4", color="#cf222e", style="bold", constraint=false];
+  "SCS2" -> "Overlay" [label="17.6k", penwidth="4.2", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS2" [label="13.6k", penwidth="4.2", color="#cf222e", style="bold", constraint=false];
+  "SCS0" -> "Overlay" [label="27.5k", penwidth="4.9", color="#cf222e", style="bold"];
+  "Overlay" -> "SCS0" [label="73.9k", penwidth="4.9", color="#cf222e", style="bold", constraint=false];
+
+  // Zyklen zwischen Subsystemen:
+  // SCS [0, 1, 2, 3, 4, 5, 6, 7, 8] bilden einen Zyklus (9 Subsysteme)
+}

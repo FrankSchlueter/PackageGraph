@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultWeightedEdge;
 
 import de.tk.dependencyanalyse.packagegraph.graph.PackageGraph;
 import de.tk.dependencyanalyse.packagegraph.graph.PackageGraphBuilder;
@@ -53,7 +54,7 @@ public final class DsmSorter {
         for (int i = 0; i < n; i++) {
             List<Integer> nb = new ArrayList<>();
             String v = ids.get(i);
-            for (DefaultEdge e : pg.graph().outgoingEdgesOf(v)) {
+            for (DefaultWeightedEdge e : pg.graph().outgoingEdgesOf(v)) {
                 String t = pg.graph().getEdgeTarget(e);
                 Integer ti = index.get(t);
                 if (ti != null) nb.add(ti);
@@ -68,7 +69,7 @@ public final class DsmSorter {
 
         // 2) Coupling-Score pro Knoten und pro SCC
         double[] nodeScore = new double[n];
-        for (DefaultEdge e : pg.graph().edgeSet()) {
+        for (DefaultWeightedEdge e : pg.graph().edgeSet()) {
             String s = pg.graph().getEdgeSource(e);
             String t = pg.graph().getEdgeTarget(e);
             Integer si = index.get(s);

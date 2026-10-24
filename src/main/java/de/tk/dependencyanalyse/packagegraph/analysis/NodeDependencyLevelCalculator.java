@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultWeightedEdge;
 
 import de.tk.dependencyanalyse.packagegraph.graph.PackageGraph;
 import de.tk.dependencyanalyse.packagegraph.graph.PackageGraphBuilder;
@@ -35,7 +36,7 @@ public final class NodeDependencyLevelCalculator {
     public Map<String, Double> compute() {
         Map<String, Double> result = new LinkedHashMap<>();
         for (String id : pg.graph().vertexSet()) {
-            Set<DefaultEdge> out = pg.graph().outgoingEdgesOf(id);
+            Set<DefaultWeightedEdge> out = pg.graph().outgoingEdgesOf(id);
             if (out.isEmpty()) {
                 result.put(id, 1.0);
                 Map<String, Object> p = pg.nodeProps().get(id);
@@ -46,7 +47,7 @@ public final class NodeDependencyLevelCalculator {
             }
             double sum = 0;
             int count = 0;
-            for (DefaultEdge e : out) {
+            for (DefaultWeightedEdge e : out) {
                 String t = pg.graph().getEdgeTarget(e);
                 Integer lvl = levels.get(t);
                 if (lvl != null) {

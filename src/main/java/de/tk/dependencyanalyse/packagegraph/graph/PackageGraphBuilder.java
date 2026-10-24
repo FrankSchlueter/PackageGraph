@@ -5,7 +5,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.jgrapht.Graph;
+import org.jgrapht.graph.DefaultDirectedWeightedGraph;
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.DirectedMultigraph;
 
 import de.tk.dependencyanalyse.packagegraph.gml.GmlReader;
@@ -28,9 +31,9 @@ public final class PackageGraphBuilder {
     public static final String PROP_NAME = "name";
 
     public PackageGraph build(GmlReader.Graph raw) {
-        DirectedMultigraph<String, DefaultEdge> g = new DirectedMultigraph<>(DefaultEdge.class);
+        Graph<String, DefaultWeightedEdge> g = new DefaultDirectedWeightedGraph<>(DefaultWeightedEdge.class);
         Map<String, Map<String, Object>> nodeProps = new LinkedHashMap<>();
-        Map<DefaultEdge, Map<String, Object>> edgeProps = new HashMap<>();
+        Map<DefaultWeightedEdge, Map<String, Object>> edgeProps = new HashMap<>();
 
         for (Map<String, String> attrs : raw.nodes()) {
             String id = attrs.get(GmlReader.ATTR_ID);
@@ -50,15 +53,29 @@ public final class PackageGraphBuilder {
             if (src.equals(tgt)) continue; // Self-Edges ignorieren
             if (!g.containsVertex(src)) g.addVertex(src);
             if (!g.containsVertex(tgt)) g.addVertex(tgt);
-            DefaultEdge e = g.addEdge(src, tgt);
+            DefaultWeightedEdge e = g.addEdge(src, tgt);
             if (e == null) continue;
             Map<String, Object> props = new HashMap<>();
             for (Map.Entry<String, String> ae : attrs.entrySet()) {
                 props.put(ae.getKey(), ae.getValue());
             }
+            // Kanten-Gewicht: bevorzugt das GML-Attribut "cardinality"
+            // (Anzahl der Aufrufe / Calls). Fallback 1.0 entspricht
+            // dem JGraphT-Default.
+            g.setEdgeWeight(e, parseCardinality(attrs.get("cardinality")));
             edgeProps.put(e, props);
         }
 
         return new PackageGraph(g, nodeProps, edgeProps);
+    }
+
+    private static double parseCardinality(String raw) {
+        if (raw == null || raw.isBlank()) return 1.0;
+        try {
+            double v = Double.parseDouble(raw.trim());
+            return v > 0 ? v : 1.0;
+        } catch (NumberFormatException ex) {
+            return 1.0;
+        }
     }
 }

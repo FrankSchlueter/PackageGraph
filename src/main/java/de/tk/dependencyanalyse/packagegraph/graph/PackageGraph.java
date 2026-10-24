@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.jgrapht.Graph;
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.DirectedMultigraph;
 
 /**
@@ -18,31 +20,31 @@ import org.jgrapht.graph.DirectedMultigraph;
 public final class PackageGraph {
 
     /** JGraphT-Graph: gerichtet, Mehrfachkanten zulaessig. */
-    private final DirectedMultigraph<String, DefaultEdge> graph;
+    private final Graph<String, DefaultWeightedEdge> graph;
 
     /** Knoten-Id -> Attribut-Map. */
     private final Map<String, Map<String, Object>> nodeProps;
 
     /** Kante -> Attribut-Map. */
-    private final Map<DefaultEdge, Map<String, Object>> edgeProps;
+    private final Map<DefaultWeightedEdge, Map<String, Object>> edgeProps;
 
-    public PackageGraph(DirectedMultigraph<String, DefaultEdge> graph,
+    public PackageGraph(Graph<String, DefaultWeightedEdge> graph,
                         Map<String, Map<String, Object>> nodeProps,
-                        Map<DefaultEdge, Map<String, Object>> edgeProps) {
+                        Map<DefaultWeightedEdge, Map<String, Object>> edgeProps) {
         this.graph = graph;
         this.nodeProps = nodeProps;
         this.edgeProps = edgeProps;
     }
 
-    public DirectedMultigraph<String, DefaultEdge> graph() { return graph; }
+    public Graph<String, DefaultWeightedEdge> graph() { return graph; }
     public Map<String, Map<String, Object>> nodeProps() { return nodeProps; }
-    public Map<DefaultEdge, Map<String, Object>> edgeProps() { return edgeProps; }
+    public Map<DefaultWeightedEdge, Map<String, Object>> edgeProps() { return edgeProps; }
 
     public List<String> vertexList() {
         return List.copyOf(graph.vertexSet());
     }
 
-    public List<DefaultEdge> edgeList() {
+    public List<DefaultWeightedEdge> edgeList() {
         return List.copyOf(graph.edgeSet());
     }
 
